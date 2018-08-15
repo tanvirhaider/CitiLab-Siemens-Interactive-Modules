@@ -1,30 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-body {
-  margin-top: 100px;
-  margin-left: 0px;
-  padding: 0px;
-  background-color: lightgray; }
-
-#site-intro-animation, #graph-vehicle-charges, #graph-emissions {
-  display: none; }
-
-.placeholder {
-  width: 100%;
-  height: 100px;
-  background: pink; }
-
 .graph-parking {
+  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -36,12 +12,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   left: 0px;
   right: 0px;
   margin-left: auto;
   margin-right: auto;
   color: white;
   font-family: 'Open Sans', sans-serif; }
+  @media (max-width: 767px) {
+    .graph-parking {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .graph-parking .selected {
     color: #0c5dc5; }
     .graph-parking .selected::after {
@@ -60,6 +46,10 @@ body {
     opacity: 0;
     -webkit-animation: fadein 0.5s forwards 0.1s;
             animation: fadein 0.5s forwards 0.1s; }
+    @media (max-width: 767px) {
+      .graph-parking #graph-content {
+        width: 100%;
+        height: 400px; } }
     .graph-parking #graph-content #grid {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -85,11 +75,11 @@ body {
       -webkit-animation: fadein 0.5s forwards 0.1s;
               animation: fadein 0.5s forwards 0.1s; }
     .graph-parking #graph-content .icon-car {
-      background-image: url(../assets/images/icon-car.svg); }
+      background-image: url("../assets/images/icon-car.svg"); }
     .graph-parking #graph-content .icon-house {
-      background-image: url(../assets/images/icon-house.svg); }
+      background-image: url("../assets/images/icon-car.svg"); }
     .graph-parking #graph-content .icon-tree {
-      background-image: url(../assets/images/icon-tree.svg); }
+      background-image: url("../assets/images/icon-tree.svg"); }
     .graph-parking #graph-content .nav {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -107,13 +97,27 @@ body {
       .graph-parking #graph-content .nav .nav-year {
         position: relative;
         font-size: 1.2em;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
     .graph-parking #graph-content .hint {
       font-size: 0.8em;
       position: absolute;
       text-align: center;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
       bottom: calc(50px);
       width: 100%; }
+      @media all and (min-width: 1024px) and (max-width: 1079px) {
+        .graph-parking #graph-content .hint {
+          font-size: 0.7em; } }
+      @media all and (min-width: 768px) and (max-width: 1023px) {
+        .graph-parking #graph-content .hint {
+          font-size: 0.7em; } }
   .graph-parking #graph-copy {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -134,3 +138,116 @@ body {
     .graph-parking #graph-copy p {
       padding: 0px;
       margin-top: 0px; }
+    @media all and (min-width: 1024px) and (max-width: 1079px) {
+      .graph-parking #graph-copy {
+        font-size: 1em; } }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      .graph-parking #graph-copy {
+        font-size: 0.9em; } }
+    @media (max-width: 767px) {
+      .graph-parking #graph-copy {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        font-size: 0.9em; } }
+
+.graph-emissions {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  max-width: 1440px;
+  max-height: 600px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: 'Open Sans', sans-serif; }
+  .graph-emissions .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70%; }
+    .graph-emissions .content .emmissions {
+      background-color: #3f000b;
+      width: 50%;
+      height: 100%; }
+      .graph-emissions .content .emmissions .title {
+        font-size: 2em; }
+      .graph-emissions .content .emmissions .chart .bar-sets .bar {
+        visibility: visible; }
+      .graph-emissions .content .emmissions .chart .chart-legends .devider-line {
+        background-color: white; }
+      .graph-emissions .content .emmissions .chart .chart-legends .years .year {
+        font-size: 2em; }
+      .graph-emissions .content .emmissions .legends {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .graph-emissions .content .electricity {
+      background-color: grey;
+      width: 50%;
+      height: 100%; }
+  .graph-emissions .caption {
+    color: white; }
+    .graph-emissions .caption p {
+      max-width: 1050px;
+      margin-left: auto;
+      margin-right: auto; }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes scalein {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes scalein {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+body {
+  margin-top: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  background-color: lightgray; }
+
+#site-intro-animation, #graph-vehicle-charges, #graph-parking-NY {
+  display: none; }
+
+.placeholder {
+  width: 100%;
+  height: 100px;
+  background: pink; }

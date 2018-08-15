@@ -9,6 +9,36 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/app\/assets\/images\/icon-car.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-car.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/assets\/images\/icon-house.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-house.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/assets\/images\/icon-tree.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-tree.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/app\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -16,15 +46,25 @@
 		"oAP": "\/dist\/index.html",
 		"oF": 0
 		},
-	"\/app\/js\/graph.js": {
+	"\/app\/js\/graph-parking.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/graph-parking-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/js\/graph.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/dist\/js\/graph-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/app\/js\/parkingGraphData.js": {
 		"ft": 64,
@@ -35,6 +75,45 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"\/app\/scss\/_emmissions-graph.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/dist\/scss\/_emmissions-graph.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/app\/scss\/_mixin.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/dist\/scss\/_mixin.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/app\/scss\/_parking-graph.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/dist\/scss\/_parking-graph.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/app\/scss\/graph.scss": {
 		"aP": 1,
