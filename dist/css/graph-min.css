@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+body {
+  margin-top: 100px;
+  margin-left: 0px;
+  padding: 0px;
+  background-color: lightgray; }
+
+#site-intro-animation, #graph-vehicle-charges, #graph-emissions {
+  display: none; }
+
+.placeholder {
+  width: 100%;
+  height: 100px;
+  background: pink; }
+
+.graph-parking {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  max-width: 1440px;
+  max-height: 600px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: 'Open Sans', sans-serif; }
+  .graph-parking .selected {
+    color: #0c5dc5; }
+    .graph-parking .selected::after {
+      content: "";
+      width: 100px;
+      left: -20px;
+      top: 44px;
+      height: 3px;
+      background-color: #0c5dc5;
+      position: absolute;
+      pointer-events: none; }
+  .graph-parking #graph-content {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    opacity: 0;
+    -webkit-animation: fadein 0.5s forwards 0.1s;
+            animation: fadein 0.5s forwards 0.1s; }
+    .graph-parking #graph-content #grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+      padding-top: 100px; }
+    .graph-parking #graph-content .icon {
+      width: 9%;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      margin: 2px;
+      opacity: 0;
+      -webkit-animation: fadein 0.5s forwards 0.1s;
+              animation: fadein 0.5s forwards 0.1s; }
+    .graph-parking #graph-content .icon-car {
+      background-image: url(../assets/images/icon-car.svg); }
+    .graph-parking #graph-content .icon-house {
+      background-image: url(../assets/images/icon-house.svg); }
+    .graph-parking #graph-content .icon-tree {
+      background-image: url(../assets/images/icon-tree.svg); }
+    .graph-parking #graph-content .nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 400px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0px;
+      right: 0px;
+      position: absolute;
+      bottom: calc(60px + 50px);
+      font-size: 1.3em; }
+      .graph-parking #graph-content .nav .nav-year {
+        position: relative;
+        font-size: 1.2em;
+        cursor: pointer; }
+    .graph-parking #graph-content .hint {
+      font-size: 0.8em;
+      position: absolute;
+      text-align: center;
+      bottom: calc(50px);
+      width: 100%; }
+  .graph-parking #graph-copy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: calc(100% - 70%);
+    font-size: 1.1em;
+    line-height: 2em;
+    padding-right: 50px;
+    opacity: 0;
+    -webkit-animation: fadein 0.5s forwards 0.1s;
+            animation: fadein 0.5s forwards 0.1s; }
+    .graph-parking #graph-copy p {
+      padding: 0px;
+      margin-top: 0px; }
