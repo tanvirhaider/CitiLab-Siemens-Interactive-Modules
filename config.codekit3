@@ -9,6 +9,17 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/app\/assets\/images\/hero.png": {
+		"ft": 32768,
+		"iS": 87967,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/hero.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/app\/assets\/images\/icon-car.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -76,6 +87,19 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/app\/scss\/_emmissions-chart.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/dist\/scss\/_emmissions-chart.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/app\/scss\/_emmissions-graph.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -85,6 +109,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/dist\/scss\/_emmissions-graph.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/app\/scss\/_intro.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/dist\/scss\/_intro.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
