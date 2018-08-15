@@ -50,12 +50,65 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/app\/assets\/images\/map-la.jpg": {
+		"ft": 16384,
+		"iS": 75099,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/map-la.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/app\/assets\/images\/map-london.jpg": {
+		"ft": 16384,
+		"iS": 119455,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/map-london.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/app\/assets\/images\/map-mumbai.jpg": {
+		"ft": 16384,
+		"iS": 68108,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/map-mumbai.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/app\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/dist\/index.html",
 		"oF": 0
+		},
+	"\/app\/js\/emmissionsGraphData.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/emmissionsGraphData-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/js\/graph-emmissions.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/graph-emmissions-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/app\/js\/graph-parking.js": {
 		"ft": 64,
@@ -77,12 +130,32 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/app\/js\/jquery-3.3.1.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 2,
+		"oAP": "\/dist\/js\/jquery-3.3.1.min.js",
+		"oF": 3,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/app\/js\/parkingGraphData.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/parkingGraphData-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/js\/vehicle-charge.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/vehicle-charge-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -148,6 +221,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/dist\/scss\/_parking-graph.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/app\/scss\/_vehicle-charges.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/dist\/scss\/_vehicle-charges.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

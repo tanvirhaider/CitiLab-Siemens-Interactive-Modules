@@ -1,0 +1,1 @@
+var emmissonsGraphData_LA=[[10,30,100],[55,34,93]],emmissonsGraphData_LONDON=[[40,20,50],[23,55,66]],emmissonsGraphData_MUMBAI=[[22,66,33],[99,44,22]];

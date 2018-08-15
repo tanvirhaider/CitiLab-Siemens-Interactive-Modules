@@ -6,6 +6,7 @@
 @import 'intro';
 @import 'parking-graph';
 @import 'emmissions-graph';
+@import 'vehicle-charges';
 
 
 @keyframes fadein {
@@ -27,7 +28,7 @@ body {
     background-color: lightgray;
 }
 
-// #site-intro-animation, #graph-vehicle-charges, #graph-parking-NY {
+// #site-intro-animation, #graph-parking-LA, .placeholder ,.graph-emissions{
 //     display: none;
 // }
 
