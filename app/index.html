@@ -8,9 +8,8 @@
     <title>CitiLab - Graphs</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/graph-min.css">
-    <script src="js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script src="js/rangeslider.min.js"></script>
     <script src="js/graph-min.js"></script>
 </head>
 <body>
@@ -137,23 +136,35 @@
     <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
 
      <!-- div for charges graph starts here . =============================================-->
-    <div class="graph-vehicle-charges" id="graph-vehicle-charges">
-        <div class="content">
-            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quidem sit deserunt, dignissimos incidunt ratione aspernatur vel odio voluptatem similique, porro, blanditiis quam molestias delectus rem quos quae hic. Quo.</div>
+    <div class="graph-vehicle-charges" id="graph-vehicle-charges-LA">
+        <div class="dotContainer"></div>
+        <div class="contents">
+            <div class="content-copy"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quidem sit deserunt, dignissimos incidunt ratione aspernatur vel odio voluptatem similique, porro, blanditiis quam molestias delectus rem quos quae hic. Quo.</p></div>
             <div class="deviderline"></div>
             <div class="legend">
                 <div class="title">SCALE</div>
                 <div class="value">1 DOT = 100 CHARGERS</div>
             </div>
-            <div class="sliderModule">
-                <div class="range-slider">
-                    <input class="range-slider__range" type="range" value="2018" min="2018" max="2050">
-                    <!-- <span class="range-slider__value">2018</span> -->
+           
+        </div>
+        
+        <div class="sliderModule">
+            <div class='years'>
+                <div class="year">2018</div>
+                <div class="year">2035</div>
+                <div class="year">2050</div>
+            </div>
+            <div class="range-slider">
+                
+                <div class="sliderDotContainer">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
                 </div>
-    
-               
+                <input class="range-slider__range" type="range" value="0" min="0" max="0">
             </div>
         </div>
+        
        
     </div>
      <!-- div for charges graph starts here . =============================================-->

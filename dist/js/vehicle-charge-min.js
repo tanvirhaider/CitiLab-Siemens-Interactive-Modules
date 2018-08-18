@@ -1,1 +1,0 @@
-var rangeSlider=function(){var e=$(".range-slider"),n=$(".range-slider__range"),a=$(".range-slider__value");e.each(function(){a.each(function(){var e=$(this).prev().attr("value");$(this).html(e)}),n.on("input",function(){$(this).next(a).html(this.value)})})};

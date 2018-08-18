@@ -1,11 +1,10 @@
 
 
-
-// @codekit-prepend "parkingGraphData.js"
-// @codekit-prepend "emmissionsGraphData.js"
+// @codekit-prepend "data.js"
 // @codekit-prepend "graph-parking.js"
 // @codekit-prepend "graph-emmissions.js"
 // @codekit-prepend "vehicle-charge.js"
+
 
 
 
@@ -24,5 +23,12 @@ window.onload = function() {
         data: emmissonsGraphData_LA
     });
 
-    rangeSlider();
+    initVehicleCarges({
+        container: "#graph-vehicle-charges-LA",
+        location: "la",
+        start: 2018,
+        end: 2050,
+        data: vehicleCargesLA
+    });
+
 };

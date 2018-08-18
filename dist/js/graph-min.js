@@ -10,6 +10,15 @@ var emmissonsGraphData_LONDON = [[40, 20, 50], [23, 55, 66]];
 var emmissonsGraphData_MUMBAI = [[22, 66, 33], [99, 44, 22]];
 "use strict";
 
+var vehicleCargesLA = [[1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2]];
+
+
+// @codekit-prepend "data/parkingGraphData.js"
+// @codekit-prepend "data/emmissionsGraphData.js"
+// @codekit-prepend "data/vehicleCargesData.js"
+"use strict";
+"use strict";
+
 function initParkingGraph(data) {
 
     var container = data.container;
@@ -115,30 +124,81 @@ function initEmmissionsGraph(data) {
     animateGraph(0, ".emmissions");
     animateGraph(1, ".electricity");
 }
-'use strict';
+"use strict";
 
-var rangeSlider = function rangeSlider() {
-  var slider = $('.range-slider'),
-      range = $('.range-slider__range'),
-      value = $('.range-slider__value');
+function initVehicleCarges(data) {
+
+  var sliderObject = document.querySelector(data.container + ' .sliderModule .range-slider .range-slider__range');
+  sliderObject.setAttribute("min", data.start);
+  sliderObject.setAttribute("value", data.start);
+  sliderObject.setAttribute("max", data.end);
+
+  var slider = $(data.container + ' .sliderModule .range-slider');
+  var range = $(data.container + ' .sliderModule .range-slider .range-slider__range');
+  var value = $(data.container + ' .sliderModule .range-slider .range-slider__range');
+
+  var initialValue = data.start;
+  var finalValue = data.end;
+
+  var tl = new TimelineMax({ repeat: 0, repeatDelay: 1 });
+  tl.pause();
+
+  console.log("what is slider: ", slider);
+  var dotContainer = document.querySelector(data.container + " .dotContainer");
 
   slider.each(function () {
 
-    value.each(function () {
-      var value = $(this).prev().attr('value');
-      $(this).html(value);
-    });
+    // value.each(function(){
+    //   var value = $(this).prev().attr('value');
+    //   $(this).html(value);
+    // });
 
     range.on('input', function () {
-      $(this).next(value).html(this.value);
+      // $(this).next(value).html(this.value);
       console.log(this.value);
+
+      var tempIndexVal = this.value - initialValue;
+      console.log("index: ", tempIndexVal);
+
+      tl.seek(tempIndexVal, true);
+
+      var currentDot = document.getElementById(data.container + "-" + this.value);
+      //console.log("selectedDot: ", data.container + "-" + this.value);
+      // currentDot.style.visibility = "visible";
+
+      // #graph-vehicle-charges-LA-40
     });
   });
-};
+
+  function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  function drawDots(whichOne) {
+    var eachDot = document.createElement('div');
+    eachDot.className = 'dots';
+    eachDot.setAttribute("id", data.container + "-" + whichOne);
+    dotContainer.appendChild(eachDot);
+    var x = getRandomArbitrary(0, 300);
+    var y = getRandomArbitrary(0, 300);
+
+    eachDot.style.top = x + "px";
+    eachDot.style.left = y + "px";
+
+    tl.add(TweenLite.fromTo(eachDot, 1, { alpha: 0 }, { alpha: 1 }));
+  }
+
+  //tl.add( TweenLite.to(element, 1, {top:50}) );
+  //tl.add( TweenLite.to(element, 1, {opacity:0}) );
+
+
+  for (var i = initialValue; i <= finalValue; i++) {
+    drawDots(i);
+  }
+}
 "use strict";
 
-// @codekit-prepend "parkingGraphData.js"
-// @codekit-prepend "emmissionsGraphData.js"
+// @codekit-prepend "data.js"
 // @codekit-prepend "graph-parking.js"
 // @codekit-prepend "graph-emmissions.js"
 // @codekit-prepend "vehicle-charge.js"
@@ -158,5 +218,11 @@ window.onload = function () {
         data: emmissonsGraphData_LA
     });
 
-    rangeSlider();
+    initVehicleCarges({
+        container: "#graph-vehicle-charges-LA",
+        location: "la",
+        start: 2018,
+        end: 2050,
+        data: vehicleCargesLA
+    });
 };

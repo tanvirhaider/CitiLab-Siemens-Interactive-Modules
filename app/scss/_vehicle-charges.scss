@@ -1,9 +1,9 @@
 
 // Base Colors
 $shade-10: #2774c0 !default;
-$shade-1: #d7dcdf !default;
+$shade-1: #fff !default;
 $shade-0: #fff !default;
-$teal: #ffffff !default;
+$teal: #2774c0 !default;
 // Range Slider
 $range-width: 100% !default;
 $range-handle-color: $shade-10 !default;
@@ -24,20 +24,46 @@ $range-label-width: 0px !default;
     max-width: 1440px;
     max-height: 600px;
     background-color: black;
-    display: flex;
-    flex-direction: row;
+   // display: flex;
+   // flex-direction: row;
     left: 0px;
     right: 0px;
     margin-left: auto;
     margin-right: auto;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 
 
     @include bgimage("map-la.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    .contents {
+        width: 380px;
+        height: 300px;
+        position: relative;
+        left: 90px;
+        top: 70px;
+
+        .content-copy p {
+            line-height: 2em;
+            margin-bottom: 8px;
+        }
+
+        .deviderline {
+           // position: absolute;
+            width: 95%;
+            height: 5px;
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        .legend {
+            padding-top: 20px;
+        }
+       
+    }
 
     .sliderModule {
         width: 100%;
@@ -47,56 +73,104 @@ $range-label-width: 0px !default;
         background-color: rgba(0,0,0,0.2);
 
 
+        .years {
+            position: absolute;
+            padding-top: 10px;
+            display: flex;
+            width: 50%;
+            left: 0px;
+            right: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-between;
+
+
+            .year {
+                font-size: 2em;
+
+            }
+            
+        }
+
+
         .range-slider {
             width: 50%;
             margin-left: auto;
             margin-right: auto;
+            padding-top: 65px;
+
+            .sliderDotContainer {
+                position: relative;
+                //padding-left: -5px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+               // top: -20px;
+                display: flex;
+                justify-content: space-between;
+                pointer-events: none;
+
+
+                .dot {
+                    width: 25px;
+                    height: 25px;
+                    background-color: white;
+                    border-radius: 50%;
+                }
+            }
         }
         
         .range-slider__range {
+            position: relative;
+            top: -23px;
             -webkit-appearance: none;
-            width: calc(100% - (#{$range-label-width + 13px}));
+            //width: calc(100% - (#{$range-label-width + 13px}));
+            width: calc(100% - 0px);
+            margin-left: auto;
+            margin-right: auto;
             height: $range-track-height;
             border-radius: 5px;
             background: $range-track-color;
             outline: none;
-            padding: 0;
-            margin: 0;
+            padding-left: 2px;
+            padding-right: 2px;
+            box-sizing: border-box;
+            //padding: 0;
+           // margin: 0;
         
             // Range Handle
             &::-webkit-slider-thumb {
-            appearance: none;
-            width: $range-handle-size;
-            height: $range-handle-size;
-            // border-radius: 50%;
-            background: $range-handle-color;
-            cursor: pointer;
-            transition: background .15s ease-in-out;
-        
-            &:hover {
-                background: $range-handle-color-hover;
-            }
+                appearance: none;
+                width: $range-handle-size;
+                height: $range-handle-size;
+                border-radius: 50%;
+                background: $range-handle-color;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            
+                &:hover {
+                    background: $range-handle-color-hover;
+                }
             }
         
             &:active::-webkit-slider-thumb {
-            background: $range-handle-color-hover;
+                background: $range-handle-color-hover;
             }
         
             &::-moz-range-thumb {
-            width: $range-handle-size;
-            height: $range-handle-size;
-            border: 0;
-            border-radius: 50%;
-            background: $range-handle-color;
-            cursor: pointer;
-            transition: background .15s ease-in-out;
-        
-            &:hover {
-                background: $range-handle-color-hover;
-            }
+                width: $range-handle-size;
+                height: $range-handle-size;
+                border: 0;
+                border-radius: 50%;
+                background: $range-handle-color;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            
+                    &:hover {
+                        background: $range-handle-color-hover;
+                    }
             }
         }
-        
         
         
         
@@ -109,6 +183,32 @@ $range-label-width: 0px !default;
         input::-moz-focus-inner,
         input::-moz-focus-outer { 
             border: 0; 
+        }
+    }
+
+
+    .dotContainer {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+       // background-color: pink;
+        // top: 0px;
+        // left: 0px;
+
+        .dots {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgb(137, 216, 137);
+           // visibility: hidden;
+           opacity: 0;
+           //animation: fadein 0.5s forwards 0.1s ;
         }
     }
 
