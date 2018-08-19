@@ -19,6 +19,51 @@ var vehicleCargesLA = [[1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [
 "use strict";
 "use strict";
 
+var alreadyAnimated = false;
+
+var heroCoordinates = {
+    "la": {
+        top: "-70%",
+        left: "0%"
+    },
+    "london": {
+        top: "-30%",
+        left: "-100%"
+    },
+    "mumbai": {
+        top: "-160%",
+        left: "-190%"
+    }
+};
+
+function initHero(data) {
+    var whichSection = data.location;
+
+    if (!alreadyAnimated) {
+
+        TweenMax.fromTo(".hero", 1, {
+            width: "100%",
+            height: "100%"
+        }, {
+            width: "300%",
+            height: "300%",
+            left: heroCoordinates[whichSection].left,
+            top: heroCoordinates[whichSection].top,
+            onComplete: initHeroAnimation
+        });
+    } else {
+        TweenMax.to(".hero", 1, {
+            left: heroCoordinates[whichSection].left,
+            top: heroCoordinates[whichSection].top
+        });
+    }
+}
+
+function initHeroAnimation() {
+    alreadyAnimated = true;
+}
+"use strict";
+
 function initParkingGraph(data) {
 
     var container = data.container;
@@ -205,6 +250,7 @@ function initVehicleCarges(data) {
 "use strict";
 
 // @codekit-prepend "data.js"
+// @codekit-prepend "hero.js"
 // @codekit-prepend "graph-parking.js"
 // @codekit-prepend "graph-emmissions.js"
 // @codekit-prepend "vehicle-charge.js"
@@ -230,5 +276,21 @@ window.onload = function () {
         start: 2018,
         end: 2050,
         data: vehicleCargesLA
+    });
+
+    // initHero({
+    //     location: "la"
+    // })
+
+    $("#temp-nav #nav-la").click(function () {
+        initHero({ location: "la" });
+    });
+
+    $("#temp-nav #nav-london").click(function () {
+        initHero({ location: "london" });
+    });
+
+    $("#temp-nav #nav-mumbai").click(function () {
+        initHero({ location: "mumbai" });
     });
 };

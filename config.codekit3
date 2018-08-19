@@ -20,6 +20,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/app\/assets\/images\/hero@3x.jpg": {
+		"ft": 16384,
+		"iS": 401851,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/hero@3x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/app\/assets\/images\/icon-car.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -160,13 +171,13 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/app\/js\/jquery-3.3.1.min.js": {
+	"\/app\/js\/hero.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 0,
-		"oA": 2,
-		"oAP": "\/dist\/js\/jquery-3.3.1.min.js",
-		"oF": 3,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/hero-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
