@@ -1,6 +1,27 @@
 "use strict";
 
-var ParkingGraphData = [[2, 1, 0, 2, 0, 0, 1, 1, 0, 0, 1, 2, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 2, 0, 1, 1, 2, 1, 0, 2, 2, 1, 0, 1, 0, 2, 2, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 1, 0, 2], [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 2, 2, 1, 0, 1, 0, 0, 1, 1, 0, 2, 1, 1, 1, 0, 2, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0]];
+// 0 == urban parkland
+// 1 == house
+// 2 == parking
+
+
+var ParkingGraphData = {
+    "london": {
+        "year2018": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "year2035": [0, 2, 2, 1, 2, 1, 2, 0, 2, 2, 2, 2, 2, 1, 2, 0, 2, 2, 2, 2, 2, 1, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "year2050": [1, 0, 2, 1, 0, 2, 1, 0, 1, 2, 0, 2, 1, 1, 2, 0, 0, 2, 1, 1, 2, 0, 0, 1, 2, 2, 1, 0, 2, 1, 2, 0, 2, 1, 2, 2, 0, 2, 0, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 1]
+    },
+    "mumbai": {
+        "year2018": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "year2035": [0, 2, 0, 2, 1, 2, 1, 2, 2, 2, 2, 0, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 0, 2, 2, 2, 1, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "year2050": [0, 0, 1, 2, 0, 1, 2, 1, 2, 0, 2, 1, 2, 2, 1, 2, 2, 2, 0, 2, 0, 2, 1, 2, 0, 2, 1, 0, 2, 0, 2, 1, 1, 2, 0, 2, 1, 2, 0, 0, 2, 1, 2, 1, 0, 1, 2, 2, 2, 2]
+    },
+    "la": {
+        "year2018": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "year2035": [1, 0, 2, 2, 1, 2, 0, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        "year2050": [0, 1, 2, 2, 1, 1, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 1, 2, 0, 2, 2, 2, 0, 0, 1, 2, 2, 0, 2, 0, 2, 1, 2, 2, 0, 0, 2, 2, 0, 2, 2, 2, 0, 2, 0, 2, 2]
+    }
+};
 "use strict";
 
 var emmissonsGraphData_LA = [[[10, 30, 100], [33, 30, 55], [10, 55, 22]], [[66, 11, 100], [10, 30, 22], [10, 30, 66]]];
@@ -68,7 +89,8 @@ function initParkingGraph(data) {
 
     var container = data.container;
     console.group("graph-debug");
-    console.log("yo MTV");
+    console.log(data.location);
+    //  console.log("yo MTV");
 
     //document.querySelector(data.container).classList.add("graph-parking");
 
@@ -99,6 +121,19 @@ function initParkingGraph(data) {
 
     function populateGrid(whichSet) {
 
+        console.log(whichSet);
+        var translateVariableIndex;
+        if (whichSet == 0) {
+            translateVariableIndex = "year2018";
+        } else if (whichSet == 1) {
+            translateVariableIndex = "year2035";
+        } else if (whichSet == 2) {
+            translateVariableIndex = "year2050";
+        }
+
+        // console.log(ParkingGraphData[data.location][translateVariableIndex].length);
+
+
         var numberOfIcons = document.querySelector(container + " #graph-content #grid");
 
         if (numberOfIcons.childElementCount > 0) {
@@ -107,8 +142,8 @@ function initParkingGraph(data) {
             }
         }
 
-        for (var i = 0; i < 50; i++) {
-            var currentIndex = data.data[whichSet][i];
+        for (var i = 0; i < ParkingGraphData[data.location][translateVariableIndex].length; i++) {
+            var currentIndex = ParkingGraphData[data.location][translateVariableIndex][i];
             var div = document.createElement("div");
             div.classList.add("icon");
             switch (currentIndex) {
@@ -130,6 +165,7 @@ function initParkingGraph(data) {
     }
 
     function defaultSetting(whichOne) {
+
         populateGrid(whichOne);
         document.querySelector(container + " #graph-content #nav-" + whichOne).classList.add("selected");
     }
@@ -260,8 +296,7 @@ window.onload = function () {
     initParkingGraph({
         container: "#graph-parking-LA",
         location: "la",
-        defaultindex: 0,
-        data: ParkingGraphData
+        defaultindex: 0
     });
 
     initEmmissionsGraph({

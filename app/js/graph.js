@@ -13,8 +13,7 @@ window.onload = function() {
     initParkingGraph ({
         container: "#graph-parking-LA",
         location: "la",
-        defaultindex: 0,
-        data: ParkingGraphData
+        defaultindex: 0
     });
 
 

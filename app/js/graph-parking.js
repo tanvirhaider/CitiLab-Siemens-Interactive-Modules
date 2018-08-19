@@ -6,7 +6,8 @@ function initParkingGraph (data) {
 
     var container = data.container;
     console.group("graph-debug");
-    console.log("yo MTV");
+    console.log(data.location);
+  //  console.log("yo MTV");
 
     //document.querySelector(data.container).classList.add("graph-parking");
 
@@ -27,11 +28,20 @@ function initParkingGraph (data) {
       //  console.log(idIndex);
         this.classList.add("selected");
         for (var i = 0; i < numberOfYear; i++) { if (i != Number(idIndex)) { document.querySelector(container + " #graph-content #nav-" + i).classList.remove("selected"); } }
-
+        
         populateGrid (idIndex);
     }
 
     function populateGrid (whichSet) {
+
+        console.log(whichSet);
+        var translateVariableIndex;
+        if (whichSet == 0) {translateVariableIndex = "year2018";}
+        else if (whichSet == 1) {translateVariableIndex = "year2035";}
+        else if (whichSet == 2) {translateVariableIndex = "year2050";}
+
+       // console.log(ParkingGraphData[data.location][translateVariableIndex].length);
+
 
         var numberOfIcons = document.querySelector(container + " #graph-content #grid");
      
@@ -41,8 +51,8 @@ function initParkingGraph (data) {
             }
         }
 
-        for (var i = 0; i < 50; i++) {
-            var currentIndex = data.data[whichSet][i];
+        for (var i = 0; i < ParkingGraphData[data.location][translateVariableIndex].length; i++) {
+            var currentIndex = ParkingGraphData[data.location][translateVariableIndex][i];
             var div = document.createElement("div");
             div.classList.add("icon");
             switch(currentIndex) {
@@ -65,6 +75,7 @@ function initParkingGraph (data) {
     }
 
     function defaultSetting (whichOne) {
+        
         populateGrid (whichOne);
         document.querySelector(container + " #graph-content #nav-" + whichOne).classList.add("selected");
     }
