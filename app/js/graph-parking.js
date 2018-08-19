@@ -7,6 +7,11 @@ function initParkingGraph (data) {
     var container = data.container;
     console.group("graph-debug");
     console.log("yo MTV");
+
+    //document.querySelector(data.container).classList.add("graph-parking");
+
+    
+    //container.classList.add("graph-parking");
    
 
     var numberOfYear = document.querySelector(container + " #graph-content .nav").childElementCount;

@@ -41,7 +41,9 @@
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      height: auto;
+      padding-bottom: 20px; } }
   .graph-parking .selected {
     color: #0c5dc5; }
     .graph-parking .selected::after {
@@ -53,6 +55,11 @@
       background-color: #0c5dc5;
       position: absolute;
       pointer-events: none; }
+      @media (max-width: 767px) {
+        .graph-parking .selected::after {
+          width: 60px;
+          top: 30px;
+          left: -10px; } }
   .graph-parking #graph-content {
     position: relative;
     width: 70%;
@@ -63,7 +70,8 @@
     @media (max-width: 767px) {
       .graph-parking #graph-content {
         width: 100%;
-        height: 400px; } }
+        height: 300px;
+        margin-bottom: 20px; } }
     .graph-parking #graph-content #grid {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -79,6 +87,12 @@
       -ms-flex-item-align: center;
           align-self: center;
       padding-top: 100px; }
+      @media (max-width: 767px) {
+        .graph-parking #graph-content #grid {
+          padding-top: 20px;
+          width: calc(100% - 15px);
+          max-width: 350px;
+          margin-bottom: 20px; } }
     .graph-parking #graph-content .icon {
       width: 9%;
       height: 55px;
@@ -88,6 +102,10 @@
       opacity: 0;
       -webkit-animation: fadein 0.5s forwards 0.1s;
               animation: fadein 0.5s forwards 0.1s; }
+      @media (max-width: 767px) {
+        .graph-parking #graph-content .icon {
+          height: 35px;
+          width: 30px; } }
     .graph-parking #graph-content .icon-car {
       background-image: url("../assets/images/icon-car.svg"); }
     .graph-parking #graph-content .icon-house {
@@ -116,6 +134,14 @@
            -moz-user-select: none;
             -ms-user-select: none;
                 user-select: none; }
+        @media (max-width: 767px) {
+          .graph-parking #graph-content .nav .nav-year {
+            font-size: 16px; } }
+      @media (max-width: 767px) {
+        .graph-parking #graph-content .nav {
+          width: 60%;
+          position: relative;
+          bottom: unset; } }
     .graph-parking #graph-content .hint {
       font-size: 0.8em;
       position: absolute;
@@ -126,6 +152,15 @@
               user-select: none;
       bottom: calc(50px);
       width: 100%; }
+      @media (max-width: 767px) {
+        .graph-parking #graph-content .hint {
+          font-size: 7px;
+          width: calc(100% - 20px);
+          left: 0px;
+          right: 0px;
+          margin-left: auto;
+          margin-right: auto;
+          bottom: 0px; } }
       @media all and (min-width: 1024px) and (max-width: 1079px) {
         .graph-parking #graph-content .hint {
           font-size: 0.7em; } }
@@ -165,7 +200,7 @@
         padding-left: 20px;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        font-size: 0.9em; } }
+        font-size: 12px; } }
 
 .graph-emissions {
   overflow: hidden;
@@ -190,6 +225,10 @@
   margin-right: auto;
   color: white;
   font-family: 'Lato', sans-serif; }
+  @media (max-width: 767px) {
+    .graph-emissions {
+      max-height: unset;
+      height: auto; } }
   .graph-emissions .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -198,6 +237,13 @@
     opacity: 0;
     -webkit-animation: fadein 0.5s forwards 0.1s;
             animation: fadein 0.5s forwards 0.1s; }
+    @media (max-width: 767px) {
+      .graph-emissions .content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: 100%; } }
     .graph-emissions .content .emmissions {
       background-color: black;
       width: 50%;
@@ -212,6 +258,10 @@
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         margin-top: 50px; }
+        @media (max-width: 767px) {
+          .graph-emissions .content .emmissions .chart-container {
+            width: 300px;
+            margin-top: 30px; } }
         .graph-emissions .content .emmissions .chart-container .title {
           font-size: 2em;
           width: 410px;
@@ -221,6 +271,11 @@
              -moz-user-select: none;
               -ms-user-select: none;
                   user-select: none; }
+          @media (max-width: 767px) {
+            .graph-emissions .content .emmissions .chart-container .title {
+              font-size: 18px;
+              width: 300px;
+              padding-bottom: 20px; } }
         .graph-emissions .content .emmissions .chart-container .chart .vertical-legend {
           -webkit-writing-mode: vertical-rl;
               -ms-writing-mode: tb-rl;
@@ -244,6 +299,9 @@
           padding-right: 10px;
           -webkit-box-sizing: border-box;
                   box-sizing: border-box; }
+          @media (max-width: 767px) {
+            .graph-emissions .content .emmissions .chart-container .chart .bar-sets {
+              height: 150px; } }
           .graph-emissions .content .emmissions .chart-container .chart .bar-sets::before {
             content: "PERCENT (%) REDUCTION";
             -webkit-writing-mode: vertical-rl;
@@ -275,6 +333,9 @@
               -webkit-box-pack: justify;
                   -ms-flex-pack: justify;
                       justify-content: space-between; }
+              @media (max-width: 767px) {
+                .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar {
+                  width: 60px; } }
               .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                 width: 16px;
                 height: 200px;
@@ -292,6 +353,10 @@
                 .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar:nth-child(3) {
                   -webkit-filter: brightness(60%);
                           filter: brightness(60%); }
+                @media (max-width: 767px) {
+                  .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar {
+                    width: 14px;
+                    height: 150px; } }
         .graph-emissions .content .emmissions .chart-container .chart .chart-legends .devider-line {
           margin-top: 10px;
           margin-bottom: 5px;
@@ -316,6 +381,9 @@
                -moz-user-select: none;
                 -ms-user-select: none;
                     user-select: none; }
+            @media (max-width: 767px) {
+              .graph-emissions .content .emmissions .chart-container .chart .chart-legends .years .year {
+                font-size: 16px; } }
         .graph-emissions .content .emmissions .chart-container .legends {
           padding-top: 20px;
           display: -webkit-box;
@@ -329,6 +397,9 @@
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between; }
+          @media (max-width: 767px) {
+            .graph-emissions .content .emmissions .chart-container .legends {
+              font-size: 9px; } }
           .graph-emissions .content .emmissions .chart-container .legends .each-legend {
             position: relative;
             width: auto;
@@ -354,6 +425,10 @@
             .graph-emissions .content .emmissions .chart-container .legends .each-legend:nth-child(3)::before {
               -webkit-filter: brightness(60%);
                       filter: brightness(60%); }
+      @media (max-width: 767px) {
+        .graph-emissions .content .emmissions {
+          height: 50%;
+          width: 100%; } }
     .graph-emissions .content .electricity {
       background-color: black;
       width: 50%;
@@ -368,6 +443,10 @@
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         margin-top: 50px; }
+        @media (max-width: 767px) {
+          .graph-emissions .content .electricity .chart-container {
+            width: 300px;
+            margin-top: 30px; } }
         .graph-emissions .content .electricity .chart-container .title {
           font-size: 2em;
           width: 410px;
@@ -377,6 +456,11 @@
              -moz-user-select: none;
               -ms-user-select: none;
                   user-select: none; }
+          @media (max-width: 767px) {
+            .graph-emissions .content .electricity .chart-container .title {
+              font-size: 18px;
+              width: 300px;
+              padding-bottom: 20px; } }
         .graph-emissions .content .electricity .chart-container .chart .vertical-legend {
           -webkit-writing-mode: vertical-rl;
               -ms-writing-mode: tb-rl;
@@ -400,6 +484,9 @@
           padding-right: 10px;
           -webkit-box-sizing: border-box;
                   box-sizing: border-box; }
+          @media (max-width: 767px) {
+            .graph-emissions .content .electricity .chart-container .chart .bar-sets {
+              height: 150px; } }
           .graph-emissions .content .electricity .chart-container .chart .bar-sets::before {
             content: "PERCENT (%) REDUCTION";
             -webkit-writing-mode: vertical-rl;
@@ -431,6 +518,9 @@
               -webkit-box-pack: justify;
                   -ms-flex-pack: justify;
                       justify-content: space-between; }
+              @media (max-width: 767px) {
+                .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar {
+                  width: 60px; } }
               .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                 width: 16px;
                 height: 200px;
@@ -448,6 +538,10 @@
                 .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar:nth-child(3) {
                   -webkit-filter: brightness(60%);
                           filter: brightness(60%); }
+                @media (max-width: 767px) {
+                  .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar {
+                    width: 14px;
+                    height: 150px; } }
         .graph-emissions .content .electricity .chart-container .chart .chart-legends .devider-line {
           margin-top: 10px;
           margin-bottom: 5px;
@@ -472,6 +566,9 @@
                -moz-user-select: none;
                 -ms-user-select: none;
                     user-select: none; }
+            @media (max-width: 767px) {
+              .graph-emissions .content .electricity .chart-container .chart .chart-legends .years .year {
+                font-size: 16px; } }
         .graph-emissions .content .electricity .chart-container .legends {
           padding-top: 20px;
           display: -webkit-box;
@@ -485,6 +582,9 @@
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between; }
+          @media (max-width: 767px) {
+            .graph-emissions .content .electricity .chart-container .legends {
+              font-size: 9px; } }
           .graph-emissions .content .electricity .chart-container .legends .each-legend {
             position: relative;
             width: auto;
@@ -510,6 +610,10 @@
             .graph-emissions .content .electricity .chart-container .legends .each-legend:nth-child(3)::before {
               -webkit-filter: brightness(60%);
                       filter: brightness(60%); }
+      @media (max-width: 767px) {
+        .graph-emissions .content .electricity {
+          height: 50%;
+          width: 100%; } }
   .graph-emissions .caption {
     color: white;
     height: auto;
@@ -523,12 +627,21 @@
     opacity: 0;
     -webkit-animation: fadein 0.5s forwards 0.1s;
             animation: fadein 0.5s forwards 0.1s; }
+    @media (max-width: 767px) {
+      .graph-emissions .caption {
+        position: relative;
+        padding-top: 30px; } }
     .graph-emissions .caption p {
       max-width: 1130px;
       width: calc(100% - 100px);
       margin-left: auto;
       margin-right: auto;
       line-height: 2em; }
+      @media (max-width: 767px) {
+        .graph-emissions .caption p {
+          font-size: 12px;
+          width: calc(100% - 40px);
+          line-height: 16px; } }
 
 .graph-vehicle-charges {
   overflow: hidden;
@@ -546,6 +659,9 @@
   margin-right: auto;
   color: white;
   font-family: 'Lato', sans-serif;
+  opacity: 0;
+  -webkit-animation: fadein 0.5s forwards 0.1s;
+          animation: fadein 0.5s forwards 0.1s;
   background-image: url("../assets/images/map-la.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -555,22 +671,53 @@
     height: 300px;
     position: relative;
     left: 90px;
-    top: 70px; }
+    top: 70px;
+    opacity: 0;
+    -webkit-animation: fadein 0.5s forwards 0.5s;
+            animation: fadein 0.5s forwards 0.5s; }
+    @media (max-width: 767px) {
+      .graph-vehicle-charges .contents {
+        width: 50%;
+        right: 0px;
+        left: unset;
+        position: absolute;
+        top: 0px;
+        padding-top: 40px; } }
     .graph-vehicle-charges .contents .content-copy p {
       line-height: 2em;
       margin-bottom: 8px; }
+      @media (max-width: 767px) {
+        .graph-vehicle-charges .contents .content-copy p {
+          padding-top: 0px;
+          margin-top: 0px;
+          width: 100%;
+          padding-right: 10px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          font-size: 13px;
+          line-height: 22px; } }
     .graph-vehicle-charges .contents .deviderline {
       width: 95%;
       height: 5px;
       background-color: rgba(255, 255, 255, 0.5); }
     .graph-vehicle-charges .contents .legend {
       padding-top: 20px; }
+      @media (max-width: 767px) {
+        .graph-vehicle-charges .contents .legend {
+          font-size: 14px;
+          padding-top: 15px; } }
   .graph-vehicle-charges .sliderModule {
     width: 100%;
     height: 150px;
     position: absolute;
     bottom: 0px;
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    -webkit-animation: fadein 0.5s forwards 0.8s;
+            animation: fadein 0.5s forwards 0.8s; }
+    @media (max-width: 767px) {
+      .graph-vehicle-charges .sliderModule {
+        height: 100px; } }
     .graph-vehicle-charges .sliderModule .years {
       position: absolute;
       padding-top: 10px;
@@ -585,13 +732,24 @@
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      @media (max-width: 767px) {
+        .graph-vehicle-charges .sliderModule .years {
+          padding-top: 15px;
+          width: calc(100% - 100px); } }
       .graph-vehicle-charges .sliderModule .years .year {
         font-size: 2em; }
+        @media (max-width: 767px) {
+          .graph-vehicle-charges .sliderModule .years .year {
+            font-size: 16px; } }
     .graph-vehicle-charges .sliderModule .range-slider {
       width: 50%;
       margin-left: auto;
       margin-right: auto;
       padding-top: 65px; }
+      @media (max-width: 767px) {
+        .graph-vehicle-charges .sliderModule .range-slider {
+          width: calc(100% - 100px);
+          padding-top: 50px; } }
       .graph-vehicle-charges .sliderModule .range-slider .sliderDotContainer {
         position: relative;
         width: 100%;
@@ -657,13 +815,22 @@
       border: 0; }
   .graph-vehicle-charges .dotContainer {
     position: absolute;
-    width: 300px;
+    width: 50%;
+    max-width: 400px;
     height: 300px;
     left: 0px;
     right: 0px;
     top: 0px;
     bottom: 0px;
     margin: auto; }
+    @media (max-width: 767px) {
+      .graph-vehicle-charges .dotContainer {
+        width: 200px;
+        height: 200px;
+        right: unset;
+        top: unset;
+        bottom: 150px;
+        left: 20px; } }
     .graph-vehicle-charges .dotContainer .dots {
       position: absolute;
       width: 15px;
@@ -671,6 +838,10 @@
       border-radius: 50%;
       background-color: #89d889;
       opacity: 0; }
+      @media (max-width: 767px) {
+        .graph-vehicle-charges .dotContainer .dots {
+          width: 10px;
+          height: 10px; } }
 
 @-webkit-keyframes fadein {
   from {

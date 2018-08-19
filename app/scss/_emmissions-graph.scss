@@ -20,12 +20,24 @@ $base-color: #3c7bcd;
    // font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
 
+    @include breakpoint ("mobile") {
+       // height: auto;
+       max-height: unset;
+       height: auto;
+    }
+
 
     .content {
         display: flex;
         height: 70%;
         opacity: 0;
         animation: fadein 0.5s forwards 0.1s ;
+
+
+        @include breakpoint ("mobile") {
+            flex-direction: column;
+            height: 100%;
+        }
 
         .emmissions {
             background-color: rgb(0, 0, 0);
@@ -34,6 +46,11 @@ $base-color: #3c7bcd;
             box-sizing: border-box;
             
             @import 'emmissions-chart';
+
+            @include breakpoint ("mobile") {
+               height: 50%;
+               width: 100%;
+            }
         }
 
         .electricity {
@@ -44,6 +61,11 @@ $base-color: #3c7bcd;
             
 
             @import 'emmissions-chart';
+
+            @include breakpoint ("mobile") {
+                height: 50%;
+                width: 100%;
+             }
 
         }
     }
@@ -61,12 +83,24 @@ $base-color: #3c7bcd;
         opacity: 0;
         animation: fadein 0.5s forwards 0.1s ;
 
+        @include breakpoint ("mobile") {
+           position: relative;
+           padding-top: 30px;
+         }
+
         p {
             max-width: 1130px;
             width: calc(100% - 100px);
             margin-left: auto;
             margin-right: auto;
             line-height: 2em;
+
+            @include breakpoint ("mobile") {
+                font-size: 12px;
+                width: calc(100% - 40px);
+                line-height: 16px;
+                // display: none;
+             }
         }
 
     }

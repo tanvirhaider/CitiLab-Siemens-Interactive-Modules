@@ -25,6 +25,12 @@ function initParkingGraph(data) {
     console.group("graph-debug");
     console.log("yo MTV");
 
+    //document.querySelector(data.container).classList.add("graph-parking");
+
+
+    //container.classList.add("graph-parking");
+
+
     var numberOfYear = document.querySelector(container + " #graph-content .nav").childElementCount;
 
     for (var i = 0; i < numberOfYear; i++) {
@@ -179,11 +185,11 @@ function initVehicleCarges(data) {
     eachDot.className = 'dots';
     eachDot.setAttribute("id", data.container + "-" + whichOne);
     dotContainer.appendChild(eachDot);
-    var x = getRandomArbitrary(0, 300);
-    var y = getRandomArbitrary(0, 300);
+    var x = getRandomArbitrary(0, 100);
+    var y = getRandomArbitrary(0, 100);
 
-    eachDot.style.top = x + "px";
-    eachDot.style.left = y + "px";
+    eachDot.style.top = x + "%";
+    eachDot.style.left = y + "%";
 
     tl.add(TweenLite.fromTo(eachDot, 1, { alpha: 0 }, { alpha: 1 }));
   }

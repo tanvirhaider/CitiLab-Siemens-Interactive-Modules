@@ -33,6 +33,8 @@ $range-label-width: 0px !default;
     color: white;
     //font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
+    opacity: 0;
+    animation: fadein 0.5s forwards 0.1s ;
 
 
     @include bgimage("map-la.jpg");
@@ -46,10 +48,31 @@ $range-label-width: 0px !default;
         position: relative;
         left: 90px;
         top: 70px;
+        opacity: 0;
+        animation: fadein 0.5s forwards 0.5s ;
+
+        @include breakpoint ("mobile") {
+            width: 50%;
+            right: 0px;
+            left: unset;
+            position: absolute;
+            top:0px;
+            padding-top: 40px;
+        }
 
         .content-copy p {
             line-height: 2em;
             margin-bottom: 8px;
+
+            @include breakpoint ("mobile") {
+                padding-top: 0px;
+                margin-top: 0px;
+                width: 100%;
+                padding-right: 10px;
+                box-sizing: border-box;
+                font-size: 13px;
+                line-height: 22px;
+            }
         }
 
         .deviderline {
@@ -61,6 +84,11 @@ $range-label-width: 0px !default;
 
         .legend {
             padding-top: 20px;
+
+            @include breakpoint ("mobile") {
+               font-size: 14px;
+               padding-top: 15px;
+            }
         }
        
     }
@@ -71,6 +99,13 @@ $range-label-width: 0px !default;
         position: absolute;
         bottom: 0px;
         background-color: rgba(0,0,0,0.2);
+
+        opacity: 0;
+        animation: fadein 0.5s forwards 0.8s ;
+
+        @include breakpoint ("mobile") {
+            height: 100px;
+        }
 
 
         .years {
@@ -84,9 +119,18 @@ $range-label-width: 0px !default;
             margin-right: auto;
             justify-content: space-between;
 
+            @include breakpoint ("mobile") {
+                padding-top: 15px;
+                width: calc(100% - 100px);
+            }
+
 
             .year {
                 font-size: 2em;
+
+                @include breakpoint ("mobile") {
+                    font-size: 16px;
+                }
 
             }
             
@@ -98,6 +142,11 @@ $range-label-width: 0px !default;
             margin-left: auto;
             margin-right: auto;
             padding-top: 65px;
+
+            @include breakpoint ("mobile") {
+                width: calc(100% - 100px);
+                padding-top: 50px;
+            }
 
             .sliderDotContainer {
                 position: relative;
@@ -189,16 +238,23 @@ $range-label-width: 0px !default;
 
     .dotContainer {
         position: absolute;
-        width: 300px;
+        width: 50%;
+        max-width: 400px;
         height: 300px;
         left: 0px;
         right: 0px;
         top: 0px;
         bottom: 0px;
         margin: auto;
-       // background-color: pink;
-        // top: 0px;
-        // left: 0px;
+        
+        @include breakpoint ("mobile") {
+           width: 200px;
+           height: 200px;
+           right: unset;
+           top: unset;
+           bottom: 150px;
+           left: 20px;
+        }
 
         .dots {
             position: absolute;
@@ -209,6 +265,11 @@ $range-label-width: 0px !default;
            // visibility: hidden;
            opacity: 0;
            //animation: fadein 0.5s forwards 0.1s ;
+
+           @include breakpoint ("mobile") {
+            width: 10px;
+            height: 10px;
+         }
         }
     }
 
