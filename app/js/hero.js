@@ -31,6 +31,7 @@ function initHero (data) {
             height: "300%", 
             left: heroCoordinates[whichSection].left, 
             top: heroCoordinates[whichSection].top, 
+            ease:Power3.easeInOut,
             onComplete: initHeroAnimation
         });
         
@@ -38,7 +39,8 @@ function initHero (data) {
     else {
         TweenMax.to(".hero",1,{
             left: heroCoordinates[whichSection].left, 
-            top: heroCoordinates[whichSection].top
+            top: heroCoordinates[whichSection].top,
+            ease:Power3.easeInOut
         });
         
     }

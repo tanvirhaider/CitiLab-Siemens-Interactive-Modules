@@ -1,5 +1,22 @@
 
 
+//scss variables :: ----------------
+
+$color-mumbai: #009999;
+$color-la: #ff2466;
+$color-london: #0e6ce5;
+
+
+// css variables :: ---------------
+
+:root {
+    --color-mumbai: #009999; 
+    --color-la: #ff2466; 
+    --color-london: #0e6ce5; 
+}
+
+
+
 @import 'mixin';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');

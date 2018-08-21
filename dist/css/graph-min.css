@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+:root {
+  --color-mumbai: #009999;
+  --color-la: #ff2466;
+  --color-london: #0e6ce5; }
+
 #site-intro-animation {
   max-width: 1440px;
   height: 460px;
@@ -423,7 +428,7 @@
               height: 16px;
               top: 0px;
               border: 1px solid #a5a5a5;
-              background-color: #3c7bcd;
+              background-color: var(--color-london);
               position: absolute; }
             .graph-emissions .content .emmissions .chart-container .legends .each-legend:nth-child(1)::before {
               -webkit-filter: brightness(100%);
@@ -608,7 +613,7 @@
               height: 16px;
               top: 0px;
               border: 1px solid #a5a5a5;
-              background-color: #3c7bcd;
+              background-color: var(--color-london);
               position: absolute; }
             .graph-emissions .content .electricity .chart-container .legends .each-legend:nth-child(1)::before {
               -webkit-filter: brightness(100%);
@@ -652,6 +657,15 @@
           width: calc(100% - 40px);
           line-height: 16px; } }
 
+.vchargesBG-mumbai {
+  background-image: url("../assets/images/map-mumbai.jpg"); }
+
+.vchargesBG-la {
+  background-image: url("../assets/images/map-la.jpg"); }
+
+.vchargesBG-london {
+  background-image: url("../assets/images/map-london.jpg"); }
+
 .graph-vehicle-charges {
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -671,7 +685,6 @@
   opacity: 0;
   -webkit-animation: fadein 0.5s forwards 0.1s;
           animation: fadein 0.5s forwards 0.1s;
-  background-image: url("../assets/images/map-la.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }

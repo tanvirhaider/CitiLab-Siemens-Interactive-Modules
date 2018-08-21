@@ -4,7 +4,10 @@
 
 function initVehicleCarges (data) {
 
-  var sliderObject = document.querySelector(data.container + ' .sliderModule .range-slider .range-slider__range');
+  var GraphContainer = document.querySelector(data.container);
+  GraphContainer.classList.add("vchargesBG-" + data.location);
+
+  var sliderObject = GraphContainer.querySelector(' .sliderModule .range-slider .range-slider__range');
   sliderObject.setAttribute("min", data.start);
   sliderObject.setAttribute("value", data.start);
   sliderObject.setAttribute("max", data.end);
@@ -20,31 +23,18 @@ function initVehicleCarges (data) {
   var tl = new TimelineMax({repeat:0, repeatDelay:1});
   tl.pause();
 
-  console.log("what is slider: " ,slider);
-  var dotContainer = document.querySelector(data.container + " .dotContainer");
+ // console.log("what is slider: " ,slider);
+  var dotContainer = GraphContainer.querySelector(" .dotContainer");
       
       
-    slider.each(function(){
-  
-      // value.each(function(){
-      //   var value = $(this).prev().attr('value');
-      //   $(this).html(value);
-      // });
-  
+    slider.each(function(){  
       range.on('input', function(){
-       // $(this).next(value).html(this.value);
-        console.log(this.value);
-
+       // console.log(this.value);
         var tempIndexVal = (this.value - initialValue);
-        console.log("index: ", tempIndexVal);
+       // console.log("index: ", tempIndexVal);
 
         tl.seek(tempIndexVal,true);
-
         var currentDot = document.getElementById(data.container + "-" + this.value);
-        //console.log("selectedDot: ", data.container + "-" + this.value);
-       // currentDot.style.visibility = "visible";
-
-       // #graph-vehicle-charges-LA-40
       });
     });
 
@@ -67,12 +57,6 @@ function initVehicleCarges (data) {
 
       tl.add( TweenLite.fromTo(eachDot, 1, {alpha:0}, {alpha:1}) );
     }
-
-
-    
-
-//tl.add( TweenLite.to(element, 1, {top:50}) );
-//tl.add( TweenLite.to(element, 1, {opacity:0}) );
 
 
     for (var i = initialValue; i <= finalValue; i++) {

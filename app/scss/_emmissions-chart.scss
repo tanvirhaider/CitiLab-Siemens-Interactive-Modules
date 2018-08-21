@@ -161,7 +161,8 @@
                 height: 16px;
                 top: 0px;
                 border: 1px solid rgb(165, 165, 165);
-                background-color: #3c7bcd;
+               // background-color: #3c7bcd;
+                background-color: var(--color-london); 
                 position: absolute;
             }
 

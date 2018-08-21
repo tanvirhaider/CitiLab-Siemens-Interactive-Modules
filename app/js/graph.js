@@ -25,7 +25,7 @@ window.onload = function() {
 
     initVehicleCarges({
         container: "#graph-vehicle-charges-LA",
-        location: "la",
+        location: "mumbai",
         start: 2018,
         end: 2050,
         data: vehicleCargesLA
