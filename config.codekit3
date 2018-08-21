@@ -7,7 +7,7 @@
 		"uuidString": "8EABF76E-ED8F-4691-92F1-E4CDF17BEAC5"
 		}
 	],
-"creatorBuild": "26680",
+"creatorBuild": "25444",
 "files": {
 	"\/app\/assets\/images\/hero.png": {
 		"ft": 32768,
@@ -15,21 +15,15 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/images\/hero.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/app\/assets\/images\/hero@3x.jpg": {
 		"ft": 16384,
 		"iS": 401851,
-		"jF": 0,
 		"oA": 0,
 		"oAP": "\/dist\/assets\/images\/hero@3x.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/app\/assets\/images\/icon-car.svg": {
 		"ft": 2097152,
@@ -64,38 +58,28 @@
 	"\/app\/assets\/images\/map-la.jpg": {
 		"ft": 16384,
 		"iS": 75099,
-		"jF": 0,
 		"oA": 0,
 		"oAP": "\/dist\/assets\/images\/map-la.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/app\/assets\/images\/map-london.jpg": {
 		"ft": 16384,
 		"iS": 119455,
-		"jF": 0,
 		"oA": 0,
 		"oAP": "\/dist\/assets\/images\/map-london.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/app\/assets\/images\/map-mumbai.jpg": {
 		"ft": 16384,
 		"iS": 68108,
-		"jF": 0,
 		"oA": 0,
 		"oAP": "\/dist\/assets\/images\/map-mumbai.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/app\/index.html": {
-		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/dist\/index.html",
@@ -103,7 +87,6 @@
 		},
 	"\/app\/js\/data.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/data-min.js",
@@ -113,7 +96,6 @@
 		},
 	"\/app\/js\/data\/emmissionsGraphData.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/data\/emmissionsGraphData-min.js",
@@ -123,7 +105,6 @@
 		},
 	"\/app\/js\/data\/parkingGraphData.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/data\/parkingGraphData-min.js",
@@ -133,7 +114,6 @@
 		},
 	"\/app\/js\/data\/vehicleCargesData.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/data\/vehicleCargesData-min.js",
@@ -143,7 +123,6 @@
 		},
 	"\/app\/js\/graph-emmissions.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/graph-emmissions-min.js",
@@ -153,7 +132,6 @@
 		},
 	"\/app\/js\/graph-parking.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/graph-parking-min.js",
@@ -163,7 +141,6 @@
 		},
 	"\/app\/js\/graph.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/dist\/js\/graph-min.js",
@@ -173,7 +150,6 @@
 		},
 	"\/app\/js\/hero.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/hero-min.js",
@@ -183,7 +159,6 @@
 		},
 	"\/app\/js\/vehicle-charge.js": {
 		"ft": 64,
-		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/vehicle-charge-min.js",
@@ -297,8 +272,7 @@
 	"creationDate": 555967449,
 	"displayValue": "graphs",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-gavin",
-	"iconImageWasSetByUser": 1
+	"iconImageName": "meme-gavin"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -306,7 +280,6 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
-	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -703,21 +676,13 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
-		"array-bracket-newline": {
-			"active": 0,
-			"optionString": "{'multiline': true, 'minItems': null}"
-			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
 			},
 		"array-callback-return": {
 			"active": 0,
-			"optionString": "{'allowImplicit': false}"
-			},
-		"array-element-newline": {
-			"active": 0,
-			"optionString": "'always'"
+			"optionString": ""
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -750,10 +715,6 @@
 		"camelcase": {
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
-			},
-		"capitalized-comments": {
-			"active": 0,
-			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
 			},
 		"class-methods-use-this": {
 			"active": 0,
@@ -815,10 +776,6 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
-		"for-direction": {
-			"active": 0,
-			"optionString": ""
-			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -835,17 +792,9 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
-		"function-paren-newline": {
-			"active": 0,
-			"optionString": "'multiline'"
-			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
-			},
-		"getter-return": {
-			"active": 0,
-			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -870,10 +819,6 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
-			},
-		"implicit-arrow-linebreak": {
-			"active": 0,
-			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -907,9 +852,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-between-class-members": {
+		"lines-around-directive": {
 			"active": 0,
-			"optionString": "'always', {exceptAfterSingleLine: false}"
+			"optionString": "{'before': 'always', 'after': 'always'}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -935,14 +880,6 @@
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
 			},
-		"max-statements-per-line": {
-			"active": 0,
-			"optionString": "{'max': 1}"
-			},
-		"multiline-comment-style": {
-			"active": 0,
-			"optionString": "'starred-block'"
-			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -952,6 +889,14 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-after-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -967,17 +912,9 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"no-await-in-loop": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
-			},
-		"no-buffer-constructor": {
-			"active": 0,
-			"optionString": ""
 			},
 		"no-caller": {
 			"active": 0,
@@ -993,10 +930,6 @@
 			},
 		"no-class-assign": {
 			"active": 1,
-			"optionString": ""
-			},
-		"no-compare-neg-zero": {
-			"active": 0,
 			"optionString": ""
 			},
 		"no-cond-assign": {
@@ -1199,10 +1132,6 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"no-multi-assign": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -1283,10 +1212,6 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"no-prototype-builtins": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -1319,10 +1244,6 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
-		"no-return-await": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -1353,7 +1274,7 @@
 			},
 		"no-sync": {
 			"active": 0,
-			"optionString": "{'allowAtRootLevel': false}"
+			"optionString": ""
 			},
 		"no-tabs": {
 			"active": 0,
@@ -1483,10 +1404,6 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"nonblock-statement-body-position": {
-			"active": 0,
-			"optionString": "'beside'"
-			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -1523,10 +1440,6 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
-		"padding-line-between-statements": {
-			"active": 0,
-			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
-			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -1535,17 +1448,9 @@
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
 			},
-		"prefer-destructuring": {
-			"active": 0,
-			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
-			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
-			},
-		"prefer-promise-reject-errors": {
-			"active": 0,
-			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -1571,10 +1476,6 @@
 			"active": 0,
 			"optionString": "'always'"
 			},
-		"require-await": {
-			"active": 0,
-			"optionString": ""
-			},
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
@@ -1594,10 +1495,6 @@
 		"semi-spacing": {
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
-			},
-		"semi-style": {
-			"active": 0,
-			"optionString": "'last'"
 			},
 		"sort-imports": {
 			"active": 0,
@@ -1639,19 +1536,11 @@
 			"active": 0,
 			"optionString": "'safe'"
 			},
-		"switch-colon-spacing": {
-			"active": 0,
-			"optionString": "{'after': true, 'before': false}"
-			},
 		"symbol-description": {
 			"active": 0,
 			"optionString": ""
 			},
 		"template-curly-spacing": {
-			"active": 0,
-			"optionString": "'never'"
-			},
-		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
@@ -2055,8 +1944,7 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1,
-		"transpilerStyle": 1
+		"syntaxCheckerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -2089,7 +1977,6 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
-		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -2100,9 +1987,7 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
-		"outputFormat": 0,
-		"quality": 100
+		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -2126,14 +2011,21 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
+	"languageDefaultsJSX": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "jsx",
+		"autoOutputPathReplace2": "js",
+		"autoOutputPathStyle": 0
+		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
-		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0
+		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -2165,13 +2057,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
-		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -2180,8 +2072,7 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0
+		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -2189,9 +2080,7 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
-		"optimizerType": 1,
-		"quality": 100
+		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -2201,8 +2090,7 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0,
-		"shouldRunCacheBuster": 0
+		"outputStyle": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -2230,8 +2118,7 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0,
-		"shouldRunCacheBuster": 0
+		"railsCompatible": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
@@ -2278,11 +2165,9 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
-	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "dist",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "app",
-	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
@@ -2423,10 +2308,6 @@
 			},
 		"space-colon": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"support-ie8": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {

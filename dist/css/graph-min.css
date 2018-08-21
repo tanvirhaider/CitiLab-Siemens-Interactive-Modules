@@ -29,8 +29,7 @@
 
 .graph-parking {
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
   width: 100%;
   height: 600px;
@@ -212,14 +211,12 @@
         width: 100%;
         padding-right: 20px;
         padding-left: 20px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         font-size: 12px; } }
 
 .graph-emissions {
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
   width: 100%;
   height: 600px;
@@ -262,15 +259,13 @@
       background-color: black;
       width: 50%;
       height: 100%;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+      box-sizing: border-box; }
       .graph-emissions .content .emmissions .chart-container {
         width: 410px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         margin-top: 50px; }
         @media (max-width: 767px) {
           .graph-emissions .content .emmissions .chart-container {
@@ -311,8 +306,7 @@
               -ms-flex-align: end;
                   align-items: flex-end;
           padding-right: 10px;
-          -webkit-box-sizing: border-box;
-                  box-sizing: border-box; }
+          box-sizing: border-box; }
           @media (max-width: 767px) {
             .graph-emissions .content .emmissions .chart-container .chart .bar-sets {
               height: 150px; } }
@@ -351,7 +345,7 @@
                 .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar {
                   width: 60px; } }
               .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar {
-                width: 16px;
+                width: 10px;
                 height: 200px;
                 background-color: #3c7bcd;
                 -webkit-transform-origin: 50% 100%;
@@ -447,15 +441,13 @@
       background-color: black;
       width: 50%;
       height: 100%;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+      box-sizing: border-box; }
       .graph-emissions .content .electricity .chart-container {
         width: 410px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         margin-top: 50px; }
         @media (max-width: 767px) {
           .graph-emissions .content .electricity .chart-container {
@@ -496,8 +488,7 @@
               -ms-flex-align: end;
                   align-items: flex-end;
           padding-right: 10px;
-          -webkit-box-sizing: border-box;
-                  box-sizing: border-box; }
+          box-sizing: border-box; }
           @media (max-width: 767px) {
             .graph-emissions .content .electricity .chart-container .chart .bar-sets {
               height: 150px; } }
@@ -536,7 +527,7 @@
                 .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar {
                   width: 60px; } }
               .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar {
-                width: 16px;
+                width: 10px;
                 height: 200px;
                 background-color: #3c7bcd;
                 -webkit-transform-origin: 50% 100%;
@@ -668,8 +659,7 @@
 
 .graph-vehicle-charges {
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
   width: 100%;
   height: 600px;
@@ -714,8 +704,7 @@
           margin-top: 0px;
           width: 100%;
           padding-right: 10px;
-          -webkit-box-sizing: border-box;
-                  box-sizing: border-box;
+          box-sizing: border-box;
           font-size: 13px;
           line-height: 22px; } }
     .graph-vehicle-charges .contents .deviderline {
@@ -802,8 +791,7 @@
       outline: none;
       padding-left: 2px;
       padding-right: 2px;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+      box-sizing: border-box; }
       .graph-vehicle-charges .sliderModule .range-slider__range::-webkit-slider-thumb {
         -webkit-appearance: none;
                 appearance: none;

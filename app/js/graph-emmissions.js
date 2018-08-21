@@ -24,8 +24,10 @@ function initEmmissionsGraph (data) {
     var inTheMiddle = " #bar-gas-";
   
 
-    function animateGraph () {
+    function animateGraph (where) {
 
+
+        var barData = [];
 
         var GHG_2018 = document.querySelector(prefix + ".emmissions" + " .chart-container .chart .bar-sets .bar-content #bar-"   + 0 + inTheMiddle + 0);
         var PM_2018 = document.querySelector(prefix + ".emmissions" + " .chart-container .chart .bar-sets .bar-content #bar-"    + 0 + inTheMiddle + 1);
@@ -197,7 +199,118 @@ function initEmmissionsGraph (data) {
          var Mumbai_2050_NUCLEAR = EmmissionGraphData['mumbai']['year2050']['electric']['Nuclear'];
 
 
+         if (where == "mumbai") {
+            barData = [
+                Mumbai_2018_GHG,
+                Mumbai_2018_PM,
+                Mumbai_2018_NO, 
+                Mumbai_2035_GHG,
+                Mumbai_2030_PM,
+                Mumbai_2035_NO,
+                Mumbai_2050_GHG,
+                Mumbai_2050_PM,
+                Mumbai_2050_NO,
+                Mumbai_2018_SOLAR,
+                Mumbai_2018_WIND,
+                Mumbai_2018_COAL,
+                Mumbai_2018_NGAS,
+                Mumbai_2018_OIL,
+                Mumbai_2018_HYDRO,
+                Mumbai_2018_NUCLEAR,
+                Mumbai_2035_SOLAR,
+                Mumbai_2035_WIND,
+                Mumbai_2035_COAL,
+                Mumbai_2035_NGAS,
+                Mumbai_2035_OIL,
+                Mumbai_2035_HYDRO,
+                Mumbai_2035_NUCLEAR,
+                Mumbai_2050_SOLAR,
+                Mumbai_2050_WIND,
+                Mumbai_2050_COAL,
+                Mumbai_2050_NGAS,
+                Mumbai_2050_OIL,
+                Mumbai_2050_HYDRO,
+                Mumbai_2050_NUCLEAR
+            ];
+         }
 
+         else if (where == "london") {
+
+            barData = [
+                London_2018_GHG,
+                London_2018_PM,
+                London_2018_NO, 
+                London_2035_GHG,
+                London_2030_PM,
+                London_2035_NO,
+                London_2050_GHG,
+                London_2050_PM,
+                London_2050_NO,
+                London_2018_SOLAR,
+                London_2018_WIND,
+                London_2018_COAL,
+                London_2018_NGAS,
+                London_2018_OIL,
+                London_2018_HYDRO,
+                London_2018_NUCLEAR,
+                London_2035_SOLAR,
+                London_2035_WIND,
+                London_2035_COAL,
+                London_2035_NGAS,
+                London_2035_OIL,
+                London_2035_HYDRO,
+                London_2035_NUCLEAR,
+                London_2050_SOLAR,
+                London_2050_WIND,
+                London_2050_COAL,
+                London_2050_NGAS,
+                London_2050_OIL,
+                London_2050_HYDRO,
+                London_2050_NUCLEAR
+            ];
+
+         }
+
+         else if (where == "la") {
+            barData = [
+                La_2018_GHG,
+                La_2018_PM,
+                La_2018_NO, 
+                La_2035_GHG,
+                La_2030_PM,
+                La_2035_NO,
+                La_2050_GHG,
+                La_2050_PM,
+                La_2050_NO,
+                La_2018_SOLAR,
+                La_2018_WIND,
+                La_2018_COAL,
+                La_2018_NGAS,
+                La_2018_OIL,
+                La_2018_HYDRO,
+                La_2018_NUCLEAR,
+                La_2035_SOLAR,
+                La_2035_WIND,
+                La_2035_COAL,
+                La_2035_NGAS,
+                La_2035_OIL,
+                La_2035_HYDRO,
+                La_2035_NUCLEAR,
+                La_2050_SOLAR,
+                La_2050_WIND,
+                La_2050_COAL,
+                La_2050_NGAS,
+                La_2050_OIL,
+                La_2050_HYDRO,
+                La_2050_NUCLEAR
+            ];
+         }
+
+
+
+         for ( var i = 0; i < barList.length; i++) {
+            TweenMax.fromTo(barList[i],2, {scaleY:0},{scaleY:(barData[i]) ,ease:Power3.easeInOut});
+         }
 
 
 
@@ -210,7 +323,7 @@ function initEmmissionsGraph (data) {
         // }
     }
 
-    animateGraph ();
+    animateGraph (data.location);
     
 
 
