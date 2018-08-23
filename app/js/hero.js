@@ -23,7 +23,7 @@ function initHero (data) {
 
     if (!alreadyAnimated) {
 
-        TweenMax.fromTo(".hero",1,{
+        TweenMax.fromTo([".hero",".dot-la",".dot-london",".dot-mumbai"],1,{
             width: "100%", 
             height: "100%"
         },{
@@ -34,14 +34,20 @@ function initHero (data) {
             ease:Power3.easeInOut,
             onComplete: initHeroAnimation
         });
+
+
+        TweenMax.fromTo([".dot-la",".dot-london",".dot-mumbai"],1,{alpha: 0},{delay:1,alpha:1});
         
     }
     else {
-        TweenMax.to(".hero",1,{
+        TweenMax.to([".hero",".dot-la",".dot-london",".dot-mumbai"],1,{
             left: heroCoordinates[whichSection].left, 
             top: heroCoordinates[whichSection].top,
             ease:Power3.easeInOut
         });
+
+
+        TweenMax.fromTo([".dot-la",".dot-london",".dot-mumbai"],1,{alpha: 0},{delay:1,alpha:1});
         
     }
     

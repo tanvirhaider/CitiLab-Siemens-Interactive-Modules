@@ -26,8 +26,8 @@ function initParkingGraph (data) {
         var currentID = this.id;
         var idIndex = currentID.substr(-1);
       //  console.log(idIndex);
-        this.classList.add("selected");
-        for (var i = 0; i < numberOfYear; i++) { if (i != Number(idIndex)) { document.querySelector(container + " #graph-content #nav-" + i).classList.remove("selected"); } }
+        this.classList.add("selected-" + data.location);
+        for (var i = 0; i < numberOfYear; i++) { if (i != Number(idIndex)) { document.querySelector(container + " #graph-content #nav-" + i).classList.remove("selected-" + data.location); } }
         
         populateGrid (idIndex);
     }
@@ -57,13 +57,13 @@ function initParkingGraph (data) {
             div.classList.add("icon");
             switch(currentIndex) {
                 case 0:
-                    div.classList.add("icon-tree");
+                    div.classList.add("icon-tree-" + data.location);
                     break;
                 case 1:
-                    div.classList.add("icon-house");
+                    div.classList.add("icon-house-" + data.location);
                     break;
                 case 2:
-                    div.classList.add("icon-car");
+                    div.classList.add("icon-car-" + data.location);
                     break;
                 default:
                     div.classList.add("");
@@ -77,7 +77,7 @@ function initParkingGraph (data) {
     function defaultSetting (whichOne) {
         
         populateGrid (whichOne);
-        document.querySelector(container + " #graph-content #nav-" + whichOne).classList.add("selected");
+        document.querySelector(container + " #graph-content #nav-" + whichOne).classList.add("selected-" + data.location);
     }
 
     defaultSetting (data.defaultindex);

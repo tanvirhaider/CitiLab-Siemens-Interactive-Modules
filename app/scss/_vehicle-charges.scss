@@ -27,6 +27,18 @@ $range-label-width: 0px !default;
     @include bgimage("map-london.jpg");
 }
 
+.charge-dot-mumbai {
+    background: $color-mumbai;
+}
+
+.charge-dot-la {
+    background: $color-la;
+}
+
+.charge-dot-london {
+    background: $color-london;
+}
+
 
 .graph-vehicle-charges {
     overflow: hidden;
@@ -182,57 +194,148 @@ $range-label-width: 0px !default;
             }
         }
         
-        .range-slider__range {
+        .range-slider__range-mumbai {
             position: relative;
             top: -23px;
             -webkit-appearance: none;
-            //width: calc(100% - (#{$range-label-width + 13px}));
             width: calc(100% - 0px);
             margin-left: auto;
             margin-right: auto;
             height: $range-track-height;
             border-radius: 5px;
-            background: $range-track-color;
+           background: $range-track-color;
             outline: none;
             padding-left: 2px;
             padding-right: 2px;
             box-sizing: border-box;
-            //padding: 0;
-           // margin: 0;
-        
-            // Range Handle
+            
+             // Range Handle
             &::-webkit-slider-thumb {
                 appearance: none;
                 width: $range-handle-size;
                 height: $range-handle-size;
                 border-radius: 50%;
-                background: $range-handle-color;
+                background: $color-mumbai;
                 cursor: pointer;
                 transition: background .15s ease-in-out;
             
-                &:hover {
-                    background: $range-handle-color-hover;
-                }
+                // &:hover {
+                //     background: $range-handle-color-hover;
+                // }
             }
         
-            &:active::-webkit-slider-thumb {
-                background: $range-handle-color-hover;
-            }
         
             &::-moz-range-thumb {
                 width: $range-handle-size;
                 height: $range-handle-size;
                 border: 0;
                 border-radius: 50%;
-                background: $range-handle-color;
+                background: $color-mumbai;
                 cursor: pointer;
                 transition: background .15s ease-in-out;
             
-                    &:hover {
-                        background: $range-handle-color-hover;
-                    }
+                    // &:hover {
+                    //     background: $range-handle-color-hover;
+                    // }
             }
+        
         }
+
+        .range-slider__range-la {
+            position: relative;
+            top: -23px;
+            -webkit-appearance: none;
+            width: calc(100% - 0px);
+            margin-left: auto;
+            margin-right: auto;
+            height: $range-track-height;
+            border-radius: 5px;
+           background: $range-track-color;
+            outline: none;
+            padding-left: 2px;
+            padding-right: 2px;
+            box-sizing: border-box;
+            
+             // Range Handle
+            &::-webkit-slider-thumb {
+                appearance: none;
+                width: $range-handle-size;
+                height: $range-handle-size;
+                border-radius: 50%;
+                background: $color-la;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            
+                // &:hover {
+                //     background: $range-handle-color-hover;
+                // }
+            }
+        
+        
+            &::-moz-range-thumb {
+                width: $range-handle-size;
+                height: $range-handle-size;
+                border: 0;
+                border-radius: 50%;
+                background: $color-la;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            
+                    // &:hover {
+                    //     background: $range-handle-color-hover;
+                    // }
+            }
+        
+        }
+
+        .range-slider__range-london {
+            position: relative;
+            top: -23px;
+            -webkit-appearance: none;
+            width: calc(100% - 0px);
+            margin-left: auto;
+            margin-right: auto;
+            height: $range-track-height;
+            border-radius: 5px;
+           background: $range-track-color;
+            outline: none;
+            padding-left: 2px;
+            padding-right: 2px;
+            box-sizing: border-box;
+            
+             // Range Handle
+            &::-webkit-slider-thumb {
+                appearance: none;
+                width: $range-handle-size;
+                height: $range-handle-size;
+                border-radius: 50%;
+                background: $color-london;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            
+                // &:hover {
+                //     background: $range-handle-color-hover;
+                // }
+            }
+        
+        
+            &::-moz-range-thumb {
+                width: $range-handle-size;
+                height: $range-handle-size;
+                border: 0;
+                border-radius: 50%;
+                background: $color-london;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            
+                    // &:hover {
+                    //     background: $range-handle-color-hover;
+                    // }
+            }
+        
+        }
+
+        
         
         
         
@@ -274,7 +377,7 @@ $range-label-width: 0px !default;
             width: 15px;
             height: 15px;
             border-radius: 50%;
-            background-color: rgb(137, 216, 137);
+           // background-color: rgb(137, 216, 137);
            // visibility: hidden;
            opacity: 0;
            //animation: fadein 0.5s forwards 0.1s ;

@@ -9,6 +9,50 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/app\/assets\/images\/dots-la.png": {
+		"ft": 32768,
+		"iS": 26642,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/dots-la.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/assets\/images\/dots-london.png": {
+		"ft": 32768,
+		"iS": 26195,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/dots-london.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/assets\/images\/dots-mumbai.png": {
+		"ft": 32768,
+		"iS": 26378,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/dots-mumbai.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/assets\/images\/hero-2@3x.jpg": {
+		"ft": 16384,
+		"iS": 365388,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/hero-2@3x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/app\/assets\/images\/hero.png": {
 		"ft": 32768,
 		"iS": 87967,
@@ -31,31 +75,91 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/app\/assets\/images\/icon-car.svg": {
+	"\/app\/assets\/images\/icon-car-la.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/assets\/images\/icon-car.svg",
+		"oAP": "\/dist\/assets\/images\/icon-car-la.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/app\/assets\/images\/icon-house.svg": {
+	"\/app\/assets\/images\/icon-car-london.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/assets\/images\/icon-house.svg",
+		"oAP": "\/dist\/assets\/images\/icon-car-london.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/app\/assets\/images\/icon-tree.svg": {
+	"\/app\/assets\/images\/icon-car-mumbai.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/dist\/assets\/images\/icon-tree.svg",
+		"oAP": "\/dist\/assets\/images\/icon-car-mumbai.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/assets\/images\/icon-house-la.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-house-la.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/assets\/images\/icon-house-london.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-house-london.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/assets\/images\/icon-house-mumbai.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-house-mumbai.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/assets\/images\/icon-tree-la.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-tree-la.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/assets\/images\/icon-tree-london.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-tree-london.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/assets\/images\/icon-tree-mumbai.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/assets\/images\/icon-tree-mumbai.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

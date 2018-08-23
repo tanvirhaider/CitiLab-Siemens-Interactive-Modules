@@ -26,6 +26,9 @@ function initEmmissionsGraph (data) {
 
     function animateGraph (where) {
 
+       // var L1 = document.querySelector(prefix + ".emmissions" + " .chart-container .legends #box-0");
+       // console.log(L1);
+
 
         var barData = [];
 
@@ -44,28 +47,28 @@ function initEmmissionsGraph (data) {
         var WIND_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 0);
         var GAS_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"   + 0 + inTheMiddle + 1);
         var COAL_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 2);
-        var COAL_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 3);
-        var COAL_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 4);
-        var COAL_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 5);
-        var COAL_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 6);
+        var NGAS_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 3);
+        var OIL_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 4);
+        var HYDRO_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 5);
+        var NUK_2018 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 0 + inTheMiddle + 6);
 
         var WIND_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 0);
         var GAS_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"   + 1 + inTheMiddle + 1);
         var COAL_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 2);
-        var COAL_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 3);
-        var COAL_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 4);
-        var COAL_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 5);
-        var COAL_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 6);
+        var NGAS_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 3);
+        var OIL_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 4);
+        var HYDRO_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 5);
+        var NUK_2035 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 1 + inTheMiddle + 6);
 
         var WIND_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 0);
         var GAS_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"   + 2 + inTheMiddle + 1);
         var COAL_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 2);
-        var COAL_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 3);
-        var COAL_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 4);
-        var COAL_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 5);
-        var COAL_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 6);
+        var NGAS_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 3);
+        var OIL_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 4);
+        var HYDRO_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 5);
+        var NUK_2050 = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + 2 + inTheMiddle + 6);
 
-        var barList = [GHG_2018,PM_2018,NO_2018, GHG_2035,PM_2035, NO_2035,GHG_2050,PM_2050,NO_2050,WIND_2018,GAS_2018,COAL_2018, WIND_2035,GAS_2035, COAL_2035,WIND_2050, GAS_2050, COAL_2050 ];
+        var barList = [GHG_2018,PM_2018,NO_2018, GHG_2035,PM_2035, NO_2035,GHG_2050,PM_2050,NO_2050,WIND_2018,GAS_2018,COAL_2018,NGAS_2018,OIL_2018, HYDRO_2018, NUK_2018,WIND_2035,GAS_2035, COAL_2035,NGAS_2035,OIL_2035,HYDRO_2035,NUK_2035,WIND_2050, GAS_2050, COAL_2050,NGAS_2050,OIL_2050,HYDRO_2050,NUK_2050 ];
 
        // console.log(EmmissionGraphData['london']['year2018']['emmission']['GreenHouseGas']);
 
@@ -307,23 +310,59 @@ function initEmmissionsGraph (data) {
          }
 
 
-
          for ( var i = 0; i < barList.length; i++) {
-            TweenMax.fromTo(barList[i],2, {scaleY:0},{scaleY:(barData[i]) ,ease:Power3.easeInOut});
+            barList[i].classList.add("small-bar-color-" + data.location);
+
+           
+            //   $( barList[i] ).mouseover(function() {
+            //   //  console.log(this.parentElement.parentElement,"over");
+
+            //         var div = document.createElement("div");
+            //         div.setAttribute("id","tooltip");
+            //         div.classList.add("tooltip");
+            //         div.innerHTML = "Hello";
+            //         this.appendChild(div);
+
+            //     }).mouseout(function() {
+            //     console.log(this,"out");
+            //     //var tooltip = document.getElementById("tooltip");
+            //     //this.removeChild(this.firstChild);
+            // });
+
+
+           // TweenMax.fromTo(barList[i],2, {scaleY:0},{scaleY:(barData[i]) ,ease:Power3.easeInOut});
+
+            TweenMax.fromTo(barList[i],2, {height:"0%"},{height:barData[i] * 100 + "%" ,ease:Power3.easeInOut});
+
+
+          //  height:"auto"
          }
 
-
-
-        // for (var i = 0; i < 3; i++) {
-        //     for (var j = 0; j < 3; j++) {
-        //         var tempItem = document.querySelector(prefix + whichOne + " .chart-container .chart .bar-sets .bar-content #bar-" + i + inTheMiddle + j);
-        //         tempItem.style.backgroundColor = barColor;
-        //         TweenMax.fromTo(tempItem,2, {scaleY:0},{scaleY:( data.data[dataindex][i][j]/100) ,ease:Power3.easeInOut});
-        //     }
-        // }
     }
 
     animateGraph (data.location);
+
+    var numberOfGEitems = document.querySelector(data.container + " .content " + ".electricity" + " .chart-container .legends").children.length;
+    var numberOfEMitems = document.querySelector(data.container + " .content " + ".emmissions" + " .chart-container .legends").children.length;
+
+
+
+    for (var i = 0; i < numberOfGEitems; i++) {
+        var tempchild = document.querySelector(data.container + " .content " + ".electricity" + " .chart-container .legends").children[i];
+        tempchild.classList.add("each-legend-" + data.location);
+        console.log(tempchild);
+    }
+
+    for (var i = 0; i < numberOfEMitems; i++) {
+        var tempchild = document.querySelector(data.container + " .content " + ".emmissions" + " .chart-container .legends").children[i];
+        tempchild.classList.add("each-legend-" + data.location);
+        console.log(tempchild);
+    }
+     
+   
+
+
+   // barList[i].classList.add("each-legend-mumbai-" + data.location);
     
 
 

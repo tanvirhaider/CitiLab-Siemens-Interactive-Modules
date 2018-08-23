@@ -24,27 +24,50 @@
         height: auto;
         padding-bottom: 20px;
     }
-   
-    .selected {
-        color: #0c5dc5;
-        
-       &::after {
-        content: "";
-        width: 100px;
-        left: -20px;
-        top: 44px;
-        height: 3px;
-        background-color: #0c5dc5;
-        position: absolute;
-        pointer-events: none;
 
-            @include breakpoint ("mobile") {
-            width: 60px;
-            top: 30px;
-            left: -10px;
-            }
-       }
+    .selected-extends {
+        &::after {
+            content: "";
+            width: 100px;
+            left: -20px;
+            top: 44px;
+            height: 3px;
+            position: absolute;
+            pointer-events: none;
+    
+                @include breakpoint ("mobile") {
+                width: 60px;
+                top: 30px;
+                left: -10px;
+                }
+           }
     }
+   
+    // .selected {
+    //     @extend .selected-extends;
+    //     color: #0c5dc5;
+    //     &::after {background-color: #0c5dc5;}
+    // }
+
+    .selected-la {
+        @extend .selected-extends;
+        color: #ff2466;
+        &::after {background-color: $color-la;}
+    }
+
+    .selected-london {
+        @extend .selected-extends;
+        color: #0e6ce5; 
+        &::after {background-color: $color-london; }
+    }
+
+    .selected-mumbai {
+        @extend .selected-extends;
+        color: #009999;
+        &::after {background-color: $color-mumbai;}
+    }
+
+
 
     #graph-content {
         position: relative;
@@ -96,9 +119,17 @@
 
         }
 
-        .icon-car {@include bgimage("icon-car.svg");}
-        .icon-house {@include bgimage("icon-house.svg");}
-        .icon-tree {@include bgimage("icon-tree.svg");}
+        .icon-car-mumbai {@include bgimage("icon-car-mumbai.svg");}
+        .icon-house-mumbai {@include bgimage("icon-house-mumbai.svg");}
+        .icon-tree-mumbai {@include bgimage("icon-tree-mumbai.svg");}
+
+        .icon-car-la {@include bgimage("icon-car-la.svg");}
+        .icon-house-la {@include bgimage("icon-house-la.svg");}
+        .icon-tree-la {@include bgimage("icon-tree-la.svg");}
+
+        .icon-car-london {@include bgimage("icon-car-london.svg");}
+        .icon-house-london {@include bgimage("icon-house-london.svg");}
+        .icon-tree-london {@include bgimage("icon-tree-london.svg");}
 
         .nav {
             display: flex;

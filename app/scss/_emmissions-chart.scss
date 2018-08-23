@@ -1,6 +1,33 @@
 
 
 
+.small-bar-color-mumbai {
+    background-color: $color-mumbai;
+}
+
+.small-bar-color-la {
+    background-color: $color-la;
+}
+
+.small-bar-color-london {
+    background-color: $color-london;
+}
+
+.tooltip {
+    position: absolute;
+    width: auto;
+    height: auto;
+    color: white;
+    pointer-events: none;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 9999;
+   // bottom: 40px;
+   // margin-bottom: 100px;
+   box-sizing: border-box;
+   
+}
+
 .chart-container {
     width: 410px;
     margin-left: auto;
@@ -53,7 +80,8 @@
             }
 
             &::before {
-                content: "PERCENT (%) REDUCTION";
+                content: "Percent Increase";
+                text-transform: uppercase;
                 writing-mode: vertical-rl;
                 transform: rotate(180deg);
                 font-size: 0.7em;
@@ -66,35 +94,69 @@
                 width: calc(100% - 35px);
                 display: flex;
                 justify-content: space-between;
+                height: 100%;
 
                 .bar {
                     visibility: visible;
                     display: flex;
                     width: 76px;
                     justify-content: space-between;
+                    position: relative;
+                    height: 100%;
 
                     @include breakpoint ("mobile") {
                        width: 60px;
                     }
 
                     .small-bar {
-                        width: 10px;
+                        // width: 10px;
+                        width: 100%;
+                        max-width: 12px;
+                        margin: 0px 1px;
                         height: 200px;
-                        background-color: #3c7bcd;
-                        transform-origin: 50% 100%;
-                        transform: scaleY(0);
+                        align-self: flex-end;
+                       // background-color: #3c7bcd;
+                       // transform-origin: 50% 100%;
+                      //  transform: scaleY(0);
+                      position: relative;
+                    //  bottom: 0px;
+                        box-sizing: border-box;
+
 
                         &:nth-child(1){
                             filter: brightness(100%);
                         }
 
                         &:nth-child(2){
-                            filter: brightness(80%);
+                            filter: brightness(90%);
                         }
 
                         &:nth-child(3){
+                            filter: brightness(80%);
+                        }
+
+                        &:nth-child(4){
+                            filter: brightness(70%);
+                        }
+
+                        &:nth-child(5){
                             filter: brightness(60%);
                         }
+
+                        &:nth-child(6){
+                            filter: brightness(50%);
+                        }
+
+                        &:nth-child(7){
+                            filter: brightness(40%);
+                        }
+
+
+                        &:hover {
+                           background-color: white;
+                           filter: brightness(100%);
+                        }
+
 
                         @include breakpoint ("mobile") {
                             width: 14px;
@@ -137,22 +199,48 @@
     .legends {
         padding-top: 20px;
         display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
         width: calc(100% - 50px);
-        max-width: 320px;
+        max-width: 380px;
         position: relative;
         left: 30px;
 
+        div {
+            opacity: 0;
+            animation: fadein 0.5s forwards 0.5s ;
+        }
+       
+
         font-size: 0.8em;
-        justify-content: space-between;
+       // justify-content: space-between;
 
         @include breakpoint ("mobile") {
             font-size: 9px;
+            width: 100%;
+            max-width: unset;
          }
 
-        .each-legend {
+         .each-legend-extend {
             position: relative;
-            width: auto;
+            width: 45px;
+            padding-right: 40px;
+            padding-bottom: 10px;
             user-select: none;
+            
+
+            @include breakpoint ("mobile") {
+                width: 40px;
+                padding-right: 30px;
+             }
+
+            &:nth-child(1) {&::before {filter: brightness(100%);}}
+            &:nth-child(2) {&::before {filter: brightness(90%);}}
+            &:nth-child(3) {&::before {filter: brightness(80%);}}
+            &:nth-child(4) {&::before {filter: brightness(70%);}}
+            &:nth-child(5) {&::before {filter: brightness(60%);}}
+            &:nth-child(6) {&::before {filter: brightness(50%);}}
+            &:nth-child(7) {&::before {filter: brightness(40%);}}
 
             &::before {
                 content: "";
@@ -161,15 +249,27 @@
                 height: 16px;
                 top: 0px;
                 border: 1px solid rgb(165, 165, 165);
-               // background-color: #3c7bcd;
-                background-color: var(--color-london); 
                 position: absolute;
+                background-color: #303030;
             }
+         }
 
-            &:nth-child(1) {&::before {filter: brightness(100%);}}
-            &:nth-child(2) {&::before {filter: brightness(80%);}}
-            &:nth-child(3) {&::before {filter: brightness(60%);}}
+        .each-legend-mumbai {
+            @extend .each-legend-extend;
+            &::before {background-color: $color-mumbai;}
+           
+        }
 
+        .each-legend-london {
+            @extend .each-legend-extend;
+            &::before {background-color: $color-london;}
+           
+        }
+
+        .each-legend-la {
+            @extend .each-legend-extend;
+            &::before {background-color: $color-la;}
+        
         }
     }
 }

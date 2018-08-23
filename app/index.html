@@ -29,6 +29,10 @@
 
     <div id="site-intro-animation">
         <div class="hero"></div>
+        <div class="dot-la"></div>
+        <div class="dot-london"></div>
+        <div class="dot-mumbai"></div>
+        
     </div>
 
 
@@ -57,45 +61,7 @@
     <!-- div for emissions graph starts here . =============================================-->
     <div class="graph-emissions" id="graph-emissions-LA">
         <div class="content">
-            <div class="emmissions">
-                <div class="chart-container">
-                    <div class="title">Emmissions Reduction</div>
-                    <div class="chart">
-                        <div class="bar-sets">
-                            <div class="bar-content">
-                                <div id="bar-0" class="bar">
-                                        <div class="small-bar" id="bar-gas-0"></div>
-                                        <div class="small-bar" id="bar-gas-1"></div>
-                                        <div class="small-bar" id="bar-gas-2"></div>
-                                    </div>
-                                    <div id="bar-1" class="bar">
-                                        <div class="small-bar" id="bar-gas-0"></div>
-                                        <div class="small-bar" id="bar-gas-1"></div>
-                                        <div class="small-bar" id="bar-gas-2"></div>
-                                    </div>
-                                    <div id="bar-2" class="bar">
-                                        <div class="small-bar" id="bar-gas-0"></div>
-                                        <div class="small-bar" id="bar-gas-1"></div>
-                                        <div class="small-bar" id="bar-gas-2"></div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="chart-legends">
-                            <div class="devider-line"></div>
-                            <div class="years">
-                                <div class="year" id="year-0">2018</div>
-                                <div class="year" id="year-1">2035</div>
-                                <div class="year" id="year-2">2050</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="legends">
-                        <div id="box-0" class="each-legend">GH Gas</div>
-                        <div id="box-1" class="each-legend">Particle Matters</div>
-                        <div id="box-2" class="each-legend">Nitrous Oxide</div>
-                    </div>
-                </div>
-            </div>
+           
             <div class="electricity">
                 <div class="chart-container">
                     <div class="title">Electricity Demand</div>
@@ -140,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="legends">
+                    <div id='legends-electric' class="legends">
                         <div id="box-0" class="each-legend mainColor">Solar</div>
                         <div id="box-1" class="each-legend mainColor">Wind</div>
                         <div id="box-2" class="each-legend mainColor">Coal</div>
@@ -148,6 +114,45 @@
                         <div id="box-4" class="each-legend mainColor">Oil</div>
                         <div id="box-5" class="each-legend mainColor">Hydro</div>
                         <div id="box-6" class="each-legend mainColor">Nuclear</div>
+                    </div>
+                </div>
+            </div>
+            <div class="emmissions">
+                <div class="chart-container">
+                    <div class="title">Emmissions Reduction</div>
+                    <div class="chart">
+                        <div class="bar-sets">
+                            <div class="bar-content">
+                                <div id="bar-0" class="bar">
+                                        <div class="small-bar" id="bar-gas-0"></div>
+                                        <div class="small-bar" id="bar-gas-1"></div>
+                                        <div class="small-bar" id="bar-gas-2"></div>
+                                    </div>
+                                    <div id="bar-1" class="bar">
+                                        <div class="small-bar" id="bar-gas-0"></div>
+                                        <div class="small-bar" id="bar-gas-1"></div>
+                                        <div class="small-bar" id="bar-gas-2"></div>
+                                    </div>
+                                    <div id="bar-2" class="bar">
+                                        <div class="small-bar" id="bar-gas-0"></div>
+                                        <div class="small-bar" id="bar-gas-1"></div>
+                                        <div class="small-bar" id="bar-gas-2"></div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="chart-legends">
+                            <div class="devider-line"></div>
+                            <div class="years">
+                                <div class="year" id="year-0">2018</div>
+                                <div class="year" id="year-1">2035</div>
+                                <div class="year" id="year-2">2050</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id='legends-emmissions' class="legends">
+                        <div id="box-0" class="each-legend">GH Gas</div>
+                        <div id="box-1" class="each-legend">PM</div>
+                        <div id="box-2" class="each-legend">NO</div>
                     </div>
                 </div>
             </div>
@@ -188,7 +193,7 @@
                     <div class="dot"></div>
                     <div class="dot"></div>
                 </div>
-                <input class="range-slider__range" type="range" value="0" min="0" max="0">
+                <input id="r-slider" type="range" value="0" min="0" max="0">
             </div>
         </div>
         
