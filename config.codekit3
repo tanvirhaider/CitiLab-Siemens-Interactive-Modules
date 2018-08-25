@@ -198,11 +198,18 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/app\/index.html": {
+	"\/app\/charges.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/dist\/index.html",
+		"oAP": "\/dist\/charges.html",
+		"oF": 0
+		},
+	"\/app\/emmissions.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/emmissions.html",
 		"oF": 0
 		},
 	"\/app\/js\/data.js": {
@@ -285,6 +292,46 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/app\/js\/main-charges.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/dist\/js\/main-charges.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/app\/js\/main-emmissions.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/dist\/js\/main-emmissions.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/app\/js\/main-parking.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/dist\/js\/main-parking.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/app\/js\/sprite.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/sprite-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/app\/js\/vehicle-charge.js": {
 		"ft": 64,
 		"ma": 0,
@@ -294,6 +341,13 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"\/app\/parking.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/parking.html",
+		"oF": 0
 		},
 	"\/app\/scss\/_emmissions-chart.scss": {
 		"aP": 0,

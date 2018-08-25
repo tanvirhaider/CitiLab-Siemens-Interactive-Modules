@@ -350,13 +350,13 @@ function initEmmissionsGraph (data) {
     for (var i = 0; i < numberOfGEitems; i++) {
         var tempchild = document.querySelector(data.container + " .content " + ".electricity" + " .chart-container .legends").children[i];
         tempchild.classList.add("each-legend-" + data.location);
-        console.log(tempchild);
+       // console.log(tempchild);
     }
 
     for (var i = 0; i < numberOfEMitems; i++) {
         var tempchild = document.querySelector(data.container + " .content " + ".emmissions" + " .chart-container .legends").children[i];
         tempchild.classList.add("each-legend-" + data.location);
-        console.log(tempchild);
+       // console.log(tempchild);
     }
      
    

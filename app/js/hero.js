@@ -19,37 +19,38 @@ var heroCoordinates = {
 
 
 function initHero (data) {
-    var whichSection = data.location;
+    // var whichSection = data.location;
 
-    if (!alreadyAnimated) {
+    // if (!alreadyAnimated) {
 
-        TweenMax.fromTo([".hero",".dot-la",".dot-london",".dot-mumbai"],1,{
-            width: "100%", 
-            height: "100%"
-        },{
-            width: "300%", 
-            height: "300%", 
-            left: heroCoordinates[whichSection].left, 
-            top: heroCoordinates[whichSection].top, 
-            ease:Power3.easeInOut,
-            onComplete: initHeroAnimation
-        });
+    //     TweenMax.fromTo([".hero",".dot-la",".dot-london",".dot-mumbai"],1,{
+    //         width: "100%", 
+    //         height: "100%"
+    //     },{
+    //         delay:1,
+    //         width: "300%", 
+    //         height: "300%", 
+    //         left: heroCoordinates[whichSection].left, 
+    //         top: heroCoordinates[whichSection].top, 
+    //         ease:Power3.easeInOut,
+    //         onComplete: initHeroAnimation
+    //     });
 
 
-        TweenMax.fromTo([".dot-la",".dot-london",".dot-mumbai"],1,{alpha: 0},{delay:1,alpha:1});
+    //     TweenMax.fromTo([".dot-la",".dot-london",".dot-mumbai"],1,{alpha: 0},{delay:1.75,alpha:1});
         
-    }
-    else {
-        TweenMax.to([".hero",".dot-la",".dot-london",".dot-mumbai"],1,{
-            left: heroCoordinates[whichSection].left, 
-            top: heroCoordinates[whichSection].top,
-            ease:Power3.easeInOut
-        });
+    // }
+    // else {
+    //     TweenMax.to([".hero",".dot-la",".dot-london",".dot-mumbai"],1,{
+    //         left: heroCoordinates[whichSection].left, 
+    //         top: heroCoordinates[whichSection].top,
+    //         ease:Power3.easeInOut
+    //     });
 
 
-        TweenMax.fromTo([".dot-la",".dot-london",".dot-mumbai"],1,{alpha: 0},{delay:1,alpha:1});
+    //     TweenMax.fromTo([".dot-la",".dot-london",".dot-mumbai"],1,{alpha: 0},{delay:1,alpha:1});
         
-    }
+    // }
     
 
 }

@@ -148,10 +148,7 @@
       height: 55px;
       background-repeat: no-repeat;
       background-position: 50% 50%;
-      margin: 2px;
-      opacity: 0;
-      -webkit-animation: fadein 0.5s forwards 0.1s;
-              animation: fadein 0.5s forwards 0.1s; }
+      margin: 2px; }
       @media (max-width: 767px) {
         .graph-parking #graph-content .icon {
           height: 35px;
@@ -336,7 +333,8 @@
         position: relative;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        margin-top: 50px; }
+        margin-top: 50px;
+        left: 50px; }
         @media (max-width: 767px) {
           .graph-emissions .content .emmissions .chart-container {
             width: 300px;
@@ -349,71 +347,83 @@
           -webkit-user-select: none;
              -moz-user-select: none;
               -ms-user-select: none;
-                  user-select: none; }
+                  user-select: none;
+          position: relative;
+          left: -25px; }
           @media (max-width: 767px) {
             .graph-emissions .content .emmissions .chart-container .title {
               font-size: 18px;
               width: 300px;
               padding-bottom: 20px; } }
         .graph-emissions .content .emmissions .chart-container .chart .vertical-legend {
+          height: 100%;
           -webkit-writing-mode: vertical-rl;
               -ms-writing-mode: tb-rl;
                   writing-mode: vertical-rl;
           -webkit-transform: rotate(180deg);
                   transform: rotate(180deg);
-          font-size: 0.7em;
-          position: absolute; }
+          position: relative;
+          bottom: -12px;
+          left: -46px; }
+          .graph-emissions .content .emmissions .chart-container .chart .vertical-legend .legend-copy {
+            font-size: 12px;
+            width: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px; }
+          .graph-emissions .content .emmissions .chart-container .chart .vertical-legend .legend-val {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            .graph-emissions .content .emmissions .chart-container .chart .vertical-legend .legend-val .legend-val-item {
+              -webkit-transform: rotate(90deg);
+                      transform: rotate(90deg);
+              font-size: 11px; }
+          .graph-emissions .content .emmissions .chart-container .chart .vertical-legend .line {
+            height: 100%;
+            width: 3px;
+            background-color: white;
+            margin-right: 8px; }
         .graph-emissions .content .emmissions .chart-container .chart .bar-sets {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           width: 100%;
-          height: 200px;
+          height: calc(200px);
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between;
           -webkit-box-align: end;
               -ms-flex-align: end;
                   align-items: flex-end;
-          padding-right: 10px;
           -webkit-box-sizing: border-box;
-                  box-sizing: border-box; }
+                  box-sizing: border-box;
+          position: relative; }
           @media (max-width: 767px) {
             .graph-emissions .content .emmissions .chart-container .chart .bar-sets {
               height: 150px; } }
-          .graph-emissions .content .emmissions .chart-container .chart .bar-sets::before {
-            content: "Percent Increase";
-            text-transform: uppercase;
-            -webkit-writing-mode: vertical-rl;
-                -ms-writing-mode: tb-rl;
-                    writing-mode: vertical-rl;
-            -webkit-transform: rotate(180deg);
-                    transform: rotate(180deg);
-            font-size: 0.7em;
-            letter-spacing: 0.4px;
-            width: 35px;
-            -webkit-user-select: none;
-               -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none; }
           .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content {
-            width: calc(100% - 35px);
+            width: 100%;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                     justify-content: space-between;
-            height: 100%; }
+            height: 92%;
+            position: relative;
+            left: -35px; }
             .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar {
               visibility: visible;
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
-              width: 76px;
-              -webkit-box-pack: justify;
-                  -ms-flex-pack: justify;
-                      justify-content: space-between;
+              width: 100px;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
               position: relative;
               height: 100%; }
               @media (max-width: 767px) {
@@ -422,7 +432,7 @@
               .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                 width: 100%;
                 max-width: 12px;
-                margin: 0px 1px;
+                margin: 0px 2px;
                 height: 200px;
                 -ms-flex-item-align: end;
                     align-self: flex-end;
@@ -461,7 +471,7 @@
         .graph-emissions .content .emmissions .chart-container .chart .chart-legends .devider-line {
           margin-top: 10px;
           margin-bottom: 5px;
-          width: 100%;
+          width: 92%;
           height: 3px;
           background-color: white; }
         .graph-emissions .content .emmissions .chart-container .chart .chart-legends .years {
@@ -469,8 +479,8 @@
           display: -ms-flexbox;
           display: flex;
           position: relative;
-          left: 14px;
-          width: 86%;
+          left: -8px;
+          width: 82%;
           margin-left: auto;
           margin-right: auto;
           -webkit-box-pack: justify;
@@ -494,7 +504,7 @@
               flex-wrap: wrap;
           -ms-flex-line-pack: end;
               align-content: flex-end;
-          width: calc(100% - 50px);
+          width: 100%;
           max-width: 380px;
           position: relative;
           left: 30px;
@@ -510,8 +520,8 @@
               max-width: unset; } }
           .graph-emissions .content .emmissions .chart-container .legends .each-legend-extend, .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai, .graph-emissions .content .emmissions .chart-container .legends .each-legend-london, .graph-emissions .content .emmissions .chart-container .legends .each-legend-la {
             position: relative;
-            width: 45px;
-            padding-right: 40px;
+            width: 65px;
+            padding-right: 30px;
             padding-bottom: 10px;
             -webkit-user-select: none;
                -moz-user-select: none;
@@ -591,7 +601,8 @@
         position: relative;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        margin-top: 50px; }
+        margin-top: 50px;
+        left: 50px; }
         @media (max-width: 767px) {
           .graph-emissions .content .electricity .chart-container {
             width: 300px;
@@ -604,71 +615,83 @@
           -webkit-user-select: none;
              -moz-user-select: none;
               -ms-user-select: none;
-                  user-select: none; }
+                  user-select: none;
+          position: relative;
+          left: -25px; }
           @media (max-width: 767px) {
             .graph-emissions .content .electricity .chart-container .title {
               font-size: 18px;
               width: 300px;
               padding-bottom: 20px; } }
         .graph-emissions .content .electricity .chart-container .chart .vertical-legend {
+          height: 100%;
           -webkit-writing-mode: vertical-rl;
               -ms-writing-mode: tb-rl;
                   writing-mode: vertical-rl;
           -webkit-transform: rotate(180deg);
                   transform: rotate(180deg);
-          font-size: 0.7em;
-          position: absolute; }
+          position: relative;
+          bottom: -12px;
+          left: -46px; }
+          .graph-emissions .content .electricity .chart-container .chart .vertical-legend .legend-copy {
+            font-size: 12px;
+            width: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px; }
+          .graph-emissions .content .electricity .chart-container .chart .vertical-legend .legend-val {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            .graph-emissions .content .electricity .chart-container .chart .vertical-legend .legend-val .legend-val-item {
+              -webkit-transform: rotate(90deg);
+                      transform: rotate(90deg);
+              font-size: 11px; }
+          .graph-emissions .content .electricity .chart-container .chart .vertical-legend .line {
+            height: 100%;
+            width: 3px;
+            background-color: white;
+            margin-right: 8px; }
         .graph-emissions .content .electricity .chart-container .chart .bar-sets {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           width: 100%;
-          height: 200px;
+          height: calc(200px);
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between;
           -webkit-box-align: end;
               -ms-flex-align: end;
                   align-items: flex-end;
-          padding-right: 10px;
           -webkit-box-sizing: border-box;
-                  box-sizing: border-box; }
+                  box-sizing: border-box;
+          position: relative; }
           @media (max-width: 767px) {
             .graph-emissions .content .electricity .chart-container .chart .bar-sets {
               height: 150px; } }
-          .graph-emissions .content .electricity .chart-container .chart .bar-sets::before {
-            content: "Percent Increase";
-            text-transform: uppercase;
-            -webkit-writing-mode: vertical-rl;
-                -ms-writing-mode: tb-rl;
-                    writing-mode: vertical-rl;
-            -webkit-transform: rotate(180deg);
-                    transform: rotate(180deg);
-            font-size: 0.7em;
-            letter-spacing: 0.4px;
-            width: 35px;
-            -webkit-user-select: none;
-               -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none; }
           .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content {
-            width: calc(100% - 35px);
+            width: 100%;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                     justify-content: space-between;
-            height: 100%; }
+            height: 92%;
+            position: relative;
+            left: -35px; }
             .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar {
               visibility: visible;
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
-              width: 76px;
-              -webkit-box-pack: justify;
-                  -ms-flex-pack: justify;
-                      justify-content: space-between;
+              width: 100px;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
               position: relative;
               height: 100%; }
               @media (max-width: 767px) {
@@ -677,7 +700,7 @@
               .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                 width: 100%;
                 max-width: 12px;
-                margin: 0px 1px;
+                margin: 0px 2px;
                 height: 200px;
                 -ms-flex-item-align: end;
                     align-self: flex-end;
@@ -716,7 +739,7 @@
         .graph-emissions .content .electricity .chart-container .chart .chart-legends .devider-line {
           margin-top: 10px;
           margin-bottom: 5px;
-          width: 100%;
+          width: 92%;
           height: 3px;
           background-color: white; }
         .graph-emissions .content .electricity .chart-container .chart .chart-legends .years {
@@ -724,8 +747,8 @@
           display: -ms-flexbox;
           display: flex;
           position: relative;
-          left: 14px;
-          width: 86%;
+          left: -8px;
+          width: 82%;
           margin-left: auto;
           margin-right: auto;
           -webkit-box-pack: justify;
@@ -749,7 +772,7 @@
               flex-wrap: wrap;
           -ms-flex-line-pack: end;
               align-content: flex-end;
-          width: calc(100% - 50px);
+          width: 100%;
           max-width: 380px;
           position: relative;
           left: 30px;
@@ -765,8 +788,8 @@
               max-width: unset; } }
           .graph-emissions .content .electricity .chart-container .legends .each-legend-extend, .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai, .graph-emissions .content .electricity .chart-container .legends .each-legend-london, .graph-emissions .content .electricity .chart-container .legends .each-legend-la {
             position: relative;
-            width: 45px;
-            padding-right: 40px;
+            width: 65px;
+            padding-right: 30px;
             padding-bottom: 10px;
             -webkit-user-select: none;
                -moz-user-select: none;

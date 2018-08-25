@@ -3,39 +3,48 @@
 
 
 function initVehicleCarges (data) {
-
+  console.log("data location: ", data.location);
   var dataMultiplier = 30;
   var sampleData = [
     [50,50],
-    [54,54],
-    [58,58],
-    [62,62],
-    [66,66],
-    [70,70],
-    [55,47],
     [60,44],
+    
+    [43,46], 
+    [66,66],
+    [37,52],
+    
+    [58,58],
+    [47,55],
+
+    [55,47],
+    [54,54],
     [66,41],
     [72,38],
-    [43,51],
-    [37,52],
+    [31,42],
     [31,53],
+    [43,51],
+    [48,40],
+    [44,59],
     [25,54],
     [18,55],
     [11,56],
+
     [49,45],
-    [48,40],
     [47,35],
-    [43,46],
-    [46,29],
-    [37,44],
-    [31,42],
-    [25,40],
-    [19,38],
-    [12,36],
-    [47,55],
-    [44,59],
+    [62,62],
     [41,63],
+    [46,29],
+    
+    
+    [37,44],
+    
+    [25,40],
+    
+    [70,70],
     [38,67],
+    [19,38],
+    [12,36], 
+
     [45,23],
     [6,34],
     [35,71],
@@ -103,6 +112,104 @@ function initVehicleCarges (data) {
   ];
 
 
+  // var sampleData = [
+  //   [50,50],
+  //   [54,54],
+  //   [58,58],
+  //   [62,62],
+  //   [66,66],
+  //   [70,70],
+  //   [55,47],
+  //   [60,44],
+  //   [66,41],
+  //   [72,38],
+  //   [43,51],
+  //   [37,52],
+  //   [31,53],
+  //   [25,54],
+  //   [18,55],
+  //   [11,56],
+  //   [49,45],
+  //   [48,40],
+  //   [47,35],
+  //   [43,46],
+  //   [46,29],
+  //   [37,44],
+  //   [31,42],
+  //   [25,40],
+  //   [19,38],
+  //   [12,36],
+  //   [47,55],
+  //   [44,59],
+  //   [41,63],
+  //   [38,67],
+  //   [45,23],
+  //   [6,34],
+  //   [35,71],
+  //   [78,35],
+  //   [74,74],
+  //   [78,78],
+  //   [82,82],
+  //   [32,75],
+  //   [29,79],
+  //   [44,18],
+  //   [4,57],
+  //   [0,32],
+  //   [43,13],
+  //   [26,83],
+  //   [84,32],
+  //   [42,8],
+  //   [23,87],
+  //   [41,3],
+  //   [90,29],
+  //   [-3,58],
+  //   [-6,30],
+  //   [-10,59],
+  //   [20,91],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50],
+  //   [50,50]
+  // ];
+
+
 
 
 
@@ -136,6 +243,8 @@ function initVehicleCarges (data) {
   var initialValue = data.start;
   var finalValue = data.end;
 
+  var selectionQueue = [];
+
   var tl = new TimelineMax({repeat:0, repeatDelay:1});
   tl.pause();
 
@@ -149,12 +258,20 @@ function initVehicleCarges (data) {
       
     slider.each(function(){  
       range.on('input', function(){
-       // console.log(this.value);
-        var tempIndexVal = (this.value - initialValue);
+     //   console.log("slider value: ",this.value);
+
+      // if ((this.value == 1)||(this.value == 50) || (this.value == 99) ) {
+        if (this.value < 50) {initiateVCanimation (1);}
+        else if ((this.value >= 50) && (this.value < 99)) {initiateVCanimation (2);}
+        else if (this.value == 99) {initiateVCanimation (3);}
+       //}
+
+       
+       // var tempIndexVal = (this.value - initialValue);
         //this.style.background = "green";
 
-        tl.seek(tempIndexVal * dataMultiplier,true);
-        var currentDot = document.getElementById(data.container + "-" + this.value);
+       // tl.seek(tempIndexVal * dataMultiplier,true);
+       // var currentDot = document.getElementById(data.container + "-" + this.value);
       });
     });
 
@@ -162,27 +279,99 @@ function initVehicleCarges (data) {
       return Math.random() * (max - min) + min;
     }
 
+    function initiateVCanimation (whichOne) {
+      
+      var rangeSet = [30,40,52];
+      var tempWhichOne = Number(whichOne) - 1;
+      selectionQueue.push(tempWhichOne);
+      var currentRange = rangeSet[tempWhichOne];
+
+     // console.log("initiate vc animation: ", whichOne, typeof whichOne);
+
+      // if (selectionQueue.length <= 1) {
+      //   for (var i = 0; i <= 52; i++) {
+      //     var tempItem = document.getElementById(data.container + "-" + i);
+      //     tempItem.style.opacity = "0";
+      //     console.log(tempItem);
+      //    }
+      // }
+      // else {
+      //   var startVal = selectionQueue[tempWhichOne];
+      //   var endValue = selectionQueue[selectionQueue.length - 1];
+
+      //   if (startVal > endValue) {
+      //     for (var i = endValue; i <= startVal; i++) {
+      //       var tempItem = document.getElementById(data.container + "-" + i);
+      //       tempItem.style.opacity = "0";
+      //       console.log(tempItem);
+      //      }
+      //   }
+      //   else {
+      //     for (var i = startVal; i <= endValue; i++) {
+      //       var tempItem = document.getElementById(data.container + "-" + i);
+      //       tempItem.style.opacity = "0";
+      //       console.log(tempItem);
+      //      }
+      //   }
+
+      // }
+
+     // console.log("current value: ", selectionQueue[selectionQueue.length - 1]);
+    //  console.log("length of values: ",selectionQueue.length );
+
+      for (var i = 0; i < 52; i++) {
+        var tempItem = document.getElementById(data.container + "-" + i);
+
+        if (i <= currentRange) {
+          if (selectionQueue.length > 1) {
+            TweenMax.to(tempItem,0.5,{alpha:1});
+          }
+          else {
+            TweenMax.fromTo(tempItem,0.5,{alpha:0},{delay:i*0.05,alpha:1});
+          }          
+        }
+        else {
+         // tempItem.style.opacity = "0";
+          TweenMax.to(tempItem,0.5,{alpha:0});
+        }
+      }
+
+      
+
+      // for (var i = 0; i <= currentRange; i++) {
+      //   var tempItem = document.getElementById(data.container + "-" + i);
+      //   TweenMax.fromTo(tempItem,0.5,{alpha:0},{delay:i*0.05,alpha:1});
+      //  }
+
+
+    }
+
     
 
     function drawDots (whichOne) {
       var eachDot = document.createElement('div');
       eachDot.className = 'dots';
-      $('.dots').css('backgroundColor',colors[data.location]);
+      console.log("color information: ",colors[data.location]);
+      $('#graph-vehicle-charges-' + data.location + ' .dotContainer .dots').css('backgroundColor',colors[data.location]);
       eachDot.setAttribute("id",data.container + "-" + whichOne)
       dotContainer.appendChild(eachDot);
-      var x = getRandomArbitrary(0,100);
-      var y = getRandomArbitrary(0,100);
+      //var x = getRandomArbitrary(0,100);
+      //var y = getRandomArbitrary(0,100);
 
       eachDot.style.top = sampleData[whichOne][0] + "%";
       eachDot.style.left = sampleData[whichOne][1] + "%";
 
-      tl.add( TweenLite.fromTo(eachDot, 1, {alpha:0}, {alpha:1}) );
+     // tl.add( TweenLite.fromTo(eachDot, 1, {alpha:0}, {alpha:1}) );
     }
 
-
-    for (var i = 0; i <= (finalValue * dataMultiplier); i++) {
+   // for (var i = 0; i <= (finalValue * dataMultiplier); i++) 
+    for (var i = 0; i <= 52; i++) 
+    {
       drawDots(i);
     }
+
+
+    initiateVCanimation (1);
 
     
    

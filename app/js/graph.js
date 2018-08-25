@@ -6,6 +6,8 @@ var colors = {
     london: "#0e6ce5"
 }
 
+
+// @codekit-prepend "sprite.js"
 // @codekit-prepend "data.js"
 // @codekit-prepend "hero.js"
 // @codekit-prepend "graph-parking.js"
@@ -31,8 +33,8 @@ function getUrlVars()
 
 window.onload = function() {
 
-    var location = getUrlVars()["location"];
-    //var location = "london";
+   // var location = getUrlVars()["location"];
+    var location = "london";
 
     console.log("whats the location: ", location);
 
@@ -61,25 +63,25 @@ window.onload = function() {
         container: "#graph-vehicle-charges-LA",
         location: location,
         start: 1,
-        end: 3
+        end: 99
     });
 
-    initHero({location: location});
+ //   initHero({location: location});
 
     // initHero({
     //     location: "la"
     // })
 
-    $( "#temp-nav #nav-la" ).click(function() {
-        initHero({location: "la"});
-    });
+    // $( "#temp-nav #nav-la" ).click(function() {
+    //     initHero({location: "la"});
+    // });
 
-    $( "#temp-nav #nav-london" ).click(function() {
-        initHero({location: "london"});
-    });
+    // $( "#temp-nav #nav-london" ).click(function() {
+    //     initHero({location: "london"});
+    // });
 
-    $( "#temp-nav #nav-mumbai" ).click(function() {
-        initHero({location: "mumbai"});
-    });
+    // $( "#temp-nav #nav-mumbai" ).click(function() {
+    //     initHero({location: "mumbai"});
+    // });
 
 };
