@@ -110,6 +110,23 @@ $range-label-width: 0px !default;
         .legend {
             padding-top: 20px;
 
+            .val-container {
+                display: flex;
+                flex-direction: row;
+                margin-top: 5px;
+
+                .sample-dot {
+                    width: 15px;
+                    height: 15px;
+                    background-color: rgb(65, 65, 65);
+                    margin-right: 10px;
+                    border-radius: 50%;
+                    align-self: center;
+                    box-sizing: border-box;
+                    margin-top: 3px;
+                }
+            }
+
             @include breakpoint ("mobile") {
                font-size: 14px;
                padding-top: 15px;
@@ -130,6 +147,17 @@ $range-label-width: 0px !default;
 
         @include breakpoint ("mobile") {
             height: 100px;
+        }
+
+        .hint {
+            width: 100%;
+            text-align: center;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 14px;
+            color: rgb(209, 209, 209);
+            user-select: none;
+            pointer-events: none;
         }
 
 
@@ -192,152 +220,66 @@ $range-label-width: 0px !default;
                     border-radius: 50%;
                 }
             }
+
+            // &::after {
+            //     content: "drag the slider to see the increasing number of electric vehicle chargers over time";
+            //     text-align: center;
+            // }
+        }
+
+        .range-slider-common {
+            position: relative;
+            top: -23px;
+            -webkit-appearance: none;
+            width: calc(100% - 0px);
+            margin-left: auto;
+            margin-right: auto;
+            height: $range-track-height;
+            border-radius: 5px;
+            background: $range-track-color;
+            outline: none;
+            padding-left: 2px;
+            padding-right: 2px;
+            box-sizing: border-box;
+
+            &::-webkit-slider-thumb {
+                appearance: none;
+                width: $range-handle-size;
+                height: $range-handle-size;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            }
+
+            &::-moz-range-thumb {
+                width: $range-handle-size;
+                height: $range-handle-size;
+                border: 0;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            }
+            
         }
         
         .range-slider__range-mumbai {
-            position: relative;
-            top: -23px;
-            -webkit-appearance: none;
-            width: calc(100% - 0px);
-            margin-left: auto;
-            margin-right: auto;
-            height: $range-track-height;
-            border-radius: 5px;
-           background: $range-track-color;
-            outline: none;
-            padding-left: 2px;
-            padding-right: 2px;
-            box-sizing: border-box;
-            
-             // Range Handle
-            &::-webkit-slider-thumb {
-                appearance: none;
-                width: $range-handle-size;
-                height: $range-handle-size;
-                border-radius: 50%;
-                background: $color-mumbai;
-                cursor: pointer;
-                transition: background .15s ease-in-out;
-            
-                // &:hover {
-                //     background: $range-handle-color-hover;
-                // }
-            }
-        
-        
-            &::-moz-range-thumb {
-                width: $range-handle-size;
-                height: $range-handle-size;
-                border: 0;
-                border-radius: 50%;
-                background: $color-mumbai;
-                cursor: pointer;
-                transition: background .15s ease-in-out;
-            
-                    // &:hover {
-                    //     background: $range-handle-color-hover;
-                    // }
-            }
-        
+            @extend .range-slider-common;
+            &::-webkit-slider-thumb {background: $color-mumbai;}
+            &::-moz-range-thumb {background: $color-mumbai;}
         }
 
         .range-slider__range-la {
-            position: relative;
-            top: -23px;
-            -webkit-appearance: none;
-            width: calc(100% - 0px);
-            margin-left: auto;
-            margin-right: auto;
-            height: $range-track-height;
-            border-radius: 5px;
-           background: $range-track-color;
-            outline: none;
-            padding-left: 2px;
-            padding-right: 2px;
-            box-sizing: border-box;
-            
-             // Range Handle
-            &::-webkit-slider-thumb {
-                appearance: none;
-                width: $range-handle-size;
-                height: $range-handle-size;
-                border-radius: 50%;
-                background: $color-la;
-                cursor: pointer;
-                transition: background .15s ease-in-out;
-            
-                // &:hover {
-                //     background: $range-handle-color-hover;
-                // }
-            }
-        
-        
-            &::-moz-range-thumb {
-                width: $range-handle-size;
-                height: $range-handle-size;
-                border: 0;
-                border-radius: 50%;
-                background: $color-la;
-                cursor: pointer;
-                transition: background .15s ease-in-out;
-            
-                    // &:hover {
-                    //     background: $range-handle-color-hover;
-                    // }
-            }
-        
+           @extend .range-slider-common;
+            &::-webkit-slider-thumb {background: $color-la;}
+            &::-moz-range-thumb {background: $color-la;}
         }
 
         .range-slider__range-london {
-            position: relative;
-            top: -23px;
-            -webkit-appearance: none;
-            width: calc(100% - 0px);
-            margin-left: auto;
-            margin-right: auto;
-            height: $range-track-height;
-            border-radius: 5px;
-           background: $range-track-color;
-            outline: none;
-            padding-left: 2px;
-            padding-right: 2px;
-            box-sizing: border-box;
-            
-             // Range Handle
-            &::-webkit-slider-thumb {
-                appearance: none;
-                width: $range-handle-size;
-                height: $range-handle-size;
-                border-radius: 50%;
-                background: $color-london;
-                cursor: pointer;
-                transition: background .15s ease-in-out;
-            
-                // &:hover {
-                //     background: $range-handle-color-hover;
-                // }
-            }
-        
-        
-            &::-moz-range-thumb {
-                width: $range-handle-size;
-                height: $range-handle-size;
-                border: 0;
-                border-radius: 50%;
-                background: $color-london;
-                cursor: pointer;
-                transition: background .15s ease-in-out;
-            
-                    // &:hover {
-                    //     background: $range-handle-color-hover;
-                    // }
-            }
-        
+            @extend .range-slider-common;
+            &::-webkit-slider-thumb {background: $color-london;}
+            &::-moz-range-thumb {background: $color-london;}
         }
 
-        
-        
-        
         
         // Firefox Overrides
         ::-moz-range-track {

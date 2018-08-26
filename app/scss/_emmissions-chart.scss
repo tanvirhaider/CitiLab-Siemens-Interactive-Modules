@@ -136,11 +136,11 @@
                         margin: 0px 2px;
                         height: 200px;
                         align-self: flex-end;
-                       // background-color: #3c7bcd;
-                       // transform-origin: 50% 100%;
-                      //  transform: scaleY(0);
-                      position: relative;
-                    //  bottom: 0px;
+                        // background-color: #3c7bcd;
+                        // transform-origin: 50% 100%;
+                        //  transform: scaleY(0);
+                        position: relative;
+                        //  bottom: 0px;
                         box-sizing: border-box;
 
 
@@ -174,15 +174,39 @@
 
 
                         &:hover {
-                           background-color: white;
-                           filter: brightness(100%);
-                        }
+                            background-color: rgb(255, 255, 255);
+                            filter: brightness(100%);
+                         }
 
 
                         @include breakpoint ("mobile") {
                             width: 14px;
                             height: 150px;
                         }
+
+                        span {
+                            pointer-events: none;
+                          //  background-color: black;
+                            height: 30px;
+                            position: absolute;
+                            left: -3px;
+                            top: -35px;
+                            z-index: 999999;
+                            color: white;
+                            filter: brightness(100%);
+                            writing-mode: vertical-rl;
+                            transform: rotate(180deg);
+                            font-size: 12px;
+                            display: none;
+                        }
+
+                        // .actual-bar {
+                        //     align-self: flex-end;
+                        //     bottom: 0px;
+                        //     position: absolute;
+                        //     width: 100%;
+                        //     z-index: -1;
+                        // }
                     }
                 }
             }

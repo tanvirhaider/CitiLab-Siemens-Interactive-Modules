@@ -7,9 +7,7 @@ var colors = {
 }
 
 
-// @codekit-prepend "sprite.js"
 // @codekit-prepend "data.js"
-// @codekit-prepend "hero.js"
 // @codekit-prepend "graph-parking.js"
 // @codekit-prepend "graph-emmissions.js"
 // @codekit-prepend "vehicle-charge.js"

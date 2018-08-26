@@ -234,12 +234,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-item-align: center;
-        align-self: center;
     width: calc(100% - 70%);
     font-size: 1.1em;
     line-height: 2em;
     padding-right: 50px;
+    padding-top: 105px;
     opacity: 0;
     -webkit-animation: fadein 0.5s forwards 0.1s;
             animation: fadein 0.5s forwards 0.1s; }
@@ -468,6 +467,23 @@
                   .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                     width: 14px;
                     height: 150px; } }
+                .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar span {
+                  pointer-events: none;
+                  height: 30px;
+                  position: absolute;
+                  left: -3px;
+                  top: -35px;
+                  z-index: 999999;
+                  color: white;
+                  -webkit-filter: brightness(100%);
+                          filter: brightness(100%);
+                  -webkit-writing-mode: vertical-rl;
+                      -ms-writing-mode: tb-rl;
+                          writing-mode: vertical-rl;
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg);
+                  font-size: 12px;
+                  display: none; }
         .graph-emissions .content .emmissions .chart-container .chart .chart-legends .devider-line {
           margin-top: 10px;
           margin-bottom: 5px;
@@ -736,6 +752,23 @@
                   .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                     width: 14px;
                     height: 150px; } }
+                .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar span {
+                  pointer-events: none;
+                  height: 30px;
+                  position: absolute;
+                  left: -3px;
+                  top: -35px;
+                  z-index: 999999;
+                  color: white;
+                  -webkit-filter: brightness(100%);
+                          filter: brightness(100%);
+                  -webkit-writing-mode: vertical-rl;
+                      -ms-writing-mode: tb-rl;
+                          writing-mode: vertical-rl;
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg);
+                  font-size: 12px;
+                  display: none; }
         .graph-emissions .content .electricity .chart-container .chart .chart-legends .devider-line {
           margin-top: 10px;
           margin-bottom: 5px;
@@ -861,7 +894,7 @@
       width: calc(100% - 100px);
       margin-left: auto;
       margin-right: auto;
-      line-height: 2em; }
+      line-height: 22px; }
       @media (max-width: 767px) {
         .graph-emissions .caption p {
           font-size: 12px;
@@ -944,6 +977,26 @@
       background-color: rgba(255, 255, 255, 0.5); }
     .graph-vehicle-charges .contents .legend {
       padding-top: 20px; }
+      .graph-vehicle-charges .contents .legend .val-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-top: 5px; }
+        .graph-vehicle-charges .contents .legend .val-container .sample-dot {
+          width: 15px;
+          height: 15px;
+          background-color: #414141;
+          margin-right: 10px;
+          border-radius: 50%;
+          -ms-flex-item-align: center;
+              align-self: center;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          margin-top: 3px; }
       @media (max-width: 767px) {
         .graph-vehicle-charges .contents .legend {
           font-size: 14px;
@@ -960,6 +1013,18 @@
     @media (max-width: 767px) {
       .graph-vehicle-charges .sliderModule {
         height: 100px; } }
+    .graph-vehicle-charges .sliderModule .hint {
+      width: 100%;
+      text-align: center;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 14px;
+      color: #d1d1d1;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      pointer-events: none; }
     .graph-vehicle-charges .sliderModule .years {
       position: absolute;
       padding-top: 10px;
@@ -1009,7 +1074,7 @@
           height: 25px;
           background-color: white;
           border-radius: 50%; }
-    .graph-vehicle-charges .sliderModule .range-slider__range-mumbai {
+    .graph-vehicle-charges .sliderModule .range-slider-common, .graph-vehicle-charges .sliderModule .range-slider__range-mumbai, .graph-vehicle-charges .sliderModule .range-slider__range-la, .graph-vehicle-charges .sliderModule .range-slider__range-london {
       position: relative;
       top: -23px;
       -webkit-appearance: none;
@@ -1024,93 +1089,35 @@
       padding-right: 2px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
-      .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-webkit-slider-thumb {
+      .graph-vehicle-charges .sliderModule .range-slider-common::-webkit-slider-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-webkit-slider-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-la::-webkit-slider-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-london::-webkit-slider-thumb {
         -webkit-appearance: none;
                 appearance: none;
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background: #009999;
         cursor: pointer;
         -webkit-transition: background .15s ease-in-out;
         transition: background .15s ease-in-out; }
-      .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-moz-range-thumb {
+      .graph-vehicle-charges .sliderModule .range-slider-common::-moz-range-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-moz-range-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-la::-moz-range-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-london::-moz-range-thumb {
         width: 20px;
         height: 20px;
         border: 0;
         border-radius: 50%;
-        background: #009999;
         cursor: pointer;
         -webkit-transition: background .15s ease-in-out;
         transition: background .15s ease-in-out; }
-    .graph-vehicle-charges .sliderModule .range-slider__range-la {
-      position: relative;
-      top: -23px;
-      -webkit-appearance: none;
-      width: calc(100% - 0px);
-      margin-left: auto;
-      margin-right: auto;
-      height: 10px;
-      border-radius: 5px;
-      background: #fff;
-      outline: none;
-      padding-left: 2px;
-      padding-right: 2px;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-      .graph-vehicle-charges .sliderModule .range-slider__range-la::-webkit-slider-thumb {
-        -webkit-appearance: none;
-                appearance: none;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: #ff2466;
-        cursor: pointer;
-        -webkit-transition: background .15s ease-in-out;
-        transition: background .15s ease-in-out; }
-      .graph-vehicle-charges .sliderModule .range-slider__range-la::-moz-range-thumb {
-        width: 20px;
-        height: 20px;
-        border: 0;
-        border-radius: 50%;
-        background: #ff2466;
-        cursor: pointer;
-        -webkit-transition: background .15s ease-in-out;
-        transition: background .15s ease-in-out; }
-    .graph-vehicle-charges .sliderModule .range-slider__range-london {
-      position: relative;
-      top: -23px;
-      -webkit-appearance: none;
-      width: calc(100% - 0px);
-      margin-left: auto;
-      margin-right: auto;
-      height: 10px;
-      border-radius: 5px;
-      background: #fff;
-      outline: none;
-      padding-left: 2px;
-      padding-right: 2px;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-      .graph-vehicle-charges .sliderModule .range-slider__range-london::-webkit-slider-thumb {
-        -webkit-appearance: none;
-                appearance: none;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: #0e6ce5;
-        cursor: pointer;
-        -webkit-transition: background .15s ease-in-out;
-        transition: background .15s ease-in-out; }
-      .graph-vehicle-charges .sliderModule .range-slider__range-london::-moz-range-thumb {
-        width: 20px;
-        height: 20px;
-        border: 0;
-        border-radius: 50%;
-        background: #0e6ce5;
-        cursor: pointer;
-        -webkit-transition: background .15s ease-in-out;
-        transition: background .15s ease-in-out; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-webkit-slider-thumb {
+      background: #009999; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-moz-range-thumb {
+      background: #009999; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-la::-webkit-slider-thumb {
+      background: #ff2466; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-la::-moz-range-thumb {
+      background: #ff2466; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-london::-webkit-slider-thumb {
+      background: #0e6ce5; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-london::-moz-range-thumb {
+      background: #0e6ce5; }
     .graph-vehicle-charges .sliderModule ::-moz-range-track {
       background: #fff;
       border: 0; }

@@ -5,7 +5,6 @@ var colors = {
     london: "#0e6ce5"
 }
 
-// @codekit-prepend "sprite.js"
 // @codekit-prepend "vehicle-charge.js"
 
 

@@ -1,9 +1,8 @@
 
 
 
-
 function initEmmissionsGraph (data) {
-    console.group("emmissions");
+    console.group("emmissions-" + data.location);
     console.log(data.container);
     console.log("emmission location: " ,data.location);
 
@@ -25,11 +24,6 @@ function initEmmissionsGraph (data) {
   
 
     function animateGraph (where) {
-
-       // var L1 = document.querySelector(prefix + ".emmissions" + " .chart-container .legends #box-0");
-       // console.log(L1);
-
-
         var barData = [];
 
         var GHG_2018 = document.querySelector(prefix + ".emmissions" + " .chart-container .chart .bar-sets .bar-content #bar-"   + 0 + inTheMiddle + 0);
@@ -310,32 +304,36 @@ function initEmmissionsGraph (data) {
          }
 
 
+
+
+
          for ( var i = 0; i < barList.length; i++) {
-            barList[i].classList.add("small-bar-color-" + data.location);
+               // var theBar = barList[i].querySelector(".actual-bar");
+                var theBar = barList[i];
+                theBar.classList.add("small-bar-color-" + data.location);
+                TweenMax.fromTo(theBar,2, {height:"0%"},{height:barData[i] * 100 + "%" ,ease:Power3.easeInOut});
 
-           
-            //   $( barList[i] ).mouseover(function() {
-            //   //  console.log(this.parentElement.parentElement,"over");
+                var theBox =  $( theBar ).find( "span" );
+                $( theBox ).text( barData[i] * 100 + "%" );
 
-            //         var div = document.createElement("div");
-            //         div.setAttribute("id","tooltip");
-            //         div.classList.add("tooltip");
-            //         div.innerHTML = "Hello";
-            //         this.appendChild(div);
+            $(barList[i])
+            .mouseover(function() {
+               // i += 1;
+               var theBox =  $( this ).find( "span" );
+               $( theBox ).css("display", "block");
+              // theBox.style.display = "block";
+              //  $( theBox ).text( "over");
+             //   console.log("yo MTV");
+            })
+            .mouseout(function() {
+                var theBox =  $( this ).find( "span" );
+                //theBox.style.display = "none";
+                $( theBox ).css("display", "none");
+              //  $( theBox ).text( "out" );
+                console.log("mtv out");
+            });
+    
 
-            //     }).mouseout(function() {
-            //     console.log(this,"out");
-            //     //var tooltip = document.getElementById("tooltip");
-            //     //this.removeChild(this.firstChild);
-            // });
-
-
-           // TweenMax.fromTo(barList[i],2, {scaleY:0},{scaleY:(barData[i]) ,ease:Power3.easeInOut});
-
-            TweenMax.fromTo(barList[i],2, {height:"0%"},{height:barData[i] * 100 + "%" ,ease:Power3.easeInOut});
-
-
-          //  height:"auto"
          }
 
     }
@@ -346,26 +344,21 @@ function initEmmissionsGraph (data) {
     var numberOfEMitems = document.querySelector(data.container + " .content " + ".emmissions" + " .chart-container .legends").children.length;
 
 
-
     for (var i = 0; i < numberOfGEitems; i++) {
         var tempchild = document.querySelector(data.container + " .content " + ".electricity" + " .chart-container .legends").children[i];
         tempchild.classList.add("each-legend-" + data.location);
-       // console.log(tempchild);
     }
 
     for (var i = 0; i < numberOfEMitems; i++) {
         var tempchild = document.querySelector(data.container + " .content " + ".emmissions" + " .chart-container .legends").children[i];
         tempchild.classList.add("each-legend-" + data.location);
-       // console.log(tempchild);
+
+        console.log("items -- ", i);
+
+      
+
     }
      
-   
-
-
-   // barList[i].classList.add("each-legend-mumbai-" + data.location);
-    
-
-
 }
 
 

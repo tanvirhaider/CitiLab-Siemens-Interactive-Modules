@@ -8,14 +8,11 @@ function initVehicleCarges (data) {
   var sampleData = [
     [50,50],
     [60,44],
-    
     [43,46], 
     [66,66],
     [37,52],
-    
     [58,58],
     [47,55],
-
     [55,47],
     [54,54],
     [66,41],
@@ -28,35 +25,29 @@ function initVehicleCarges (data) {
     [25,54],
     [18,55],
     [11,56],
-
     [49,45],
     [47,35],
     [62,62],
     [41,63],
     [46,29],
-    
-    
     [37,44],
-    
     [25,40],
-    
     [70,70],
     [38,67],
     [19,38],
     [12,36], 
-
     [45,23],
     [6,34],
     [35,71],
     [78,35],
     [74,74],
     [78,78],
-    [82,82],
     [32,75],
     [29,79],
     [44,18],
-    [4,57],
+    [4,57],  // < this is 40
     [0,32],
+    [82,82],
     [43,13],
     [26,83],
     [84,32],
@@ -258,6 +249,9 @@ function initVehicleCarges (data) {
       
     slider.each(function(){  
       range.on('input', function(){
+
+        hideHint ();
+
      //   console.log("slider value: ",this.value);
 
       // if ((this.value == 1)||(this.value == 50) || (this.value == 99) ) {
@@ -275,6 +269,12 @@ function initVehicleCarges (data) {
       });
     });
 
+
+    function hideHint () {
+      var hintCopy = document.querySelector(data.container + " .sliderModule .hint");
+      hintCopy.style.visibility = "hidden";
+    }
+
     function getRandomArbitrary(min, max) {
       return Math.random() * (max - min) + min;
     }
@@ -286,48 +286,15 @@ function initVehicleCarges (data) {
       selectionQueue.push(tempWhichOne);
       var currentRange = rangeSet[tempWhichOne];
 
-     // console.log("initiate vc animation: ", whichOne, typeof whichOne);
-
-      // if (selectionQueue.length <= 1) {
-      //   for (var i = 0; i <= 52; i++) {
-      //     var tempItem = document.getElementById(data.container + "-" + i);
-      //     tempItem.style.opacity = "0";
-      //     console.log(tempItem);
-      //    }
-      // }
-      // else {
-      //   var startVal = selectionQueue[tempWhichOne];
-      //   var endValue = selectionQueue[selectionQueue.length - 1];
-
-      //   if (startVal > endValue) {
-      //     for (var i = endValue; i <= startVal; i++) {
-      //       var tempItem = document.getElementById(data.container + "-" + i);
-      //       tempItem.style.opacity = "0";
-      //       console.log(tempItem);
-      //      }
-      //   }
-      //   else {
-      //     for (var i = startVal; i <= endValue; i++) {
-      //       var tempItem = document.getElementById(data.container + "-" + i);
-      //       tempItem.style.opacity = "0";
-      //       console.log(tempItem);
-      //      }
-      //   }
-
-      // }
-
-     // console.log("current value: ", selectionQueue[selectionQueue.length - 1]);
-    //  console.log("length of values: ",selectionQueue.length );
-
       for (var i = 0; i < 52; i++) {
         var tempItem = document.getElementById(data.container + "-" + i);
 
         if (i <= currentRange) {
           if (selectionQueue.length > 1) {
-            TweenMax.to(tempItem,0.5,{alpha:1});
+            TweenMax.to(tempItem,0.1,{delay:0.02 * i,alpha:1});
           }
           else {
-            TweenMax.fromTo(tempItem,0.5,{alpha:0},{delay:i*0.05,alpha:1});
+            TweenMax.fromTo(tempItem,0.1,{alpha:0},{delay:i*0.05,alpha:1});
           }          
         }
         else {
@@ -335,14 +302,6 @@ function initVehicleCarges (data) {
           TweenMax.to(tempItem,0.5,{alpha:0});
         }
       }
-
-      
-
-      // for (var i = 0; i <= currentRange; i++) {
-      //   var tempItem = document.getElementById(data.container + "-" + i);
-      //   TweenMax.fromTo(tempItem,0.5,{alpha:0},{delay:i*0.05,alpha:1});
-      //  }
-
 
     }
 
@@ -371,6 +330,7 @@ function initVehicleCarges (data) {
     }
 
 
+    $('#graph-vehicle-charges-' + data.location + ' .contents .legend .sample-dot').css('backgroundColor',colors[data.location]);
     initiateVCanimation (1);
 
     

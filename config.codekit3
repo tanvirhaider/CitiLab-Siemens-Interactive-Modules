@@ -282,16 +282,6 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/app\/js\/hero.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/dist\/js\/hero-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/app\/js\/main-charges.js": {
 		"ft": 64,
 		"ma": 0,
@@ -321,16 +311,6 @@
 		"oF": 2,
 		"sC": 3,
 		"tS": 1
-		},
-	"\/app\/js\/sprite.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/dist\/js\/sprite-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"\/app\/js\/vehicle-charge.js": {
 		"ft": 64,
