@@ -83,17 +83,36 @@
         opacity: 0;
         animation: fadein 0.5s forwards 0.1s ;
 
+        .rollover-copy {
+            max-width: 1130px;
+            width: calc(100% - 100px);
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 22px;
+            display: none;
+            opacity: 0;
+            animation: fadein 0.5s forwards 0.1s ;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .original-copy {
+            max-width: 1130px;
+            width: calc(100% - 100px);
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 22px;
+            opacity: 0;
+            animation: fadein 0.5s forwards 0.1s ;
+        }
+
         @include breakpoint ("mobile") {
            position: relative;
            padding-top: 30px;
          }
 
         p {
-            max-width: 1130px;
-            width: calc(100% - 100px);
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 22px;
+           
 
             @include breakpoint ("mobile") {
                 font-size: 12px;

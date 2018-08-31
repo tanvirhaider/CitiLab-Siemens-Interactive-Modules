@@ -236,8 +236,8 @@ function initVehicleCarges (data) {
 
   var selectionQueue = [];
 
-  var tl = new TimelineMax({repeat:0, repeatDelay:1});
-  tl.pause();
+  //var tl = new TimelineMax({repeat:0, repeatDelay:1});
+  //tl.pause();
 
  // console.log("what is slider: " ,slider);
   var dotContainer = GraphContainer.querySelector(" .dotContainer");
@@ -291,15 +291,24 @@ function initVehicleCarges (data) {
 
         if (i <= currentRange) {
           if (selectionQueue.length > 1) {
-            TweenMax.to(tempItem,0.1,{delay:0.02 * i,alpha:1});
+            TweenMax.to(tempItem,0.1,{
+              delay:0.01 * i,
+              alpha:1
+            });
           }
           else {
-            TweenMax.fromTo(tempItem,0.1,{alpha:0},{delay:i*0.05,alpha:1});
+            TweenMax.fromTo(tempItem,0.1,{alpha:0},{
+              delay:i*0.05,
+              alpha:1
+            });
           }          
         }
         else {
          // tempItem.style.opacity = "0";
-          TweenMax.to(tempItem,0.5,{alpha:0});
+          TweenMax.to(tempItem,0.5,{
+           // delay:i * 0.01,
+            alpha:0
+          });
         }
       }
 
@@ -331,6 +340,9 @@ function initVehicleCarges (data) {
 
 
     $('#graph-vehicle-charges-' + data.location + ' .contents .legend .sample-dot').css('backgroundColor',colors[data.location]);
+
+    document.querySelector('#graph-vehicle-charges-' + data.location + ' .dotContainer').classList.add("dotContainerPosition-" + data.location);
+
     initiateVCanimation (1);
 
     

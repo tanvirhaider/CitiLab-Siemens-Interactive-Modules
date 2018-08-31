@@ -26,13 +26,13 @@ var EmmissionGraphData = {
                 "NitrousOxide": 0.5
             },
             "electric": {
-                "Solar": 0.2,
-                "Wind": 0.45,
-                "Coal": 0.01,
-                "NaturalGas":0.01,
+                "Solar": 0.7,
+                "Wind": 0.54,
+                "Coal": 0.25,
+                "NaturalGas":0.45,
                 "Oil":0.01,
-                "Hydro":0.3,
-                "Nuclear":0.05
+                "Hydro":0.4,
+                "Nuclear":0.10
             }
         },
         "year2050": {
@@ -42,13 +42,13 @@ var EmmissionGraphData = {
                 "NitrousOxide": 0.01
             },
             "electric": {
-                "Solar": 0.2,
-                "Wind": 0.45,
-                "Coal": 0.01,
-                "NaturalGas":0.01,
+                "Solar": 0.9,
+                "Wind": 1.0,
+                "Coal": 0.25,
+                "NaturalGas":0.45,
                 "Oil":0.01,
-                "Hydro":0.3,
-                "Nuclear":0.05
+                "Hydro":0.7,
+                "Nuclear":0.15
             }
         }
     },
@@ -61,7 +61,7 @@ var EmmissionGraphData = {
             },
             "electric": {
                 "Solar": 0.5,
-                "Wind": 1.0,
+                "Wind": 0.1,
                 "Coal": 0.25,
                 "NaturalGas":0.45,
                 "Oil":0.01,
@@ -76,13 +76,13 @@ var EmmissionGraphData = {
                 "NitrousOxide": 0.6
             },
             "electric": {
-                "Solar": 0.2,
-                "Wind": 0.45,
-                "Coal": 0.01,
-                "NaturalGas":0.01,
+                "Solar": 0.7,
+                "Wind": 0.46,
+                "Coal": 0.25,
+                "NaturalGas":0.45,
                 "Oil":0.01,
-                "Hydro":0.3,
-                "Nuclear":0.05
+                "Hydro":0.4,
+                "Nuclear":0.1
             }
         },
         "year2050": {
@@ -92,13 +92,13 @@ var EmmissionGraphData = {
                 "NitrousOxide": 0.3
             },
             "electric": {
-                "Solar": 0.2,
-                "Wind": 0.45,
-                "Coal": 0.01,
-                "NaturalGas":0.01,
+                "Solar": 0.9,
+                "Wind": 0.91,
+                "Coal": 0.25,
+                "NaturalGas":0.45,
                 "Oil":0.01,
-                "Hydro":0.3,
-                "Nuclear":0.05
+                "Hydro":0.7,
+                "Nuclear":0.15
             }
         }
     },
@@ -126,13 +126,13 @@ var EmmissionGraphData = {
                 "NitrousOxide": 0.6
             }, 
             "electric": {
-                "Solar": 0.2,
-                "Wind": 0.45,
+                "Solar": 0.25,
+                "Wind": 0.54,
                 "Coal": 0.01,
-                "NaturalGas":0.01,
-                "Oil":0.01,
-                "Hydro":0.3,
-                "Nuclear":0.05
+                "NaturalGas":0.45,
+                "Oil":0.25,
+                "Hydro":0.4,
+                "Nuclear":0.1
             }
         },
         "year2050": {
@@ -142,13 +142,13 @@ var EmmissionGraphData = {
                 "NitrousOxide": 0.2
             },
             "electric": {
-                "Solar": 0.2,
-                "Wind": 0.45,
-                "Coal": 0.01,
-                "NaturalGas":0.01,
+                "Solar": 0.45,
+                "Wind": 1.0,
+                "Coal": 0.25,
+                "NaturalGas":0.45,
                 "Oil":0.01,
-                "Hydro":0.3,
-                "Nuclear":0.05
+                "Hydro":0.7,
+                "Nuclear":0.15
             }
         }
     }

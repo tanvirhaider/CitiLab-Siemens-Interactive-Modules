@@ -304,6 +304,11 @@ function initEmmissionsGraph (data) {
          }
 
 
+        //  $( document ).on( "mousemove", function( event ) {
+        //     $( "#log" ).text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+        //   });
+
+
 
 
 
@@ -314,13 +319,42 @@ function initEmmissionsGraph (data) {
                 TweenMax.fromTo(theBar,2, {height:"0%"},{height:barData[i] * 100 + "%" ,ease:Power3.easeInOut});
 
                 var theBox =  $( theBar ).find( "span" );
-                $( theBox ).text( barData[i] * 100 + "%" );
+                //$( theBox ).text( Math.abs(barData[i]) * 100  + "%" );
+              //  $( theBox ).text( "FPO" );
 
             $(barList[i])
             .mouseover(function() {
                // i += 1;
                var theBox =  $( this ).find( "span" );
                $( theBox ).css("display", "block");
+
+               var thisItem = event.currentTarget.parentElement.parentElement.parentElement.parentElement;
+               var tooltip = thisItem.querySelector(".tooltip");
+
+
+               //var sectioncheck =  $( this ).find( ".electricity" );
+               console.log("section check: ", thisItem);
+
+            //    var descriptionDiv = document.querySelector("#graph-emissions-" + data.location + " .caption .original-copy");
+            //    var rolloverCopyDiv = document.querySelector("#graph-emissions-" + data.location + " .caption .rollover-copy");
+
+            //    descriptionDiv.style.display = "none";
+            //    rolloverCopyDiv.style.display = "block";
+
+              // var tooltipObj = document.querySelector(prefix + ".electricity" + " .chart-container .chart .tooltip");
+               tooltip.style.display = "block";
+              // console.log(captionDiv);
+
+            //   $( this).add( data.container + " .content .chart .tooltip" );
+             //  console.log(event.currentTarget);
+             //  console.log(event.clientX,event.clientY);
+             // console.log(event.clientX,event.clientY);
+
+             //   var x = event.pageX - $(this).offset().left;
+             //   var y = event.pageY - $(this).offset().top;
+
+             //  $( data.container + " .content .chart .tooltip" ).css("top", x + "px");
+             //  $( data.container + " .content .chart .tooltip" ).css("left", y + "px");
               // theBox.style.display = "block";
               //  $( theBox ).text( "over");
              //   console.log("yo MTV");
@@ -331,6 +365,20 @@ function initEmmissionsGraph (data) {
                 $( theBox ).css("display", "none");
               //  $( theBox ).text( "out" );
                 console.log("mtv out");
+
+                // var descriptionDiv = document.querySelector("#graph-emissions-" + data.location + " .caption .original-copy");
+                // var rolloverCopyDiv = document.querySelector("#graph-emissions-" + data.location + " .caption .rollover-copy");
+ 
+                // descriptionDiv.style.display = "block";
+                // rolloverCopyDiv.style.display = "none";
+
+                var thisItem = event.currentTarget.parentElement.parentElement.parentElement.parentElement;
+                var tooltip = thisItem.querySelector(".tooltip");
+
+              //  var tooltipObj = document.querySelector(prefix + ".electricity" + " .chart-container .chart .tooltip");
+                tooltip.style.display = "none";
+
+               
             });
     
 
@@ -346,17 +394,67 @@ function initEmmissionsGraph (data) {
 
     for (var i = 0; i < numberOfGEitems; i++) {
         var tempchild = document.querySelector(data.container + " .content " + ".electricity" + " .chart-container .legends").children[i];
+
+        tempchild.addEventListener("mouseover", whenHoverElectric);
+        tempchild.addEventListener("mouseout", whenHoverOutElectric);
         tempchild.classList.add("each-legend-" + data.location);
     }
 
     for (var i = 0; i < numberOfEMitems; i++) {
         var tempchild = document.querySelector(data.container + " .content " + ".emmissions" + " .chart-container .legends").children[i];
+
+        tempchild.addEventListener("mouseover", whenHoverEmmission);
+        tempchild.addEventListener("mouseout", whenHoverOutEmmission);
         tempchild.classList.add("each-legend-" + data.location);
 
-        console.log("items -- ", i);
+       // console.log("items -- ", i);
+    }
 
-      
+    function whenHoverElectric (event) {
+        var currentTarget = event.currentTarget.id;
+        var res = currentTarget.substr(-1);
 
+        for (var i = 0; i < 3; i++) {
+            var tempObj = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + i + inTheMiddle + res);
+            tempObj.classList.add("active");
+            tempObj.classList.remove("small-bar");
+        }
+    }
+
+    function whenHoverOutElectric (event) {
+        var currentTarget = event.currentTarget.id;
+        var res = currentTarget.substr(-1);
+
+    
+        for (var i = 0; i < 3; i++) {
+            var tempObj = document.querySelector(prefix + ".electricity" + " .chart-container .chart .bar-sets .bar-content #bar-"  + i + inTheMiddle + res);
+            tempObj.classList.remove("active");
+            tempObj.classList.add("small-bar");
+        }
+    }
+
+    function whenHoverEmmission (event) {
+        var currentTarget = event.currentTarget.id;
+        var res = currentTarget.substr(-1);
+
+       
+
+        for (var i = 0; i < 3; i++) {
+            var tempObj = document.querySelector(prefix + ".emmissions" + " .chart-container .chart .bar-sets .bar-content #bar-"  + i + inTheMiddle + res);
+            tempObj.classList.add("active");
+            tempObj.classList.remove("small-bar");
+        }
+    }
+
+    function whenHoverOutEmmission (event) {
+        var currentTarget = event.currentTarget.id;
+        var res = currentTarget.substr(-1);
+
+        for (var i = 0; i < 3; i++) {
+            var tempObj = document.querySelector(prefix + ".emmissions" + " .chart-container .chart .bar-sets .bar-content #bar-"  + i + inTheMiddle + res);
+            tempObj.classList.remove("active");
+            tempObj.classList.add("small-bar");
+        }
     }
      
 }

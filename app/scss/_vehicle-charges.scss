@@ -214,10 +214,14 @@ $range-label-width: 0px !default;
 
 
                 .dot {
-                    width: 25px;
-                    height: 25px;
+                   // padding-top: 4px;
+                   // box-sizing: border-box;
+                    width: 22px;
+                    height: 22px;
                     background-color: white;
                     border-radius: 50%;
+                    position: relative;
+                    top: -1px;
                 }
             }
 
@@ -229,9 +233,10 @@ $range-label-width: 0px !default;
 
         .range-slider-common {
             position: relative;
+            left: 2px;
             top: -23px;
             -webkit-appearance: none;
-            width: calc(100% - 0px);
+            width: calc(100% - 4px);
             margin-left: auto;
             margin-right: auto;
             height: $range-track-height;
@@ -244,18 +249,26 @@ $range-label-width: 0px !default;
 
             &::-webkit-slider-thumb {
                 appearance: none;
-                width: $range-handle-size;
-                height: $range-handle-size;
-                border-radius: 50%;
+                width: 14px;
+                height: 30px;
+               // margin-left:4px;
+               // margin-right: 4px;
+              //  box-sizing: border-box;
+                // width: $range-handle-size;
+                // border-radius: 50%;
                 cursor: pointer;
                 transition: background .15s ease-in-out;
+                position: relative;
+               // left: -4px;
             }
 
             &::-moz-range-thumb {
-                width: $range-handle-size;
-                height: $range-handle-size;
+                // width: $range-handle-size;
+                // height: $range-handle-size;
+                width: 14px;
+                height: 30px;
                 border: 0;
-                border-radius: 50%;
+               // border-radius: 50%;
                 cursor: pointer;
                 transition: background .15s ease-in-out;
             }
@@ -294,7 +307,20 @@ $range-label-width: 0px !default;
     }
 
 
-    .dotContainer {
+    .dotContainerPosition-la{
+        position: absolute;
+        width: 50%;
+        max-width: 400px;
+        height: 300px;
+        // left: 0px;
+        // right: 0px;
+        right: 350px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+    }
+
+    .dotContainerPosition-london{
         position: absolute;
         width: 50%;
         max-width: 400px;
@@ -304,6 +330,37 @@ $range-label-width: 0px !default;
         top: 0px;
         bottom: 0px;
         margin: auto;
+    }
+
+    .dotContainerPosition-mumbai{
+        position: absolute;
+        width: 50%;
+        max-width: 400px;
+        height: 300px;
+        // left: 0px;
+        // right: 0px;
+        left: -10%;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 40px;
+        bottom: 0px;
+        transform: scale(0.7) rotate(35deg);
+        //transform: scale(0.7);
+       // margin: auto;
+    }
+
+
+    .dotContainer {
+        // position: absolute;
+        // width: 50%;
+        // max-width: 400px;
+        // height: 300px;
+        // left: 0px;
+        // right: 0px;
+        // top: 0px;
+        // bottom: 0px;
+        // margin: auto;
         
         @include breakpoint ("mobile") {
            width: 200px;
