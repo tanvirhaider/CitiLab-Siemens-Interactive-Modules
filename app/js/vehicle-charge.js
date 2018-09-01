@@ -7,6 +7,11 @@
 function initVehicleCarges (data) {
   console.log("data location: ", data.location);
 
+
+
+  //element.classList.add("mystyle");
+  document.querySelector('#graph-vehicle-charges-' + data.location + ' .contents').classList.add(data.location);
+
   var currentSet = VehicleCargesData[data.location];
   var NumberOfSegments = 10;
 

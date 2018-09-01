@@ -67,12 +67,9 @@ $range-label-width: 0px !default;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 
-    .contents {
+    .content-common {
         width: 380px;
         height: 300px;
-        position: relative;
-        left: 90px;
-        top: 70px;
         opacity: 0;
         animation: fadein 0.5s forwards 0.5s ;
 
@@ -101,13 +98,13 @@ $range-label-width: 0px !default;
         }
 
         .deviderline {
-           // position: absolute;
-            width: 95%;
-            height: 5px;
-            background-color: rgba(255,255,255,0.5);
-        }
+            // position: absolute;
+             width: 95%;
+             height: 5px;
+             background-color: rgba(255,255,255,0.5);
+         }
 
-        .legend {
+         .legend {
             padding-top: 20px;
 
             .val-container {
@@ -132,7 +129,31 @@ $range-label-width: 0px !default;
                padding-top: 15px;
             }
         }
-       
+    }
+
+    .contents {
+        @extend .content-common;
+    }
+
+    .mumbai {
+        @extend .content-common;
+        position: relative;
+        left: 90px;
+        top: 70px;
+    }
+
+    .la {
+        @extend .content-common;
+        position: relative;
+        left: calc(100% - 550px);
+        top: 70px;
+    }
+
+    .london {
+        @extend .content-common;
+        position: relative;
+        left: 90px;
+        top: 70px;
     }
 
     .sliderModule {
@@ -309,12 +330,12 @@ $range-label-width: 0px !default;
 
     .dotContainerPosition-la{
         position: absolute;
-        width: 50%;
-        max-width: 400px;
-        height: 300px;
+        width: 100%;
+        //max-width: 400px;
+        height: 100%;
         // left: 0px;
         // right: 0px;
-        right: 350px;
+        right: 0px;
         top: 0px;
         bottom: 0px;
         margin: auto;
