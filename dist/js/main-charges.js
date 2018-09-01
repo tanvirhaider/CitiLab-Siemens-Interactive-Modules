@@ -34,6 +34,8 @@ function initVehicleCarges(data) {
 
   var dotContainer = GraphContainer.querySelector(" .dotContainer");
 
+  var rangeSet = [currentSet.length / NumberOfSegments * 1, currentSet.length / NumberOfSegments * 2, currentSet.length / NumberOfSegments * 3, currentSet.length / NumberOfSegments * 4, currentSet.length / NumberOfSegments * 5, currentSet.length / NumberOfSegments * 6, currentSet.length / NumberOfSegments * 7, currentSet.length / NumberOfSegments * 8, currentSet.length / NumberOfSegments * 9, currentSet.length / NumberOfSegments * 10];
+
   slider.each(function () {
     range.on('input', function () {
 
@@ -73,8 +75,6 @@ function initVehicleCarges(data) {
   }
 
   function initiateVCanimation(whichOne) {
-
-    var rangeSet = [currentSet.length / NumberOfSegments * 1, currentSet.length / NumberOfSegments * 2, currentSet.length / NumberOfSegments * 3, currentSet.length / NumberOfSegments * 4, currentSet.length / NumberOfSegments * 5, currentSet.length / NumberOfSegments * 6, currentSet.length / NumberOfSegments * 7, currentSet.length / NumberOfSegments * 8, currentSet.length / NumberOfSegments * 9, currentSet.length / NumberOfSegments * 10];
 
     var tempWhichOne = Number(whichOne) - 1;
     selectionQueue.push(tempWhichOne);
