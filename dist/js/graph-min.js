@@ -845,7 +845,7 @@ function initVehicleCarges(data) {
       try {
         for (var i = 0; i < rangeSet[tempWhichOne]; i++) {
           var tempDot = document.getElementById(data.container + "-" + i);
-          TweenMax.to(tempDot, 0.1, {
+          TweenMax.to(tempDot, 0.05, {
             alpha: 1,
             delay: 0.005 * i
           });
