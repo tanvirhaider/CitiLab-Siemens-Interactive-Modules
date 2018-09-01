@@ -322,9 +322,9 @@ $range-label-width: 0px !default;
 
     .dotContainerPosition-london{
         position: absolute;
-        width: 50%;
-        max-width: 400px;
-        height: 300px;
+        width: 100%;
+     //@debug   max-width: 400px;
+        height: 100%;
         left: 0px;
         right: 0px;
         top: 0px;

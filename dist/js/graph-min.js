@@ -178,24 +178,10 @@ var EmmissionGraphData = {
 };
 "use strict";
 
-var vehicleCargesLA = [[1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2]];
-
 var VehicleCargesData = {
-    "london": {
-        "year2018": 983.67949034,
-        "year2035": 12353.4413005,
-        "year2050": 8837.783086
-    },
-    "mumbai": {
-        "year2018": 577.40199967,
-        "year2035": 8299.998314,
-        "year2050": 6431.1260159
-    },
-    "la": {
-        "year2018": 581.03369075,
-        "year2035": 9336.8797536,
-        "year2050": 7209.7674594
-    }
+    "london": [[60, 37], [51, 46], [55, 42], [48, 38], [67, 42], [58, 32], [58, 47], [63, 51], [57, 55], [53, 34], [52, 23], [62, 58], [62, 35], [60, 45], [45, 35], [66, 39], [60, 66], [47, 33], [63, 29], [38, 26], [72, 62], [60, 33], [48, 15], [64, 59], [45, 58], [55, 23], [53, 25], [63, 24], [69, 35], [66, 35], [41, 34], [61, 73], [55, 32], [60, 53], [44, 27], [72, 50], [76, 16], [79, 58], [71, 37], [53, 49], [67, 67], [61, 25], [43, 64], [80, 48], [66, 57], [79, 41], [70, 29], [52, 42], [42, 56], [36, 54], [53, 59], [63, 8], [59, 36], [64, 40], [67, 62], [57, 44], [49, 34], [44, 54], [55, 10], [51, 62], [82, 22], [43, 13], [55, 49], [56, 57], [67, 13], [84, 37], [87, 17], [56, 61], [68, 31], [38, 58], [87, 55], [33, 54], [90, 59], [78, 14], [34, 33], [88, 64], [86, 24], [41, 41], [94, 65], [92, 28], [33, 20], [34, 8], [66, 29], [53, 46], [65, 51], [73, 34], [80, 20], [61, 20], [46, 29], [85, 10], [36, 61], [44, 10], [50, 16], [55, 56], [62, 16], [57, 35], [50, 25], [81, 51], [63, 61], [71, 24]],
+    "mumbai": [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]],
+    "la": [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
 };
 
 
@@ -770,109 +756,14 @@ function initEmmissionsGraph(data) {
 }
 "use strict";
 
+// @codekit-prepend "data/vehicleCargesData.js"
+
+
 function initVehicleCarges(data) {
   console.log("data location: ", data.location);
-  var dataMultiplier = 30;
-  var sampleData = [[50, 50], [60, 44], [43, 46], [66, 66], [37, 52], [58, 58], [47, 55], [55, 47], [54, 54], [66, 41], [72, 38], [31, 42], [31, 53], [43, 51], [48, 40], [44, 59], [25, 54], [18, 55], [11, 56], [49, 45], [47, 35], [62, 62], [41, 63], [46, 29], [37, 44], [25, 40], [70, 70], [38, 67], [19, 38], [12, 36], [45, 23], [6, 34], [35, 71], [78, 35], [74, 74], [78, 78], [32, 75], [29, 79], [44, 18], [4, 57], // < this is 40
-  [0, 32], [82, 82], [43, 13], [26, 83], [84, 32], [42, 8], [23, 87], [41, 3], [90, 29], [-3, 58], [-6, 30], [-10, 59], [20, 91], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50], [50, 50]];
 
-  // var sampleData = [
-  //   [50,50],
-  //   [54,54],
-  //   [58,58],
-  //   [62,62],
-  //   [66,66],
-  //   [70,70],
-  //   [55,47],
-  //   [60,44],
-  //   [66,41],
-  //   [72,38],
-  //   [43,51],
-  //   [37,52],
-  //   [31,53],
-  //   [25,54],
-  //   [18,55],
-  //   [11,56],
-  //   [49,45],
-  //   [48,40],
-  //   [47,35],
-  //   [43,46],
-  //   [46,29],
-  //   [37,44],
-  //   [31,42],
-  //   [25,40],
-  //   [19,38],
-  //   [12,36],
-  //   [47,55],
-  //   [44,59],
-  //   [41,63],
-  //   [38,67],
-  //   [45,23],
-  //   [6,34],
-  //   [35,71],
-  //   [78,35],
-  //   [74,74],
-  //   [78,78],
-  //   [82,82],
-  //   [32,75],
-  //   [29,79],
-  //   [44,18],
-  //   [4,57],
-  //   [0,32],
-  //   [43,13],
-  //   [26,83],
-  //   [84,32],
-  //   [42,8],
-  //   [23,87],
-  //   [41,3],
-  //   [90,29],
-  //   [-3,58],
-  //   [-6,30],
-  //   [-10,59],
-  //   [20,91],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50],
-  //   [50,50]
-  // ];
-
+  var currentSet = VehicleCargesData[data.location];
+  var NumberOfSegments = 10;
 
   var GraphContainer = document.querySelector(data.container);
   GraphContainer.classList.add("vchargesBG-" + data.location);
@@ -884,59 +775,40 @@ function initVehicleCarges(data) {
   sliderObject.setAttribute("value", data.start);
   sliderObject.setAttribute("max", data.end);
 
-  //$(data.container +' .sliderModule .range-slider .range-slider__range::-webkit-slider-thumb').css('background',colors[data.location]);
-
-
-  //$('input[type=range]').addClass('.charge-dot-' + data.location);
-
-  //.range-slider__range::-webkit-slider-thumb
-
-
   var slider = $(data.container + ' .sliderModule #r-slider');
   var range = $(data.container + ' .sliderModule #r-slider');
-  var value = $(data.container + ' .sliderModule #r-slider');
-
-  //  $('input[type=range]').css("background","green");
-
-  var initialValue = data.start;
-  var finalValue = data.end;
+  //var value   = $(data.container + ' .sliderModule #r-slider');
 
   var selectionQueue = [];
 
-  //var tl = new TimelineMax({repeat:0, repeatDelay:1});
-  //tl.pause();
-
-  // console.log("what is slider: " ,slider);
   var dotContainer = GraphContainer.querySelector(" .dotContainer");
-
-  //console.log(slider);
-
-  //slider.style.background = "green";
-
 
   slider.each(function () {
     range.on('input', function () {
 
       hideHint();
 
-      //   console.log("slider value: ",this.value);
-
-      // if ((this.value == 1)||(this.value == 50) || (this.value == 99) ) {
-      if (this.value < 50) {
+      if (this.value < currentSet.length / NumberOfSegments) {
         initiateVCanimation(1);
-      } else if (this.value >= 50 && this.value < 99) {
+      } else if (this.value >= currentSet.length / NumberOfSegments * 1 && this.value < currentSet.length / NumberOfSegments * 2) {
         initiateVCanimation(2);
-      } else if (this.value == 99) {
+      } else if (this.value >= currentSet.length / NumberOfSegments * 2 && this.value < currentSet.length / NumberOfSegments * 3) {
         initiateVCanimation(3);
+      } else if (this.value >= currentSet.length / NumberOfSegments * 4 && this.value < currentSet.length / NumberOfSegments * 5) {
+        initiateVCanimation(4);
+      } else if (this.value >= currentSet.length / NumberOfSegments * 5 && this.value < currentSet.length / NumberOfSegments * 6) {
+        initiateVCanimation(5);
+      } else if (this.value >= currentSet.length / NumberOfSegments * 6 && this.value < currentSet.length / NumberOfSegments * 7) {
+        initiateVCanimation(6);
+      } else if (this.value >= currentSet.length / NumberOfSegments * 7 && this.value < currentSet.length / NumberOfSegments * 8) {
+        initiateVCanimation(7);
+      } else if (this.value >= currentSet.length / NumberOfSegments * 8 && this.value < currentSet.length / NumberOfSegments * 9) {
+        initiateVCanimation(8);
+      } else if (this.value >= currentSet.length / NumberOfSegments * 9 && this.value < currentSet.length / NumberOfSegments * 10) {
+        initiateVCanimation(9);
+      } else if (this.value >= currentSet.length / NumberOfSegments * 10) {
+        initiateVCanimation(10);
       }
-      //}
-
-
-      // var tempIndexVal = (this.value - initialValue);
-      //this.style.background = "green";
-
-      // tl.seek(tempIndexVal * dataMultiplier,true);
-      // var currentDot = document.getElementById(data.container + "-" + this.value);
     });
   });
 
@@ -951,61 +823,58 @@ function initVehicleCarges(data) {
 
   function initiateVCanimation(whichOne) {
 
-    var rangeSet = [30, 40, 52];
+    var rangeSet = [currentSet.length / NumberOfSegments * 1, currentSet.length / NumberOfSegments * 2, currentSet.length / NumberOfSegments * 3, currentSet.length / NumberOfSegments * 4, currentSet.length / NumberOfSegments * 5, currentSet.length / NumberOfSegments * 6, currentSet.length / NumberOfSegments * 7, currentSet.length / NumberOfSegments * 8, currentSet.length / NumberOfSegments * 9, currentSet.length / NumberOfSegments * 10];
+
     var tempWhichOne = Number(whichOne) - 1;
     selectionQueue.push(tempWhichOne);
-    var currentRange = rangeSet[tempWhichOne];
+    // var currentRange = rangeSet[tempWhichOne];
 
-    for (var i = 0; i < 52; i++) {
-      var tempItem = document.getElementById(data.container + "-" + i);
 
-      if (i <= currentRange) {
-        if (selectionQueue.length > 1) {
-          TweenMax.to(tempItem, 0.1, {
-            delay: 0.01 * i,
-            alpha: 1
-          });
-        } else {
-          TweenMax.fromTo(tempItem, 0.1, { alpha: 0 }, {
-            delay: i * 0.05,
-            alpha: 1
-          });
+    function hideDotsWeDontNeedCurrently() {
+      try {
+        for (var i = rangeSet[tempWhichOne]; i < currentSet.length; i++) {
+          var tempDot = document.getElementById(data.container + "-" + i);
+          TweenMax.set(tempDot, { alpha: 0 });
         }
-      } else {
-        // tempItem.style.opacity = "0";
-        TweenMax.to(tempItem, 0.5, {
-          // delay:i * 0.01,
-          alpha: 0
-        });
+      } catch (Error) {
+        console.log(Error);
       }
     }
+
+    function animateDotsWeNeedCurrently() {
+      try {
+        for (var i = 0; i < rangeSet[tempWhichOne]; i++) {
+          var tempDot = document.getElementById(data.container + "-" + i);
+          TweenMax.to(tempDot, 0.1, {
+            alpha: 1,
+            delay: 0.005 * i
+          });
+        }
+      } catch (Error) {
+        console.log(Error);
+      }
+    }
+
+    animateDotsWeNeedCurrently();
+    hideDotsWeDontNeedCurrently();
   }
 
   function drawDots(whichOne) {
     var eachDot = document.createElement('div');
     eachDot.className = 'dots';
-    console.log("color information: ", colors[data.location]);
     $('#graph-vehicle-charges-' + data.location + ' .dotContainer .dots').css('backgroundColor', colors[data.location]);
     eachDot.setAttribute("id", data.container + "-" + whichOne);
     dotContainer.appendChild(eachDot);
-    //var x = getRandomArbitrary(0,100);
-    //var y = getRandomArbitrary(0,100);
-
-    eachDot.style.top = sampleData[whichOne][0] + "%";
-    eachDot.style.left = sampleData[whichOne][1] + "%";
-
-    // tl.add( TweenLite.fromTo(eachDot, 1, {alpha:0}, {alpha:1}) );
+    eachDot.style.left = currentSet[whichOne][0] + "%";
+    eachDot.style.top = currentSet[whichOne][1] + "%";
   }
 
-  // for (var i = 0; i <= (finalValue * dataMultiplier); i++) 
-  for (var i = 0; i <= 52; i++) {
+  for (var i = 0; i < currentSet.length; i++) {
     drawDots(i);
   }
 
   $('#graph-vehicle-charges-' + data.location + ' .contents .legend .sample-dot').css('backgroundColor', colors[data.location]);
-
   document.querySelector('#graph-vehicle-charges-' + data.location + ' .dotContainer').classList.add("dotContainerPosition-" + data.location);
-
   initiateVCanimation(1);
 }
 "use strict";
