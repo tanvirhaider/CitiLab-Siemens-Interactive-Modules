@@ -355,20 +355,17 @@ $range-label-width: 0px !default;
 
     .dotContainerPosition-mumbai{
         position: absolute;
-        width: 50%;
-        max-width: 400px;
-        height: 300px;
-        // left: 0px;
-        // right: 0px;
-        left: -10%;
+        width: 100%;
+        height: 100%;
         right: 0px;
         margin-left: auto;
         margin-right: auto;
-        top: 40px;
         bottom: 0px;
-        transform: scale(0.7) rotate(35deg);
-        //transform: scale(0.7);
-       // margin: auto;
+
+        .dots {
+            width: 10px !important;
+            height: 10px !important;
+        }
     }
 
 
@@ -397,15 +394,12 @@ $range-label-width: 0px !default;
             width: 15px;
             height: 15px;
             border-radius: 50%;
-           // background-color: rgb(137, 216, 137);
-           // visibility: hidden;
-           opacity: 0;
-           //animation: fadein 0.5s forwards 0.1s ;
+            opacity: 0;
 
-           @include breakpoint ("mobile") {
-            width: 10px;
-            height: 10px;
-         }
+            @include breakpoint ("mobile") {
+                width: 10px;
+                height: 10px;
+            }
         }
     }
 

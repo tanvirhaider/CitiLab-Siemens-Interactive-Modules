@@ -7,9 +7,6 @@
 function initVehicleCarges (data) {
   console.log("data location: ", data.location);
 
-
-
-  //element.classList.add("mystyle");
   document.querySelector('#graph-vehicle-charges-' + data.location + ' .contents').classList.add(data.location);
 
   var currentSet = VehicleCargesData[data.location];
@@ -52,16 +49,23 @@ function initVehicleCarges (data) {
 
         hideHint ();
 
-        if (this.value < currentSet.length/NumberOfSegments) {initiateVCanimation (1);}
-        else if ((this.value >= (currentSet.length/NumberOfSegments)*1 ) && (this.value < (currentSet.length/NumberOfSegments)*2)) {initiateVCanimation (2);}
-        else if ((this.value >= (currentSet.length/NumberOfSegments)*2 ) && (this.value < (currentSet.length/NumberOfSegments)*3)) {initiateVCanimation (3);}
-        else if ((this.value >= (currentSet.length/NumberOfSegments)*4 ) && (this.value < (currentSet.length/NumberOfSegments)*5)) {initiateVCanimation (4);}
-        else if ((this.value >= (currentSet.length/NumberOfSegments)*5 ) && (this.value < (currentSet.length/NumberOfSegments)*6)) {initiateVCanimation (5);}
-        else if ((this.value >= (currentSet.length/NumberOfSegments)*6 ) && (this.value < (currentSet.length/NumberOfSegments)*7)) {initiateVCanimation (6);}
-        else if ((this.value >= (currentSet.length/NumberOfSegments)*7 ) && (this.value < (currentSet.length/NumberOfSegments)*8)) {initiateVCanimation (7);}
-        else if ((this.value >= (currentSet.length/NumberOfSegments)*8 ) && (this.value < (currentSet.length/NumberOfSegments)*9)) {initiateVCanimation (8);}
-        else if ((this.value >= (currentSet.length/NumberOfSegments)*9 ) && (this.value < (currentSet.length/NumberOfSegments)*10)) {initiateVCanimation (9);}
-        else if (this.value >= (currentSet.length/NumberOfSegments)*10) {initiateVCanimation (10);}
+        console.log("what is the value selected: ", this.value);
+        var valSel = this.value;
+
+        for (var i = 0; i < NumberOfSegments; i++) {
+          if ((valSel >= (currentSet.length / NumberOfSegments) * i ) && (valSel < (currentSet.length / (NumberOfSegments)) * (i+1))) {initiateVCanimation (i+1);}
+        }
+
+        // if (valSel < currentSet.length/NumberOfSegments) {initiateVCanimation (1);}
+        // else if ((valSel >= (currentSet.length/NumberOfSegments)*1 ) && (valSel < (currentSet.length/NumberOfSegments)*2)) {initiateVCanimation (2);}
+        // else if ((valSel >= (currentSet.length/NumberOfSegments)*2 ) && (valSel < (currentSet.length/NumberOfSegments)*3)) {initiateVCanimation (3);}
+        // else if ((valSel >= (currentSet.length/NumberOfSegments)*4 ) && (valSel < (currentSet.length/NumberOfSegments)*5)) {initiateVCanimation (4);}
+        // else if ((valSel >= (currentSet.length/NumberOfSegments)*5 ) && (valSel < (currentSet.length/NumberOfSegments)*6)) {initiateVCanimation (5);}
+        // else if ((valSel >= (currentSet.length/NumberOfSegments)*6 ) && (valSel < (currentSet.length/NumberOfSegments)*7)) {initiateVCanimation (6);}
+        // else if ((valSel >= (currentSet.length/NumberOfSegments)*7 ) && (valSel < (currentSet.length/NumberOfSegments)*8)) {initiateVCanimation (7);}
+        // else if ((valSel >= (currentSet.length/NumberOfSegments)*8 ) && (valSel < (currentSet.length/NumberOfSegments)*9)) {initiateVCanimation (8);}
+        // else if ((valSel >= (currentSet.length/NumberOfSegments)*9 ) && (valSel < (currentSet.length/NumberOfSegments)*10)) {initiateVCanimation (9);}
+        // else if (valSel >= (currentSet.length/NumberOfSegments)*10) {initiateVCanimation (10);}
    
       });
     });
