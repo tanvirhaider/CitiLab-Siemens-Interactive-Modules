@@ -762,12 +762,14 @@ function initEmmissionsGraph(data) {
 
 
 function initVehicleCarges(data) {
-  console.log("data location: ", data.location);
+
+  // local variables :
+  var selectionQueue = [];
+  var rangeSet = [];
+  var NumberOfSegments = 10;
+  var currentSet = VehicleCargesData[data.location];
 
   document.querySelector('#graph-vehicle-charges-' + data.location + ' .contents').classList.add(data.location);
-
-  var currentSet = VehicleCargesData[data.location];
-  var NumberOfSegments = 10;
 
   var GraphContainer = document.querySelector(data.container);
   GraphContainer.classList.add("vchargesBG-" + data.location);
@@ -783,11 +785,8 @@ function initVehicleCarges(data) {
   var range = $(data.container + ' .sliderModule #r-slider');
   //var value   = $(data.container + ' .sliderModule #r-slider');
 
-  var selectionQueue = [];
 
   var dotContainer = GraphContainer.querySelector(" .dotContainer");
-
-  var rangeSet = [];
 
   for (var i = 0; i < NumberOfSegments; i++) {
     var tempVal = Math.floor(currentSet.length / NumberOfSegments) * (i + 1);
@@ -830,7 +829,9 @@ function initVehicleCarges(data) {
       try {
         for (var i = rangeSet[tempWhichOne]; i < currentSet.length; i++) {
           var tempDot = document.getElementById(data.container + "-" + i);
-          TweenMax.set(tempDot, { alpha: 0 });
+          TweenMax.to(tempDot, 0.2, {
+            delay: 0.01 * i,
+            alpha: 0 });
         }
       } catch (Error) {
         console.log(Error);
@@ -843,7 +844,7 @@ function initVehicleCarges(data) {
           var tempDot = document.getElementById(data.container + "-" + i);
           TweenMax.to(tempDot, 0.05, {
             alpha: 1,
-            delay: 0.005 * i
+            delay: 0.01 * i
           });
         }
       } catch (Error) {
