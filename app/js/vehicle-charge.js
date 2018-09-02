@@ -31,44 +31,27 @@ function initVehicleCarges (data) {
 
   var dotContainer = GraphContainer.querySelector(" .dotContainer");
 
-  var rangeSet = [
-    Math.floor(currentSet.length/NumberOfSegments) * 1, 
-    Math.floor(currentSet.length/NumberOfSegments) * 2,
-    Math.floor(currentSet.length/NumberOfSegments) * 3,
-    Math.floor(currentSet.length/NumberOfSegments) * 4,
-    Math.floor(currentSet.length/NumberOfSegments) * 5,
-    Math.floor(currentSet.length/NumberOfSegments) * 6,
-    Math.floor(currentSet.length/NumberOfSegments) * 7,
-    Math.floor(currentSet.length/NumberOfSegments) * 8,
-    Math.floor(currentSet.length/NumberOfSegments) * 9,
-    Math.floor(currentSet.length/NumberOfSegments) * 10
-  ];
 
-    slider.each(function(){  
-    range.on('input', function(){
+  var rangeSet = [];
 
-        hideHint ();
+  for (var i = 0; i < NumberOfSegments; i++) {
+    var tempVal = Math.floor(currentSet.length/NumberOfSegments) * ( i  + 1 );
+    rangeSet.push(tempVal);
+  }
 
-        console.log("what is the value selected: ", this.value);
-        var valSel = this.value;
+  slider.each(function(){  
+  range.on('input', function(){
 
-        for (var i = 0; i < NumberOfSegments; i++) {
-          if ((valSel >= (currentSet.length / NumberOfSegments) * i ) && (valSel < (currentSet.length / (NumberOfSegments)) * (i+1))) {initiateVCanimation (i+1);}
-        }
+      hideHint ();
 
-        // if (valSel < currentSet.length/NumberOfSegments) {initiateVCanimation (1);}
-        // else if ((valSel >= (currentSet.length/NumberOfSegments)*1 ) && (valSel < (currentSet.length/NumberOfSegments)*2)) {initiateVCanimation (2);}
-        // else if ((valSel >= (currentSet.length/NumberOfSegments)*2 ) && (valSel < (currentSet.length/NumberOfSegments)*3)) {initiateVCanimation (3);}
-        // else if ((valSel >= (currentSet.length/NumberOfSegments)*4 ) && (valSel < (currentSet.length/NumberOfSegments)*5)) {initiateVCanimation (4);}
-        // else if ((valSel >= (currentSet.length/NumberOfSegments)*5 ) && (valSel < (currentSet.length/NumberOfSegments)*6)) {initiateVCanimation (5);}
-        // else if ((valSel >= (currentSet.length/NumberOfSegments)*6 ) && (valSel < (currentSet.length/NumberOfSegments)*7)) {initiateVCanimation (6);}
-        // else if ((valSel >= (currentSet.length/NumberOfSegments)*7 ) && (valSel < (currentSet.length/NumberOfSegments)*8)) {initiateVCanimation (7);}
-        // else if ((valSel >= (currentSet.length/NumberOfSegments)*8 ) && (valSel < (currentSet.length/NumberOfSegments)*9)) {initiateVCanimation (8);}
-        // else if ((valSel >= (currentSet.length/NumberOfSegments)*9 ) && (valSel < (currentSet.length/NumberOfSegments)*10)) {initiateVCanimation (9);}
-        // else if (valSel >= (currentSet.length/NumberOfSegments)*10) {initiateVCanimation (10);}
-   
-      });
+      console.log("what is the value selected: ", this.value);
+      var valSel = this.value;
+
+      for (var i = 0; i < NumberOfSegments; i++) {
+        if ((valSel >= (currentSet.length / NumberOfSegments) * i ) && (valSel < (currentSet.length / (NumberOfSegments)) * (i+1))) {initiateVCanimation (i+1);}
+      }   
     });
+  });
 
 
     function hideHint () {
