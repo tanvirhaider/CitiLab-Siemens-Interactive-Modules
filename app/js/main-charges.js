@@ -13,28 +13,29 @@ window.onload = function() {
 
 
     initVehicleCarges({
-        container: "#graph-vehicle-charges-la",
-        location: "la",
-        intervals: 10,
-        start: 1,
-        end: 99
+        container: "#graph-vehicle-charges-la",         // required
+        location: "la",                                 // required
+        intervals: 10,                                  // optional 
+        start: 1,                                       // optional 
+        end: 99                                         // optional 
     });
 
 
     initVehicleCarges({
-        container: "#graph-vehicle-charges-london",
-        location: "london",
-        intervals: 10,
-        start: 1,
-        end: 99
+        container: "#graph-vehicle-charges-london",     // required
+        location: "london",                             // required
+        intervals: 10,                                  // optional 
+        start: 1,                                       // optional 
+        end: 99                                         // optional 
     });
 
 
     initVehicleCarges({
-        container: "#graph-vehicle-charges-mumbai",
-        location: "mumbai",
-        start: 1,
-        end: 99
+        container: "#graph-vehicle-charges-mumbai",     // required
+        location: "mumbai",                             // required
+        intervals: 10,                                  // optional 
+        start: 1,                                       // optional 
+        end: 99                                         // optional 
     });
 
 }

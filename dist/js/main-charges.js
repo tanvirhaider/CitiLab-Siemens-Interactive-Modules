@@ -26,9 +26,9 @@ function initVehicleCarges(data) {
   var sliderObject = GraphContainer.querySelector(' .sliderModule #r-slider');
   sliderObject.classList.add('range-slider__range-' + data.location);
 
-  sliderObject.setAttribute("min", data.start);
-  sliderObject.setAttribute("value", data.start);
-  sliderObject.setAttribute("max", data.end);
+  sliderObject.setAttribute("min", !!data.start ? data.start : 1);
+  sliderObject.setAttribute("value", !!data.start ? data.start : 1);
+  sliderObject.setAttribute("max", !!data.end ? data.end : 99);
 
   var slider = $(data.container + ' .sliderModule #r-slider');
   var range = $(data.container + ' .sliderModule #r-slider');
@@ -136,25 +136,26 @@ var colors = {
 };window.onload = function () {
 
     initVehicleCarges({
-        container: "#graph-vehicle-charges-la",
-        location: "la",
-        intervals: 10,
-        start: 1,
-        end: 99
+        container: "#graph-vehicle-charges-la", // required
+        location: "la", // required
+        intervals: 10, // optional 
+        start: 1, // optional 
+        end: 99 // optional 
     });
 
     initVehicleCarges({
-        container: "#graph-vehicle-charges-london",
-        location: "london",
-        intervals: 10,
-        start: 1,
-        end: 99
+        container: "#graph-vehicle-charges-london", // required
+        location: "london", // required
+        intervals: 10, // optional 
+        start: 1, // optional 
+        end: 99 // optional 
     });
 
     initVehicleCarges({
-        container: "#graph-vehicle-charges-mumbai",
-        location: "mumbai",
-        start: 1,
-        end: 99
+        container: "#graph-vehicle-charges-mumbai", // required
+        location: "mumbai", // required
+        intervals: 10, // optional 
+        start: 1, // optional 
+        end: 99 // optional 
     });
 };

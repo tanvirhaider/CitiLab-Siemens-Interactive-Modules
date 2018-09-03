@@ -21,9 +21,9 @@ function initVehicleCarges (data) {
   var sliderObject = GraphContainer.querySelector(' .sliderModule #r-slider');
   sliderObject.classList.add('range-slider__range-' + data.location);
 
-  sliderObject.setAttribute("min", data.start);
-  sliderObject.setAttribute("value", data.start);
-  sliderObject.setAttribute("max", data.end);
+  sliderObject.setAttribute("min", !!data.start ? data.start : 1);
+  sliderObject.setAttribute("value", !!data.start ? data.start : 1);
+  sliderObject.setAttribute("max", !!data.end ? data.end : 99);
 
 
   var slider  = $(data.container + ' .sliderModule #r-slider');
