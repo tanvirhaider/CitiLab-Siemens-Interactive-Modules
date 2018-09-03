@@ -9,7 +9,7 @@ function initVehicleCarges (data) {
   // local variables :
   var selectionQueue = [];
   var rangeSet = [];
-  var NumberOfSegments = 10;
+  var NumberOfSegments = !!data.intervals ? data.intervals : 10;
   var currentSet = VehicleCargesData[data.location];
 
 

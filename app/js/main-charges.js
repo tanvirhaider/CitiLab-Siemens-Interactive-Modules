@@ -15,6 +15,7 @@ window.onload = function() {
     initVehicleCarges({
         container: "#graph-vehicle-charges-la",
         location: "la",
+        intervals: 10,
         start: 1,
         end: 99
     });
@@ -23,6 +24,7 @@ window.onload = function() {
     initVehicleCarges({
         container: "#graph-vehicle-charges-london",
         location: "london",
+        intervals: 10,
         start: 1,
         end: 99
     });
