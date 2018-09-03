@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
 :root {
   --color-mumbai: #009999;
   --color-la: #ff2466;
@@ -259,6 +260,23 @@
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         font-size: 12px; } }
+    .graph-parking #graph-copy #content-2050 {
+      display: none;
+      opacity: 0;
+      -webkit-animation: fadein 0.5s forwards 0.1s;
+              animation: fadein 0.5s forwards 0.1s; }
+    .graph-parking #graph-copy .legend {
+      color: white;
+      font-family: 'Lato', sans-serif;
+      line-height: 24px; }
+      .graph-parking #graph-copy .legend::before {
+        content: " ";
+        display: block;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
 
 .graph-emissions {
   overflow: hidden;

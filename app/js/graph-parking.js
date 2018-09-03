@@ -12,6 +12,7 @@ function initParkingGraph (data) {
     var numberOfTree = [];
    
     var numberOfYear = document.querySelector(container + " #graph-content .nav").childElementCount;
+    var para_2050 = document.querySelector(container + " #graph-copy #content-2050");
 
     var firstRun = false;
 
@@ -30,7 +31,6 @@ function initParkingGraph (data) {
         }
     }
 
-   
 
     function navClicked(event) {
         var currentElement = document.querySelector(container + " #graph-content #nav-" + event.target.id);
@@ -46,11 +46,20 @@ function initParkingGraph (data) {
     function populateGrid (whichSet) {
         console.group("populate");
 
-        console.log(whichSet);
+        console.log("which set clicked: ",whichSet);
         var translateVariableIndex;
-        if (whichSet == 0) {translateVariableIndex = "year2018";}
-        else if (whichSet == 1) {translateVariableIndex = "year2035";}
-        else if (whichSet == 2) {translateVariableIndex = "year2050";}
+        if (whichSet == 0) {
+            translateVariableIndex = "year2018";
+            if (para_2050) {para_2050.style.display = "none";}
+        }
+        else if (whichSet == 1) {
+            translateVariableIndex = "year2035";
+            if (para_2050) {para_2050.style.display = "none";}
+        }
+        else if (whichSet == 2) {
+            translateVariableIndex = "year2050";
+            if (para_2050) {para_2050.style.display = "block";}
+        }
 
        
         var numberOfIcons = document.querySelector(container + " #graph-content #grid");
@@ -62,45 +71,18 @@ function initParkingGraph (data) {
     
                 var div = document.createElement("div");
                 div.setAttribute("id", "icon-" + i);
-    
-                
                 div.classList.add("icon");
-                //div.classList.add("icon-car-" + data.location);
-
-                // switch(currentIndex) {
-                //     case 0:
-                //         numberOfTree.push(i);
-                //         //div.classList.add("icon-tree-" + data.location);
-                //         break;
-                //     case 1:
-                //         numberOfHouse.push(i);
-                //        // div.classList.add("icon-house-" + data.location);
-                //         break;
-                //     case 2:
-                //         numberOfParking.push(i);
-                //         //div.classList.add("icon-car-" + data.location);
-                //         break;
-                //     default:
-                //         div.classList.add("");
-                // }
 
                 if (!firstRun) {
                     var gridContainer = document.querySelector(container + " #graph-content #grid").appendChild(div);
                    
                 }
-    
-                
-               // TweenMax.fromTo(div,0.5, {alpha:0,scale:0},{delay:0.1,alpha:1,scale:1});
                 
             }
 
             firstRun = true;
 
-           // 
-
-
-
-           for (var n = 0; n < 50; n++) {
+            for (var n = 0; n < 50; n++) {
                 var currentIndex = ParkingGraphData[data.location][translateVariableIndex][n];
                 var currentIcon = document.querySelector(container + " #graph-content #grid #icon-" + n);
                 if (currentIndex == 2) {
@@ -108,13 +90,20 @@ function initParkingGraph (data) {
 
                     }
                     else {
-                        
-
-                        TweenMax.to(currentIcon,0.5, {delay:0.01 * n,alpha:0,scale:0, onComplete:replaceClass, onCompleteParams:[currentIcon]});
+        
+                        TweenMax.to(currentIcon,0.5, {
+                            delay:0.01 * n,
+                            alpha:0,
+                            scale:0, 
+                            onComplete:replaceClass, 
+                            onCompleteParams:[currentIcon]
+                        });
 
                         function replaceClass (whichOne) {
-                            if (whichOne.classList.contains("icon-tree-" + data.location)) {whichOne.classList.remove("icon-tree-" + data.location);}
-                            if (whichOne.classList.contains("icon-house-" + data.location)) {whichOne.classList.remove("icon-house-" + data.location);}
+                            if (whichOne.classList.contains("icon-tree-" + data.location)) {
+                                whichOne.classList.remove("icon-tree-" + data.location);}
+                            if (whichOne.classList.contains("icon-house-" + data.location)) {
+                                whichOne.classList.remove("icon-house-" + data.location);}
                             whichOne.classList.add("icon-car-" + data.location);
                             TweenMax.fromTo(whichOne,0.5, {alpha:0},{scale:1,alpha:1});
                         }
