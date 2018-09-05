@@ -216,28 +216,8 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/dist\/js\/data-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/app\/js\/data\/parkingGraphData.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/dist\/js\/data\/parkingGraphData-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/app\/js\/data\/vehicleCargesData.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/dist\/js\/data\/vehicleCargesData-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -308,6 +288,16 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/dist\/js\/vehicle-charge-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/js\/vehicleCargesData.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/dist\/js\/vehicleCargesData-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

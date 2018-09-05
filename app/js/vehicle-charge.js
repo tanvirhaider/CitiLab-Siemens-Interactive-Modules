@@ -1,7 +1,6 @@
 
 
-
-// @codekit-prepend "data/vehicleCargesData.js"
+// @codekit-prepend "vehicleCargesData.js"
 
 
 function initVehicleCarges (data) {
@@ -9,7 +8,7 @@ function initVehicleCarges (data) {
   // local variables :
   var selectionQueue = [];
   var rangeSet = [];
-  var NumberOfSegments = !!data.intervals ? data.intervals : 10;
+  var NumberOfSegments = data.intervals ? data.intervals : 10;
   var currentSet = VehicleCargesData[data.location];
 
 
@@ -21,9 +20,9 @@ function initVehicleCarges (data) {
   var sliderObject = GraphContainer.querySelector(' .sliderModule #r-slider');
   sliderObject.classList.add('range-slider__range-' + data.location);
 
-  sliderObject.setAttribute("min", !!data.start ? data.start : 1);
-  sliderObject.setAttribute("value", !!data.start ? data.start : 1);
-  sliderObject.setAttribute("max", !!data.end ? data.end : 99);
+  sliderObject.setAttribute("min", data.start ? data.start : 1);
+  sliderObject.setAttribute("value", data.start ? data.start : 1);
+  sliderObject.setAttribute("max", data.end ? data.end : 99);
 
 
   var slider  = $(data.container + ' .sliderModule #r-slider');

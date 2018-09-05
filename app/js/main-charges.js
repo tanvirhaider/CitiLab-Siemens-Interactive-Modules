@@ -8,7 +8,6 @@ var colors = {
 // @codekit-prepend "vehicle-charge.js"
 
 
-
 window.onload = function() {
 
 

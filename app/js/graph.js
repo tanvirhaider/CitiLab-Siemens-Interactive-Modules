@@ -6,8 +6,6 @@ var colors = {
     london: "#0e6ce5"
 }
 
-
-// @codekit-prepend "data.js"
 // @codekit-prepend "graph-parking.js"
 // @codekit-prepend "graph-emmissions.js"
 // @codekit-prepend "vehicle-charge.js"

@@ -23,6 +23,7 @@ var ParkingGraphData = {
 
 
 
+
 window.onload = function() {
     initParkingGraph ({
         container: "#graph-parking-la",
