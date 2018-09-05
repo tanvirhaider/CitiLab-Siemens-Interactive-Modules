@@ -177,6 +177,18 @@
                         }
                     }
 
+                    .bar-coal { filter: brightness(30%);}
+                    .bar-oil { filter: brightness(45%);}
+                    .bar-nuclear { filter: brightness(60%);}
+                    .bar-gas { filter: brightness(70%);}
+                    .bar-hydro { filter: brightness(80%);}
+                    .bar-wind { filter: brightness(90%);}
+                    .bar-solar { filter: brightness(150%);}
+
+                    .bar-pm { filter: brightness(90%);}
+                    .bar-no { filter: brightness(60%);}
+                    .bar-ghgas { filter: brightness(40%);}
+
                     .small-bar {
                         // width: 10px;
                         width: 100%;
@@ -192,33 +204,33 @@
                         box-sizing: border-box;
 
 
-                        &:nth-child(1){
-                            filter: brightness(100%);
-                        }
+                        // &:nth-child(1){
+                        //     filter: brightness(100%);
+                        // }
 
-                        &:nth-child(2){
-                            filter: brightness(90%);
-                        }
+                        // &:nth-child(2){
+                        //     filter: brightness(90%);
+                        // }
 
-                        &:nth-child(3){
-                            filter: brightness(80%);
-                        }
+                        // &:nth-child(3){
+                        //     filter: brightness(80%);
+                        // }
 
-                        &:nth-child(4){
-                            filter: brightness(70%);
-                        }
+                        // &:nth-child(4){
+                        //     filter: brightness(70%);
+                        // }
 
-                        &:nth-child(5){
-                            filter: brightness(60%);
-                        }
+                        // &:nth-child(5){
+                        //     filter: brightness(60%);
+                        // }
 
-                        &:nth-child(6){
-                            filter: brightness(50%);
-                        }
+                        // &:nth-child(6){
+                        //     filter: brightness(50%);
+                        // }
 
-                        &:nth-child(7){
-                            filter: brightness(40%);
-                        }
+                        // &:nth-child(7){
+                        //     filter: brightness(40%);
+                        // }
 
 
                         &:hover {
@@ -285,11 +297,25 @@
         display: flex;
         flex-wrap: wrap;
         align-content: flex-end;
-       // width: calc(100% - 50px);
+        font-size: 0.8em;
         width: 100%;
         max-width: 380px;
         position: relative;
         left: 30px;
+
+        
+        .box-coal { &::before {filter: brightness(30%);}}
+        .box-oil { &::before {filter: brightness(45%);}}
+        .box-nuclear { &::before {filter: brightness(60%);}}
+        .box-gas { &::before {filter: brightness(70%);}}
+        .box-hydro { &::before {filter: brightness(80%);}}
+        .box-wind { &::before {filter: brightness(90%);}}
+        .box-solar { &::before {filter: brightness(150%);}}
+
+        .box-pm { &::before {filter: brightness(90%);}}
+        .box-no { &::before {filter: brightness(50%);}}
+        .box-ghgas { &::before {filter: brightness(30%);}}
+        
 
         div {
             opacity: 0;
@@ -297,8 +323,7 @@
         }
        
 
-        font-size: 0.8em;
-       // justify-content: space-between;
+       
 
         @include breakpoint ("mobile") {
             font-size: 9px;
@@ -320,13 +345,13 @@
                 padding-right: 30px;
              }
 
-            &:nth-child(1) {&::before {filter: brightness(100%);}}
-            &:nth-child(2) {&::before {filter: brightness(90%);}}
-            &:nth-child(3) {&::before {filter: brightness(80%);}}
-            &:nth-child(4) {&::before {filter: brightness(70%);}}
-            &:nth-child(5) {&::before {filter: brightness(60%);}}
-            &:nth-child(6) {&::before {filter: brightness(50%);}}
-            &:nth-child(7) {&::before {filter: brightness(40%);}}
+            // &:nth-child(1) {&::before {filter: brightness(100%);}}
+            // &:nth-child(2) {&::before {filter: brightness(90%);}}
+            // &:nth-child(3) {&::before {filter: brightness(80%);}}
+            // &:nth-child(4) {&::before {filter: brightness(70%);}}
+            // &:nth-child(5) {&::before {filter: brightness(60%);}}
+            // &:nth-child(6) {&::before {filter: brightness(50%);}}
+            // &:nth-child(7) {&::before {filter: brightness(40%);}}
 
             &::before {
                 content: "";

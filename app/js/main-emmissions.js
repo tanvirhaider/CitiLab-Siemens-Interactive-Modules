@@ -130,7 +130,7 @@ var EmmissionGraphData = {
                 "Wind": 0.54,
                 "Coal": 0.01,
                 "NaturalGas":0.45,
-                "Oil":0.25,
+                "Oil":0.01,
                 "Hydro":0.4,
                 "Nuclear":0.1
             }
@@ -175,7 +175,5 @@ window.onload = function() {
         container: "#graph-emissions-mumbai",
         location: "mumbai"
     });
-
-
 
 }

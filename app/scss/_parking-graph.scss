@@ -193,10 +193,20 @@
     }
 
     #graph-copy {
+
+
+        // .graph-copy-content {
+        //     display:flex;
+        //     align-items:center;
+        // }
+
+
         p {
             padding: 0px;
             margin-top: 0px;
         }
+
+       // align-items:center;
 
         display:flex;
         flex-direction: column;
