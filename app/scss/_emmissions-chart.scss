@@ -1,6 +1,14 @@
 
 
 
+$Value-1: 750%;
+$Value-2: 400%;
+$Value-3: 250%;
+$Value-4: 100%;
+$Value-5: 80%;
+$Value-6: 60%;
+$Value-7: 35%;
+
 .small-bar-color-mumbai {
     background-color: $color-mumbai;
 }
@@ -13,20 +21,6 @@
     background-color: $color-london;
 }
 
-// .tooltip {
-//     position: absolute;
-//     width: auto;
-//     height: auto;
-//     color: white;
-//     pointer-events: none;
-//     padding: 5px;
-//     background-color: rgba(255,255,255,0.5);
-//     z-index: 9999;
-//    // bottom: 40px;
-//    // margin-bottom: 100px;
-//    box-sizing: border-box;
-   
-// }
 
 .chart-container {
     width: 410px;
@@ -40,6 +34,7 @@
     @include breakpoint ("mobile") {
         width: 300px;
         margin-top: 30px;
+        left: 35px;
     }
 
     .title {
@@ -91,6 +86,10 @@
                 width: 24px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
+
+                @include breakpoint ("mobile") {
+                    font-size: 8px;
+                }
             }
 
             .legend-val {
@@ -177,13 +176,15 @@
                         }
                     }
 
-                    .bar-coal { filter: brightness(30%);}
-                    .bar-oil { filter: brightness(45%);}
-                    .bar-nuclear { filter: brightness(60%);}
-                    .bar-gas { filter: brightness(70%);}
-                    .bar-hydro { filter: brightness(80%);}
-                    .bar-wind { filter: brightness(90%);}
-                    .bar-solar { filter: brightness(150%);}
+                    
+
+                    .bar-coal { filter: brightness($Value-6);}
+                    .bar-oil { filter: brightness($Value-6);}
+                    .bar-nuclear { filter: brightness($Value-5);}
+                    .bar-gas { filter: brightness($Value-4);}
+                    .bar-hydro { filter: brightness($Value-3);}
+                    .bar-wind { filter: brightness($Value-2);}
+                    .bar-solar { filter: brightness($Value-1);}
 
                     .bar-pm { filter: brightness(90%);}
                     .bar-no { filter: brightness(60%);}
@@ -304,13 +305,13 @@
         left: 30px;
 
         
-        .box-coal { &::before {filter: brightness(30%);}}
-        .box-oil { &::before {filter: brightness(45%);}}
-        .box-nuclear { &::before {filter: brightness(60%);}}
-        .box-gas { &::before {filter: brightness(70%);}}
-        .box-hydro { &::before {filter: brightness(80%);}}
-        .box-wind { &::before {filter: brightness(90%);}}
-        .box-solar { &::before {filter: brightness(150%);}}
+        .box-coal { &::before {filter: brightness($Value-7);}}
+        .box-oil { &::before {filter: brightness($Value-6);}}
+        .box-nuclear { &::before {filter: brightness($Value-5);}}
+        .box-gas { &::before {filter: brightness($Value-4);}}
+        .box-hydro { &::before {filter: brightness($Value-3);}}
+        .box-wind { &::before {filter: brightness($Value-2);}}
+        .box-solar { &::before {filter: brightness($Value-1);}}
 
         .box-pm { &::before {filter: brightness(90%);}}
         .box-no { &::before {filter: brightness(50%);}}
@@ -362,6 +363,13 @@
                 border: 1px solid rgb(165, 165, 165);
                 position: absolute;
                 background-color: #303030;
+
+
+                @include breakpoint ("mobile") {
+                    width: 8px;
+                    height: 8px;
+                    left: -18px;
+                }
 
                 // &:hover{
                 //     border: 1px solid rgb(230, 0, 0);

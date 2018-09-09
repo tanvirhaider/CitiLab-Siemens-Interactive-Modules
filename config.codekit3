@@ -42,39 +42,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/app\/assets\/images\/hero-2@3x.jpg": {
-		"ft": 16384,
-		"iS": 365388,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/dist\/assets\/images\/hero-2@3x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/app\/assets\/images\/hero.png": {
-		"ft": 32768,
-		"iS": 87967,
-		"oA": 0,
-		"oAP": "\/dist\/assets\/images\/hero.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/app\/assets\/images\/hero@3x.jpg": {
-		"ft": 16384,
-		"iS": 401851,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/dist\/assets\/images\/hero@3x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/app\/assets\/images\/icon-car-la.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -198,6 +165,28 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/app\/assets\/images\/worldmap-v2.png": {
+		"ft": 32768,
+		"iS": 480588,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/worldmap-v2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/assets\/images\/worldmap.png": {
+		"ft": 32768,
+		"iS": 212875,
+		"oA": 0,
+		"oAP": "\/dist\/assets\/images\/worldmap.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/app\/charges.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -212,13 +201,20 @@
 		"oAP": "\/dist\/emmissions.html",
 		"oF": 0
 		},
-	"\/app\/js\/data.js": {
+	"\/app\/hero-animation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/dist\/hero-animation.html",
+		"oF": 0
+		},
+	"\/app\/js\/createjs-2015.11.26.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/dist\/js\/data-min.js",
-		"oF": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/dist\/js\/createjs.min.js",
+		"oF": 3,
 		"sC": 3,
 		"tS": 0
 		},
@@ -251,6 +247,16 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/app\/js\/intro-animation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/dist\/js\/intro-animation.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/app\/js\/main-charges.js": {
 		"ft": 64,
@@ -400,6 +406,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/app\/scss\/intro-animation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/dist\/css\/intro-animation.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/dist": {
 		"ft": 65536,
 		"oA": 1,
@@ -410,6 +429,14 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"\/app\/js\/intro-animation.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/app\/js\/createjs-2015.11.26.min.js",
+			"position": 0,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 555967449,

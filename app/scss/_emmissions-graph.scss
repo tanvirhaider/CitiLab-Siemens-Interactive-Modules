@@ -108,17 +108,19 @@
 
         @include breakpoint ("mobile") {
            position: relative;
-           padding-top: 30px;
+           padding-top: 20px;
+
+           .original-copy {
+               width: 100%;
+           }
          }
 
         p {
-           
-
             @include breakpoint ("mobile") {
                 font-size: 12px;
-                width: calc(100% - 40px);
+                width: calc(100% - 20px);
+                padding-left: 10px;
                 line-height: 16px;
-                // display: none;
              }
         }
 

@@ -194,20 +194,6 @@
 
     #graph-copy {
 
-
-        // .graph-copy-content {
-        //     display:flex;
-        //     align-items:center;
-        // }
-
-
-        p {
-            padding: 0px;
-            margin-top: 0px;
-        }
-
-       // align-items:center;
-
         display:flex;
         flex-direction: column;
         //align-self: center;
@@ -216,7 +202,7 @@
         font-size: 1.1em;
         line-height: 2em;
         padding-right: 50px;
-        padding-top: 105px;
+       // padding-top: 105px;
 
         opacity: 0;
         animation: fadein 0.5s forwards 0.1s ;
@@ -237,31 +223,46 @@
             box-sizing: border-box;
             font-size: 12px;
         }
+        
+        .graph-content {
 
-        #content-2050 {
-            display: none;
-            opacity: 0;
-            animation: fadein 0.5s forwards 0.1s ;
-        }
+            //display:flex;
+           // align-items:center;
+           margin-top: auto;
+           margin-bottom: auto;
 
-        .legend {
-            color: white;
-            font-family: 'Lato', sans-serif;
-            line-height: 24px;
+            p {
+                padding: 0px;
+                margin-top: 0px;
+            }
 
-            &::before {
-                content: " ";
-                display: block;
-                border-bottom: 2px solid #fff;
-                margin-bottom: 20px;
-                margin-right: 20px;
-                box-sizing: border-box;
+            #content-2050 {
+                display: none;
+                opacity: 0;
+                animation: fadein 0.5s forwards 0.1s ;
+            }
+
+            .legend {
+                color: white;
+                font-family: 'Lato', sans-serif;
+                line-height: 24px;
+    
+                &::before {
+                    content: " ";
+                    display: block;
+                    border-bottom: 2px solid #fff;
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                    box-sizing: border-box;
+                }
             }
         }
+
+        // .graph-copy-content {
+        //     display:flex;
+        //     align-items:center;
+        // }
+
+      
     }
-
-   
-
-
-
 }

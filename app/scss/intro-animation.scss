@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+//@import 'mixin';
+
+@mixin bgimage($name) {
+    $url:"../assets/images/#{$name}";
+    background-image: url($url);
+  }
+  
+  
+  @mixin breakpoint($class) {
+    @if $class == mobile {
+      @media (max-width: 767px) and (orientation : portrait)  { @content; }
+    }
+  
+    @else if $class == small {
+      @media all and (min-width: 768px) and (max-width: 1223px)  { @content; }
+    }
+   
+    @else if $class == medium {
+      @media all and (min-width: 1224px) and (max-width: 1440px)  { @content; }
+    }
+   
+    @else if $class == large {
+      @media all and (min-width: 1441px) { @content; }
+    }
+   
+    @else {
+      @warn "Breakpoint mixin supports: small, medium, large, portrait, landscape";
+    }
+  }
+  
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+
+.placeholder {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+
+#hero-animation_container {
+    background-color: black;
+    width: 1440px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 1440px;
+    min-width: 350px;
+
+    @include breakpoint(small) {
+        width: 100% !important;
+    }
+
+    canvas {
+        width: 100% !important;
+    }
+
+    .introCopy {
+        color: white;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        height: 60%;
+        opacity: 0;
+        animation: fadein 1s forwards 1.0s;
+        display: none;
+        position: absolute;
+       // padding-bottom: 20px;
+        bottom: 0px;
+      //  display:flex;
+        justify-content:center;
+
+        .title {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 2%;
+
+            color: white;
+            box-sizing: border-box;
+            width: 60%;
+            text-align: center;
+            overflow: hidden;
+        
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+           
+           // font-size: 55px;
+           
+            user-select: none;
+            pointer-events: none;
+           
+        
+            @include breakpoint(large) {
+                font-size: 55px;
+            }
+        
+            @include breakpoint(medium) {
+                font-size: 3.8vw;
+            }
+        
+            @include breakpoint(small) {
+                font-size: 3.8vw;
+            }
+        
+            @include breakpoint(mobile) {
+                font-size: 3.8vw;
+              //  padding-bottom: 10px;
+               // height: 30px;
+            }
+        }
+
+        .copy {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            font-size: 20px;
+            line-height: 30px;
+
+            @include breakpoint(small) {
+                font-size: 1.6vw;
+                line-height: 2.6vw;
+            }
+
+            @include breakpoint(mobile) {
+                font-size: 1.6vw;
+                line-height: 2.6vw;
+            }
+        }
+    }
+
+  
+
+
+
+    #dom_overlay_container {
+        pointer-events: none;
+        overflow: hidden;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        margin: auto;
+        display: block;
+
+        @include breakpoint(mobile) {
+            width: 100%;
+        }
+
+        @include breakpoint(small) {
+            width: 100% !important;
+        }
+    }
+
+    #canvas {
+        position: absolute;
+        display: block;
+        background-color: black;
+        overflow: hidden;
+
+       
+    }
+}
+
+
+
+
+

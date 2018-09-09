@@ -10,12 +10,15 @@ function initVehicleCarges (data) {
   var rangeSet = [];
   var NumberOfSegments = data.intervals ? data.intervals : 10;
   var currentSet = VehicleCargesData[data.location];
+  var mapHolder = document.querySelector( data.container + " .mapholder");
+  mapHolder.classList.add("vchargesBG-" + data.location);
+  console.log(mapHolder);
 
 
   document.querySelector('#graph-vehicle-charges-' + data.location + ' .contents').classList.add(data.location);
 
   var GraphContainer = document.querySelector(data.container);
-  GraphContainer.classList.add("vchargesBG-" + data.location);
+  //GraphContainer.classList.add("vchargesBG-" + data.location);
 
   var sliderObject = GraphContainer.querySelector(' .sliderModule #r-slider');
   sliderObject.classList.add('range-slider__range-' + data.location);
