@@ -8,18 +8,32 @@
     <title>CitiLab - Graphs</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/graph-min.css">
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics_debug.js','ga'); // <-- please update the url for the non-debug version
+        // use this for the final version:   https://www.google-analytics.com/analytics.js
+
+        ga('create', 'UA-1234567890-1', 'auto'); // <----- please update the GA tracking-id for final
+        ga('set', 'forceSSL', true);
+        ga('send', 'pageview');
+    </script>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script src="js/main-parking.js"></script>
+    <script src="js/graph-parking.js"></script>
 </head>
 <body>
 
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
+    <!-- === PLACE HOLDER ========== -->
     <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <!-- === END OF PLACE HOLDER === -->
 
 
-    <!-- div for parking graph starts here . =============================================-->
+    <!-- PARKING GRAPH - LOS ANGELES ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="graph-parking" id="graph-parking-la">
         <div id="graph-content">
             <div id="grid"></div>
@@ -28,21 +42,28 @@
         </div>
         <div id="graph-copy">
             <div class="graph-content">
-                <p>In a city like LA, with 18.6 million parking spaces, the space reclaimed from just parking alone can create more than 500,000 new homes. If you combined all of these parking spaces into one giant parking lot, it would be roughly the distance from Downtown LA to Santa Monica, or the space of about 25 Central Parks.</p>
+                <p>In a city like LA, with 18.6 million parking spaces, the space reclaimed from just parking alone could create more than 500,000 new homes. If you combined all of these parking spaces into one giant, circular parking lot, it would be roughly the distance from Downtown LA to Santa Monica, or the space of about 25 Central Parks.</p>
                 <div class="legend">SCALE</br>1 VEHICLE = 100 PARKING SPACES</div>
             </div>
         </div>
-       
     </div>
-    <!-- div for parking graph ends here  ================================================-->
+
+    <script>
+        initParkingGraph ({
+            container: "#graph-parking-la",
+            location: "la",
+            defaultindex: 0
+        });
+    </script>
+    <!-- END OF PARKING GRAPH - LOS ANGELES ++++++++++++++++++++++++++++++++++++++++++++ -->
 
 
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
+    <!-- === PLACE HOLDER ========== -->
     <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <!-- === END OF PLACE HOLDER === -->
 
 
-    <!-- div for parking graph starts here . =============================================-->
+   <!-- PARKING GRAPH - LONDON ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="graph-parking" id="graph-parking-london">
         <div id="graph-content">
             <div id="grid"></div>
@@ -51,47 +72,57 @@
         </div>
         <div id="graph-copy">
             <div class="graph-content">
-                <p>At present, the land occupied by parking in HIHD cities could fit almost 3 million homes. Parked alongside one another, the amount of space taken up by parking in a city like London could make up the entire city of Boston proper.</p>
-                <!-- <p id="content-2050">As e-Mobility takes hold, by 2050, the spaces reclaimed could make up close to 700,000 new homes, or 560 million square feet in urban parkland. That’s about the space of 9,700 football fields.</p> -->
+                <p>At present, the land occupied by parking in HIHD cities  like London could fit almost 3 million homes. Parked alongside one another, the amount of space taken up by parking in a city like London could make up the entire city of Boston proper.</p>
+                <p id="content-2050">As eMobility takes hold, by 2050 the parking spaces reclaimed could fit close to 900,000 new homes, or 700 million square feet in urban parkland. That’s about the space of 12,000 football fields.</p>
                 <div class="legend">SCALE</br>1 VEHICLE = 100 PARKING SPACES</div>
             </div>
         </div>
-        
     </div>
-    <!-- div for parking graph ends here  ================================================-->
 
-        <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
-        <div class="placeholder"></div>
-        <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <script>
+        initParkingGraph ({
+            container: "#graph-parking-london",
+            location: "london",
+            defaultindex: 0
+        });
+    </script>
+
+   <!-- PARKING GRAPH - LONDON ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- === PLACE HOLDER ========== -->
+    <div class="placeholder"></div>
+    <!-- === END OF PLACE HOLDER === -->
     
     
-        <!-- div for parking graph starts here . =============================================-->
-        <div class="graph-parking" id="graph-parking-mumbai">
-            <div id="graph-content">
-                <div id="grid"></div>
-                <div class="nav"><div class="nav-year" id="nav-0">2018</div><div class="nav-year" id="nav-1">2035</div><div class="nav-year" id="nav-2">2050</div></div>
-                <div class="hint">SELECT A YEAR TO VISUALIZE THE CHANGE IN LAND USE OVER TIME</div>
-            </div>
-            <div id="graph-copy">
-                <div class="graph-content">
-                    <p>Siemens predicts a 24% decrease in number of parking spaces needed for cars by 2035, and a 50% decrease by 2050.</p>
-                    <p>This could mean space for over 600,000 new homes or over 390 million square feet for urban parkland--roughly the same amount of space as about 29,000 Olympic-sized swimming pools.</p>
-                    <div class="legend">SCALE</br>1 VEHICLE = 100 PARKING SPACES</div>
-                </div>
+    <!-- PARKING GRAPH - MUMBAI ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="graph-parking" id="graph-parking-mumbai">
+        <div id="graph-content">
+            <div id="grid"></div>
+            <div class="nav"><div class="nav-year" id="nav-0">2018</div><div class="nav-year" id="nav-1">2035</div><div class="nav-year" id="nav-2">2050</div></div>
+            <div class="hint">SELECT A YEAR TO VISUALIZE THE CHANGE IN LAND USE OVER TIME</div>
+        </div>
+        <div id="graph-copy">
+            <div class="graph-content">
+                <p>Siemens predicts a 24 percent decrease in number of parking spaces needed for cars by 2035, and a 50 percent decrease by 2050.</p>
+                <p>This could mean space for over 600,000 new homes or over 390 million square feet for urban parkland—roughly the same amount of space as about 29,000 Olympic-sized swimming pools.</p>
+                <div class="legend">SCALE</br>1 VEHICLE = 100 PARKING SPACES</div>
             </div>
         </div>
-        <!-- div for parking graph ends here  ================================================-->
+    </div>
+
+    <script>
+        initParkingGraph ({
+            container: "#graph-parking-mumbai",
+            location: "mumbai",
+            defaultindex: 0
+        });
+    </script>
+    <!-- PARKING GRAPH - MUMBAI ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 
-          <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
-          <div class="placeholder"></div>
-          <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
-
-
-
-<script>
-
-</script>
+    <!-- === PLACE HOLDER ========== -->
+    <div class="placeholder"></div>
+    <!-- === END OF PLACE HOLDER === -->
 
 
 </body>

@@ -218,13 +218,23 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/app\/js\/graph-charge.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/js\/graph-charge.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/app\/js\/graph-emmissions.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "\/dist\/js\/graph-emmissions-min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/dist\/js\/graph-emmissions.js",
+		"oF": 3,
 		"sC": 3,
 		"tS": 0
 		},
@@ -232,9 +242,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "\/dist\/js\/graph-parking-min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/dist\/js\/graph-parking.js",
+		"oF": 3,
 		"sC": 3,
 		"tS": 0
 		},
@@ -255,46 +265,6 @@
 		"oA": 0,
 		"oAP": "\/dist\/js\/intro-animation.js",
 		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/app\/js\/main-charges.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/dist\/js\/main-charges.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 1
-		},
-	"\/app\/js\/main-emmissions.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/dist\/js\/main-emmissions.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 1
-		},
-	"\/app\/js\/main-parking.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/dist\/js\/main-parking.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 1
-		},
-	"\/app\/js\/vehicle-charge.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/dist\/js\/vehicle-charge-min.js",
-		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},

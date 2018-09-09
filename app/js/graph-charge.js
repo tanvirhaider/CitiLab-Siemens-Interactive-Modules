@@ -2,8 +2,18 @@
 
 // @codekit-prepend "vehicleCargesData.js"
 
-
 function initVehicleCarges (data) {
+
+  function trackEvent (_eventCategory, _eventAction, _eventLabel) {
+    // console.log('Tracking', _eventCategory, _eventAction, _eventLabel);
+      ga('send', 'event', _eventCategory, _eventAction, _eventLabel);
+  }
+
+  var colors = {
+    mumbai: "#009999",
+    la: "#ff2466",
+    london: "#0e6ce5"
+  }
 
   // local variables :
   var selectionQueue = [];
@@ -47,8 +57,10 @@ function initVehicleCarges (data) {
 
       hideHint ();
 
-      console.log("what is the value selected: ", this.value);
+      //console.log("what is the value selected: ", this.value);
+      
       var valSel = this.value;
+      trackEvent('vehicle-charges', 'Slider',data.location + 'slider-bar-value-for-' + valSel);
 
       for (var i = 0; i < NumberOfSegments; i++) {
         if ((valSel >= (currentSet.length / NumberOfSegments) * i ) && (valSel < (currentSet.length / (NumberOfSegments)) * (i+1))) {initiateVCanimation (i+1);}

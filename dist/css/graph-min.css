@@ -155,23 +155,23 @@
           height: 35px;
           width: 30px; } }
     .graph-parking #graph-content .icon-car-mumbai {
-      background-image: url("../assets/images/icon-car-mumbai.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5OS44IDEwMC4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5OS44IDEwMC4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxtZXRhZGF0YT48P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MyA3OS4xNjEzNTYsIDIwMTcvMDkvMDctMDE6MTE6MjIgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiLz4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PjwvbWV0YWRhdGE+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzAwOTk5OTt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTk0LjQsMzYuMmgtOC44TDc5LjcsMjNjLTMuNS00LjktNi02LjQtMTAuMi02LjRIMzAuM2MtNC4yLDAtNi43LDEuNS0xMC4yLDYuNGwtNS44LDEzLjFINS40CgkJYy0xLjQsMC00LDcuMiw1LjQsNy40bC0zLjEsNy42YzAuMSw5LjcsMC4xLDE5LjIsMC4xLDI4LjdjMCwyLDEuNiwzLjYsMy42LDMuNmgxMi4xYzIsMCwzLjUtMS42LDMuNS0zLjZWNzJoNDUuOHY3LjkKCQljMCwyLDEuNiwzLjYsMy42LDMuNmgxMi4xYzIsMCwzLjUtMS42LDMuNS0zLjZjMC05LjUsMC4xLTE5LjEsMC4xLTI4LjdsLTMuMS03LjZDOTguNCw0My40LDk1LjcsMzYuMiw5NC40LDM2LjJ6IE0yMC45LDYzLjUKCQljLTMuMywwLTUuOC0yLjctNS44LTUuOGMwLTMuMywyLjYtNS44LDUuOC01LjhjMy4xLDAsNS44LDIuNiw1LjgsNS44QzI2LjcsNjAuOCwyNCw2My41LDIwLjksNjMuNXogTTYyLjIsNjIuNUgzNy41CgkJYy0xLjQsMC0yLjctMS4zLTIuNy0yLjdjMC0xLjUsMS4zLTIuOCwyLjctMi44aDI0LjdjMS41LDAsMi43LDEuMywyLjcsMi44QzY0LjksNjEuMiw2My43LDYyLjUsNjIuMiw2Mi41eiBNMTkuMSw0MC4zCgkJYzEuOS00LjEsMy42LTguMyw1LjktMTIuOWMxLjMtMi4yLDIuNy00LjIsNS4yLTQuNGgzOS4yYzIuNiwwLjIsNCwyLjIsNS4yLDQuNGMyLjMsNC43LDQuMSw4LjgsNS45LDEyLjlIMTkuMXogTTc4LjksNjMuNQoJCWMtMy4xLDAtNS44LTIuNy01LjgtNS44YzAtMy4zLDIuNy01LjgsNS44LTUuOGMzLjMsMCw1LjgsMi42LDUuOCw1LjhDODQuNyw2MC44LDgyLjIsNjMuNSw3OC45LDYzLjV6Ii8+CjwvZz4KPC9zdmc+Cg=="); }
     .graph-parking #graph-content .icon-house-mumbai {
-      background-image: url("../assets/images/icon-house-mumbai.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAgMTAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzAwOTk5OTt9Cjwvc3R5bGU+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNTAsOS43IDMyLjcsMjUuNCAzMi43LDIwLjIgMzIuNywxMi42IDIwLjEsMTIuNiAyMC4xLDIwLjIgMjAuMSwzNi45IDAuMyw1NC45IDEwLjcsNTQuOSAxMC43LDkwLjMgCgk0MC41LDkwLjMgNTkuNSw5MC4zIDg5LjMsOTAuMyA4OS4zLDU0LjkgOTkuNyw1NC45ICIvPgo8L3N2Zz4K"); }
     .graph-parking #graph-content .icon-tree-mumbai {
-      background-image: url("../assets/images/icon-tree-mumbai.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5NSA5NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTUgOTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPG1ldGFkYXRhPjw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQzIDc5LjE2MTM1NiwgMjAxNy8wOS8wNy0wMToxMToyMiAgICAgICAgIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIvPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPiAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PjwvbWV0YWRhdGE+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzAwOTk5OTt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04Ni43LDM0YzAuOC0xLjcsMS4zLTMuNywxLjMtNS44YzAtNy43LTYuMi0xMy45LTEzLjgtMTMuOWMtMS41LTYuMi03LTEwLjctMTMuNi0xMC43Yy0yLjcsMC01LjIsMC44LTcuMywyLjEKCWMtMi42LTMuMi02LjUtNS41LTExLTUuNWMtNywwLTEyLjgsNS4xLTEzLjgsMTEuOEMyNy45LDEyLDI3LjMsMTIsMjYuNywxMmMtNy43LDAtMTMuOSw2LjMtMTMuOSwxMy45YzAsMC4xLDAsMC4zLDAsMC41CgljLTQuMiwyLjQtNyw3LTcsMTIuMWMwLDQuMywyLDguMSw1LDEwLjdjMCwwLjUtMC4xLDEtMC4xLDEuNWMwLDcuNyw2LjMsMTMuOSwxMy45LDEzLjljMi44LDAsNS4yLTAuOCw3LjQtMi4yYzMuMSwzLjEsNywyLjEsOCw2LjIKCWM0LjUsMTYuNS0yLjcsMjYuMS0yLjcsMjYuMWgxNi44YzAsMC04LTE5LjEtMS41LTIzLjRjMS42LTEsMy40LTIuOCw1LTQuNmMyLjMsMS42LDUuMSwyLjYsOC4xLDIuNmM3LjcsMCwxMy45LTYuMiwxMy45LTEzLjgKCWM1LjYtMS45LDkuNi03LjEsOS42LTEzLjJDODkuMywzOS4yLDg4LjMsMzYuMyw4Ni43LDM0eiBNMzksNjIuNmMtMi4xLTAuNi0zLjctMS4yLTUtMS43YzEuOS0xLjcsMy40LTQuMSwzLjktNi42CgljMS41LDEuNCwzLjIsMi40LDUuMSwzLjJDNDMuOSw2MSw0My40LDYzLjksMzksNjIuNnogTTQ2LjEsNjMuMmMwLjEtMS43LDAtMy40LTAuMi00LjZjMS40LDAuMywyLjksMC42LDQuNSwwLjcKCUM0OC4zLDY0LjksNDUuNyw3MC41LDQ2LjEsNjMuMnogTTQ5LjUsNjhjMi0yLjIsMy4xLTQuNiwzLjctNi44YzAuNiwxLjIsMS4zLDIuMiwyLjEsMy4xQzUyLjEsNjYuNCw0OS41LDY4LDQ5LjUsNjh6Ii8+Cjwvc3ZnPgo="); }
     .graph-parking #graph-content .icon-car-la {
-      background-image: url("../assets/images/icon-car-la.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5OS44IDEwMC4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5OS44IDEwMC4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxtZXRhZGF0YT48P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MyA3OS4xNjEzNTYsIDIwMTcvMDkvMDctMDE6MTE6MjIgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiLz4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PjwvbWV0YWRhdGE+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I2ZmMjQ2Njt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTk0LjQsMzYuMmgtOC44TDc5LjcsMjNjLTMuNS00LjktNi02LjQtMTAuMi02LjRIMzAuM2MtNC4yLDAtNi43LDEuNS0xMC4yLDYuNGwtNS44LDEzLjFINS40CgkJYy0xLjQsMC00LDcuMiw1LjQsNy40bC0zLjEsNy42YzAuMSw5LjcsMC4xLDE5LjIsMC4xLDI4LjdjMCwyLDEuNiwzLjYsMy42LDMuNmgxMi4xYzIsMCwzLjUtMS42LDMuNS0zLjZWNzJoNDUuOHY3LjkKCQljMCwyLDEuNiwzLjYsMy42LDMuNmgxMi4xYzIsMCwzLjUtMS42LDMuNS0zLjZjMC05LjUsMC4xLTE5LjEsMC4xLTI4LjdsLTMuMS03LjZDOTguNCw0My40LDk1LjcsMzYuMiw5NC40LDM2LjJ6IE0yMC45LDYzLjUKCQljLTMuMywwLTUuOC0yLjctNS44LTUuOGMwLTMuMywyLjYtNS44LDUuOC01LjhjMy4xLDAsNS44LDIuNiw1LjgsNS44QzI2LjcsNjAuOCwyNCw2My41LDIwLjksNjMuNXogTTYyLjIsNjIuNUgzNy41CgkJYy0xLjQsMC0yLjctMS4zLTIuNy0yLjdjMC0xLjUsMS4zLTIuOCwyLjctMi44aDI0LjdjMS41LDAsMi43LDEuMywyLjcsMi44QzY0LjksNjEuMiw2My43LDYyLjUsNjIuMiw2Mi41eiBNMTkuMSw0MC4zCgkJYzEuOS00LjEsMy42LTguMyw1LjktMTIuOWMxLjMtMi4yLDIuNy00LjIsNS4yLTQuNGgzOS4yYzIuNiwwLjIsNCwyLjIsNS4yLDQuNGMyLjMsNC43LDQuMSw4LjgsNS45LDEyLjlIMTkuMXogTTc4LjksNjMuNQoJCWMtMy4xLDAtNS44LTIuNy01LjgtNS44YzAtMy4zLDIuNy01LjgsNS44LTUuOGMzLjMsMCw1LjgsMi42LDUuOCw1LjhDODQuNyw2MC44LDgyLjIsNjMuNSw3OC45LDYzLjV6Ii8+CjwvZz4KPC9zdmc+Cg=="); }
     .graph-parking #graph-content .icon-house-la {
-      background-image: url("../assets/images/icon-house-la.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAgMTAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I2ZmMjQ2Njt9Cjwvc3R5bGU+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNTAsOS43IDMyLjcsMjUuNCAzMi43LDIwLjIgMzIuNywxMi42IDIwLjEsMTIuNiAyMC4xLDIwLjIgMjAuMSwzNi45IDAuMyw1NC45IDEwLjcsNTQuOSAxMC43LDkwLjMgCgk0MC41LDkwLjMgNTkuNSw5MC4zIDg5LjMsOTAuMyA4OS4zLDU0LjkgOTkuNyw1NC45ICIvPgo8L3N2Zz4K"); }
     .graph-parking #graph-content .icon-tree-la {
-      background-image: url("../assets/images/icon-tree-la.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5NSA5NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTUgOTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPG1ldGFkYXRhPjw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQzIDc5LjE2MTM1NiwgMjAxNy8wOS8wNy0wMToxMToyMiAgICAgICAgIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIvPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPiAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz48L21ldGFkYXRhPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNmZjI0NjY7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODYuNywzNGMwLjgtMS43LDEuMy0zLjcsMS4zLTUuOGMwLTcuNy02LjItMTMuOS0xMy44LTEzLjljLTEuNS02LjItNy0xMC43LTEzLjYtMTAuN2MtMi43LDAtNS4yLDAuOC03LjMsMi4xCgljLTIuNi0zLjItNi41LTUuNS0xMS01LjVjLTcsMC0xMi44LDUuMS0xMy44LDExLjhDMjcuOSwxMiwyNy4zLDEyLDI2LjcsMTJjLTcuNywwLTEzLjksNi4zLTEzLjksMTMuOWMwLDAuMSwwLDAuMywwLDAuNQoJYy00LjIsMi40LTcsNy03LDEyLjFjMCw0LjMsMiw4LjEsNSwxMC43YzAsMC41LTAuMSwxLTAuMSwxLjVjMCw3LjcsNi4zLDEzLjksMTMuOSwxMy45YzIuOCwwLDUuMi0wLjgsNy40LTIuMmMzLjEsMy4xLDcsMi4xLDgsNi4yCgljNC41LDE2LjUtMi43LDI2LjEtMi43LDI2LjFoMTYuOGMwLDAtOC0xOS4xLTEuNS0yMy40YzEuNi0xLDMuNC0yLjgsNS00LjZjMi4zLDEuNiw1LjEsMi42LDguMSwyLjZjNy43LDAsMTMuOS02LjIsMTMuOS0xMy44CgljNS42LTEuOSw5LjYtNy4xLDkuNi0xMy4yQzg5LjMsMzkuMiw4OC4zLDM2LjMsODYuNywzNHogTTM5LDYyLjZjLTIuMS0wLjYtMy43LTEuMi01LTEuN2MxLjktMS43LDMuNC00LjEsMy45LTYuNgoJYzEuNSwxLjQsMy4yLDIuNCw1LjEsMy4yQzQzLjksNjEsNDMuNCw2My45LDM5LDYyLjZ6IE00Ni4xLDYzLjJjMC4xLTEuNywwLTMuNC0wLjItNC42YzEuNCwwLjMsMi45LDAuNiw0LjUsMC43CglDNDguMyw2NC45LDQ1LjcsNzAuNSw0Ni4xLDYzLjJ6IE00OS41LDY4YzItMi4yLDMuMS00LjYsMy43LTYuOGMwLjYsMS4yLDEuMywyLjIsMi4xLDMuMUM1Mi4xLDY2LjQsNDkuNSw2OCw0OS41LDY4eiIvPgo8L3N2Zz4K"); }
     .graph-parking #graph-content .icon-car-london {
-      background-image: url("../assets/images/icon-car-london.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5OS44IDEwMC4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5OS44IDEwMC4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxtZXRhZGF0YT48P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MyA3OS4xNjEzNTYsIDIwMTcvMDkvMDctMDE6MTE6MjIgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiLz4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8+PC9tZXRhZGF0YT4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMDgzRjg2O30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTQuNCwzNi4yaC04LjhMNzkuNywyM2MtMy41LTQuOS02LTYuNC0xMC4yLTYuNEgzMC4zYy00LjIsMC02LjcsMS41LTEwLjIsNi40bC01LjgsMTMuMUg1LjQKCQljLTEuNCwwLTQsNy4yLDUuNCw3LjRsLTMuMSw3LjZjMC4xLDkuNywwLjEsMTkuMiwwLjEsMjguN2MwLDIsMS42LDMuNiwzLjYsMy42aDEyLjFjMiwwLDMuNS0xLjYsMy41LTMuNlY3Mmg0NS44djcuOQoJCWMwLDIsMS42LDMuNiwzLjYsMy42aDEyLjFjMiwwLDMuNS0xLjYsMy41LTMuNmMwLTkuNSwwLjEtMTkuMSwwLjEtMjguN2wtMy4xLTcuNkM5OC40LDQzLjQsOTUuNywzNi4yLDk0LjQsMzYuMnogTTIwLjksNjMuNQoJCWMtMy4zLDAtNS44LTIuNy01LjgtNS44YzAtMy4zLDIuNi01LjgsNS44LTUuOGMzLjEsMCw1LjgsMi42LDUuOCw1LjhDMjYuNyw2MC44LDI0LDYzLjUsMjAuOSw2My41eiBNNjIuMiw2Mi41SDM3LjUKCQljLTEuNCwwLTIuNy0xLjMtMi43LTIuN2MwLTEuNSwxLjMtMi44LDIuNy0yLjhoMjQuN2MxLjUsMCwyLjcsMS4zLDIuNywyLjhDNjQuOSw2MS4yLDYzLjcsNjIuNSw2Mi4yLDYyLjV6IE0xOS4xLDQwLjMKCQljMS45LTQuMSwzLjYtOC4zLDUuOS0xMi45YzEuMy0yLjIsMi43LTQuMiw1LjItNC40aDM5LjJjMi42LDAuMiw0LDIuMiw1LjIsNC40YzIuMyw0LjcsNC4xLDguOCw1LjksMTIuOUgxOS4xeiBNNzguOSw2My41CgkJYy0zLjEsMC01LjgtMi43LTUuOC01LjhjMC0zLjMsMi43LTUuOCw1LjgtNS44YzMuMywwLDUuOCwyLjYsNS44LDUuOEM4NC43LDYwLjgsODIuMiw2My41LDc4LjksNjMuNXoiLz4KPC9nPgo8L3N2Zz4K"); }
     .graph-parking #graph-content .icon-house-london {
-      background-image: url("../assets/images/icon-house-london.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAgMTAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzBDNURDNTt9Cjwvc3R5bGU+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNTAsOS43IDMyLjcsMjUuNCAzMi43LDIwLjIgMzIuNywxMi42IDIwLjEsMTIuNiAyMC4xLDIwLjIgMjAuMSwzNi45IDAuMyw1NC45IDEwLjcsNTQuOSAxMC43LDkwLjMgCgk0MC41LDkwLjMgNTkuNSw5MC4zIDg5LjMsOTAuMyA4OS4zLDU0LjkgOTkuNyw1NC45ICIvPgo8L3N2Zz4K"); }
     .graph-parking #graph-content .icon-tree-london {
-      background-image: url("../assets/images/icon-tree-london.svg"); }
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5NSA5NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTUgOTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPG1ldGFkYXRhPjw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQzIDc5LjE2MTM1NiwgMjAxNy8wOS8wNy0wMToxMToyMiAgICAgICAgIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIvPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz48L21ldGFkYXRhPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiMwQTUwQTk7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODYuNywzNGMwLjgtMS43LDEuMy0zLjcsMS4zLTUuOGMwLTcuNy02LjItMTMuOS0xMy44LTEzLjljLTEuNS02LjItNy0xMC43LTEzLjYtMTAuN2MtMi43LDAtNS4yLDAuOC03LjMsMi4xCgljLTIuNi0zLjItNi41LTUuNS0xMS01LjVjLTcsMC0xMi44LDUuMS0xMy44LDExLjhDMjcuOSwxMiwyNy4zLDEyLDI2LjcsMTJjLTcuNywwLTEzLjksNi4zLTEzLjksMTMuOWMwLDAuMSwwLDAuMywwLDAuNQoJYy00LjIsMi40LTcsNy03LDEyLjFjMCw0LjMsMiw4LjEsNSwxMC43YzAsMC41LTAuMSwxLTAuMSwxLjVjMCw3LjcsNi4zLDEzLjksMTMuOSwxMy45YzIuOCwwLDUuMi0wLjgsNy40LTIuMmMzLjEsMy4xLDcsMi4xLDgsNi4yCgljNC41LDE2LjUtMi43LDI2LjEtMi43LDI2LjFoMTYuOGMwLDAtOC0xOS4xLTEuNS0yMy40YzEuNi0xLDMuNC0yLjgsNS00LjZjMi4zLDEuNiw1LjEsMi42LDguMSwyLjZjNy43LDAsMTMuOS02LjIsMTMuOS0xMy44CgljNS42LTEuOSw5LjYtNy4xLDkuNi0xMy4yQzg5LjMsMzkuMiw4OC4zLDM2LjMsODYuNywzNHogTTM5LDYyLjZjLTIuMS0wLjYtMy43LTEuMi01LTEuN2MxLjktMS43LDMuNC00LjEsMy45LTYuNgoJYzEuNSwxLjQsMy4yLDIuNCw1LjEsMy4yQzQzLjksNjEsNDMuNCw2My45LDM5LDYyLjZ6IE00Ni4xLDYzLjJjMC4xLTEuNywwLTMuNC0wLjItNC42YzEuNCwwLjMsMi45LDAuNiw0LjUsMC43CglDNDguMyw2NC45LDQ1LjcsNzAuNSw0Ni4xLDYzLjJ6IE00OS41LDY4YzItMi4yLDMuMS00LjYsMy43LTYuOGMwLjYsMS4yLDEuMywyLjIsMi4xLDMuMUM1Mi4xLDY2LjQsNDkuNSw2OCw0OS41LDY4eiIvPgo8L3N2Zz4K"); }
     .graph-parking #graph-content .nav {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -334,6 +334,126 @@
         background-color: #ff2466; }
       .graph-emissions .content .emmissions .small-bar-color-london {
         background-color: #0e6ce5; }
+      .graph-emissions .content .emmissions .color-pm-london {
+        background-color: #05edff; }
+      .graph-emissions .content .emmissions .color-no-london {
+        background-color: #60affe; }
+      .graph-emissions .content .emmissions .color-ghg-london {
+        background-color: #3300ff; }
+      .graph-emissions .content .emmissions .color-solar-london {
+        background-color: #DBFEF8; }
+      .graph-emissions .content .emmissions .color-wind-london {
+        background-color: #97ffff; }
+      .graph-emissions .content .emmissions .color-hydro-london {
+        background-color: #05edff; }
+      .graph-emissions .content .emmissions .color-nuclear-london {
+        background-color: #b0e2ff; }
+      .graph-emissions .content .emmissions .color-gas-london {
+        background-color: #60affe; }
+      .graph-emissions .content .emmissions .color-oil-london {
+        background-color: #88ace0; }
+      .graph-emissions .content .emmissions .color-coal-london {
+        background-color: #3300ff; }
+      .graph-emissions .content .emmissions .box-pm-london::before {
+        background-color: #05edff; }
+      .graph-emissions .content .emmissions .box-no-london::before {
+        background-color: #60affe; }
+      .graph-emissions .content .emmissions .box-ghg-london::before {
+        background-color: #3300ff; }
+      .graph-emissions .content .emmissions .box-solar-london::before {
+        background-color: #DBFEF8; }
+      .graph-emissions .content .emmissions .box-wind-london::before {
+        background-color: #97ffff; }
+      .graph-emissions .content .emmissions .box-hydro-london::before {
+        background-color: #05edff; }
+      .graph-emissions .content .emmissions .box-nuclear-london::before {
+        background-color: #b0e2ff; }
+      .graph-emissions .content .emmissions .box-gas-london::before {
+        background-color: #60affe; }
+      .graph-emissions .content .emmissions .box-oil-london::before {
+        background-color: #88ace0; }
+      .graph-emissions .content .emmissions .box-coal-london::before {
+        background-color: #3300ff; }
+      .graph-emissions .content .emmissions .color-pm-la {
+        background-color: #fff0f5; }
+      .graph-emissions .content .emmissions .color-no-la {
+        background-color: #ff69b4; }
+      .graph-emissions .content .emmissions .color-ghg-la {
+        background-color: #ff007f; }
+      .graph-emissions .content .emmissions .color-solar-la {
+        background-color: #fff0f5; }
+      .graph-emissions .content .emmissions .color-wind-la {
+        background-color: #ffcccc; }
+      .graph-emissions .content .emmissions .color-hydro-la {
+        background-color: #ffb5c5; }
+      .graph-emissions .content .emmissions .color-nuclear-la {
+        background-color: #ffbbff; }
+      .graph-emissions .content .emmissions .color-gas-la {
+        background-color: #ff69b4; }
+      .graph-emissions .content .emmissions .color-oil-la {
+        background-color: #ff00cc; }
+      .graph-emissions .content .emmissions .color-coal-la {
+        background-color: #ff007f; }
+      .graph-emissions .content .emmissions .box-pm-la::before {
+        background-color: #fff0f5; }
+      .graph-emissions .content .emmissions .box-no-la::before {
+        background-color: #ff69b4; }
+      .graph-emissions .content .emmissions .box-ghg-la::before {
+        background-color: #ff007f; }
+      .graph-emissions .content .emmissions .box-solar-la::before {
+        background-color: #fff0f5; }
+      .graph-emissions .content .emmissions .box-wind-la::before {
+        background-color: #ffcccc; }
+      .graph-emissions .content .emmissions .box-hydro-la::before {
+        background-color: #ffb5c5; }
+      .graph-emissions .content .emmissions .box-nuclear-la::before {
+        background-color: #ffbbff; }
+      .graph-emissions .content .emmissions .box-gas-la::before {
+        background-color: #ff69b4; }
+      .graph-emissions .content .emmissions .box-oil-la::before {
+        background-color: #ff00cc; }
+      .graph-emissions .content .emmissions .box-coal-la::before {
+        background-color: #ff007f; }
+      .graph-emissions .content .emmissions .color-pm-mumbai {
+        background-color: #a4dcd1; }
+      .graph-emissions .content .emmissions .color-no-mumbai {
+        background-color: #00ff00; }
+      .graph-emissions .content .emmissions .color-ghg-mumbai {
+        background-color: #79973f; }
+      .graph-emissions .content .emmissions .color-solar-mumbai {
+        background-color: #98fb98; }
+      .graph-emissions .content .emmissions .color-wind-mumbai {
+        background-color: #00ffcc; }
+      .graph-emissions .content .emmissions .color-hydro-mumbai {
+        background-color: #a4dcd1; }
+      .graph-emissions .content .emmissions .color-nuclear-mumbai {
+        background-color: #00ff00; }
+      .graph-emissions .content .emmissions .color-gas-mumbai {
+        background-color: #00cd00; }
+      .graph-emissions .content .emmissions .color-oil-mumbai {
+        background-color: #79973f; }
+      .graph-emissions .content .emmissions .color-coal-mumbai {
+        background-color: #008b45; }
+      .graph-emissions .content .emmissions .box-pm-mumbai::before {
+        background-color: #a4dcd1; }
+      .graph-emissions .content .emmissions .box-no-mumbai::before {
+        background-color: #00ff00; }
+      .graph-emissions .content .emmissions .box-ghg-mumbai::before {
+        background-color: #79973f; }
+      .graph-emissions .content .emmissions .box-solar-mumbai::before {
+        background-color: #98fb98; }
+      .graph-emissions .content .emmissions .box-wind-mumbai::before {
+        background-color: #00ffcc; }
+      .graph-emissions .content .emmissions .box-hydro-mumbai::before {
+        background-color: #a4dcd1; }
+      .graph-emissions .content .emmissions .box-nuclear-mumbai::before {
+        background-color: #00ff00; }
+      .graph-emissions .content .emmissions .box-gas-mumbai::before {
+        background-color: #00cd00; }
+      .graph-emissions .content .emmissions .box-oil-mumbai::before {
+        background-color: #79973f; }
+      .graph-emissions .content .emmissions .box-coal-mumbai::before {
+        background-color: #008b45; }
       .graph-emissions .content .emmissions .chart-container {
         width: 410px;
         margin-left: auto;
@@ -485,36 +605,6 @@
                   .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .active {
                     width: 14px;
                     height: 150px; } }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-coal {
-                -webkit-filter: brightness(60%);
-                        filter: brightness(60%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-oil {
-                -webkit-filter: brightness(60%);
-                        filter: brightness(60%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-nuclear {
-                -webkit-filter: brightness(80%);
-                        filter: brightness(80%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-gas {
-                -webkit-filter: brightness(100%);
-                        filter: brightness(100%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-hydro {
-                -webkit-filter: brightness(250%);
-                        filter: brightness(250%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-wind {
-                -webkit-filter: brightness(400%);
-                        filter: brightness(400%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-solar {
-                -webkit-filter: brightness(750%);
-                        filter: brightness(750%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-pm {
-                -webkit-filter: brightness(90%);
-                        filter: brightness(90%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-no {
-                -webkit-filter: brightness(60%);
-                        filter: brightness(60%); }
-              .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .bar-ghgas {
-                -webkit-filter: brightness(40%);
-                        filter: brightness(40%); }
               .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                 width: 100%;
                 max-width: 12px;
@@ -586,36 +676,6 @@
           max-width: 380px;
           position: relative;
           left: 30px; }
-          .graph-emissions .content .emmissions .chart-container .legends .box-coal::before {
-            -webkit-filter: brightness(35%);
-                    filter: brightness(35%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-oil::before {
-            -webkit-filter: brightness(60%);
-                    filter: brightness(60%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-nuclear::before {
-            -webkit-filter: brightness(80%);
-                    filter: brightness(80%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-gas::before {
-            -webkit-filter: brightness(100%);
-                    filter: brightness(100%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-hydro::before {
-            -webkit-filter: brightness(250%);
-                    filter: brightness(250%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-wind::before {
-            -webkit-filter: brightness(400%);
-                    filter: brightness(400%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-solar::before {
-            -webkit-filter: brightness(750%);
-                    filter: brightness(750%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-pm::before {
-            -webkit-filter: brightness(90%);
-                    filter: brightness(90%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-no::before {
-            -webkit-filter: brightness(50%);
-                    filter: brightness(50%); }
-          .graph-emissions .content .emmissions .chart-container .legends .box-ghgas::before {
-            -webkit-filter: brightness(30%);
-                    filter: brightness(30%); }
           .graph-emissions .content .emmissions .chart-container .legends div {
             opacity: 0;
             -webkit-animation: fadein 0.5s forwards 0.5s;
@@ -646,8 +706,7 @@
               height: 16px;
               top: 0px;
               border: 1px solid #a5a5a5;
-              position: absolute;
-              background-color: #303030; }
+              position: absolute; }
               @media (max-width: 767px) {
                 .graph-emissions .content .emmissions .chart-container .legends .each-legend-extend::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-london::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-la::before {
                   width: 8px;
@@ -658,12 +717,6 @@
               background-color: white;
               -webkit-filter: brightness(100%);
                       filter: brightness(100%); }
-          .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai::before {
-            background-color: #009999; }
-          .graph-emissions .content .emmissions .chart-container .legends .each-legend-london::before {
-            background-color: #0e6ce5; }
-          .graph-emissions .content .emmissions .chart-container .legends .each-legend-la::before {
-            background-color: #ff2466; }
       @media (max-width: 767px) {
         .graph-emissions .content .emmissions {
           height: 50%;
@@ -680,6 +733,126 @@
         background-color: #ff2466; }
       .graph-emissions .content .electricity .small-bar-color-london {
         background-color: #0e6ce5; }
+      .graph-emissions .content .electricity .color-pm-london {
+        background-color: #05edff; }
+      .graph-emissions .content .electricity .color-no-london {
+        background-color: #60affe; }
+      .graph-emissions .content .electricity .color-ghg-london {
+        background-color: #3300ff; }
+      .graph-emissions .content .electricity .color-solar-london {
+        background-color: #DBFEF8; }
+      .graph-emissions .content .electricity .color-wind-london {
+        background-color: #97ffff; }
+      .graph-emissions .content .electricity .color-hydro-london {
+        background-color: #05edff; }
+      .graph-emissions .content .electricity .color-nuclear-london {
+        background-color: #b0e2ff; }
+      .graph-emissions .content .electricity .color-gas-london {
+        background-color: #60affe; }
+      .graph-emissions .content .electricity .color-oil-london {
+        background-color: #88ace0; }
+      .graph-emissions .content .electricity .color-coal-london {
+        background-color: #3300ff; }
+      .graph-emissions .content .electricity .box-pm-london::before {
+        background-color: #05edff; }
+      .graph-emissions .content .electricity .box-no-london::before {
+        background-color: #60affe; }
+      .graph-emissions .content .electricity .box-ghg-london::before {
+        background-color: #3300ff; }
+      .graph-emissions .content .electricity .box-solar-london::before {
+        background-color: #DBFEF8; }
+      .graph-emissions .content .electricity .box-wind-london::before {
+        background-color: #97ffff; }
+      .graph-emissions .content .electricity .box-hydro-london::before {
+        background-color: #05edff; }
+      .graph-emissions .content .electricity .box-nuclear-london::before {
+        background-color: #b0e2ff; }
+      .graph-emissions .content .electricity .box-gas-london::before {
+        background-color: #60affe; }
+      .graph-emissions .content .electricity .box-oil-london::before {
+        background-color: #88ace0; }
+      .graph-emissions .content .electricity .box-coal-london::before {
+        background-color: #3300ff; }
+      .graph-emissions .content .electricity .color-pm-la {
+        background-color: #fff0f5; }
+      .graph-emissions .content .electricity .color-no-la {
+        background-color: #ff69b4; }
+      .graph-emissions .content .electricity .color-ghg-la {
+        background-color: #ff007f; }
+      .graph-emissions .content .electricity .color-solar-la {
+        background-color: #fff0f5; }
+      .graph-emissions .content .electricity .color-wind-la {
+        background-color: #ffcccc; }
+      .graph-emissions .content .electricity .color-hydro-la {
+        background-color: #ffb5c5; }
+      .graph-emissions .content .electricity .color-nuclear-la {
+        background-color: #ffbbff; }
+      .graph-emissions .content .electricity .color-gas-la {
+        background-color: #ff69b4; }
+      .graph-emissions .content .electricity .color-oil-la {
+        background-color: #ff00cc; }
+      .graph-emissions .content .electricity .color-coal-la {
+        background-color: #ff007f; }
+      .graph-emissions .content .electricity .box-pm-la::before {
+        background-color: #fff0f5; }
+      .graph-emissions .content .electricity .box-no-la::before {
+        background-color: #ff69b4; }
+      .graph-emissions .content .electricity .box-ghg-la::before {
+        background-color: #ff007f; }
+      .graph-emissions .content .electricity .box-solar-la::before {
+        background-color: #fff0f5; }
+      .graph-emissions .content .electricity .box-wind-la::before {
+        background-color: #ffcccc; }
+      .graph-emissions .content .electricity .box-hydro-la::before {
+        background-color: #ffb5c5; }
+      .graph-emissions .content .electricity .box-nuclear-la::before {
+        background-color: #ffbbff; }
+      .graph-emissions .content .electricity .box-gas-la::before {
+        background-color: #ff69b4; }
+      .graph-emissions .content .electricity .box-oil-la::before {
+        background-color: #ff00cc; }
+      .graph-emissions .content .electricity .box-coal-la::before {
+        background-color: #ff007f; }
+      .graph-emissions .content .electricity .color-pm-mumbai {
+        background-color: #a4dcd1; }
+      .graph-emissions .content .electricity .color-no-mumbai {
+        background-color: #00ff00; }
+      .graph-emissions .content .electricity .color-ghg-mumbai {
+        background-color: #79973f; }
+      .graph-emissions .content .electricity .color-solar-mumbai {
+        background-color: #98fb98; }
+      .graph-emissions .content .electricity .color-wind-mumbai {
+        background-color: #00ffcc; }
+      .graph-emissions .content .electricity .color-hydro-mumbai {
+        background-color: #a4dcd1; }
+      .graph-emissions .content .electricity .color-nuclear-mumbai {
+        background-color: #00ff00; }
+      .graph-emissions .content .electricity .color-gas-mumbai {
+        background-color: #00cd00; }
+      .graph-emissions .content .electricity .color-oil-mumbai {
+        background-color: #79973f; }
+      .graph-emissions .content .electricity .color-coal-mumbai {
+        background-color: #008b45; }
+      .graph-emissions .content .electricity .box-pm-mumbai::before {
+        background-color: #a4dcd1; }
+      .graph-emissions .content .electricity .box-no-mumbai::before {
+        background-color: #00ff00; }
+      .graph-emissions .content .electricity .box-ghg-mumbai::before {
+        background-color: #79973f; }
+      .graph-emissions .content .electricity .box-solar-mumbai::before {
+        background-color: #98fb98; }
+      .graph-emissions .content .electricity .box-wind-mumbai::before {
+        background-color: #00ffcc; }
+      .graph-emissions .content .electricity .box-hydro-mumbai::before {
+        background-color: #a4dcd1; }
+      .graph-emissions .content .electricity .box-nuclear-mumbai::before {
+        background-color: #00ff00; }
+      .graph-emissions .content .electricity .box-gas-mumbai::before {
+        background-color: #00cd00; }
+      .graph-emissions .content .electricity .box-oil-mumbai::before {
+        background-color: #79973f; }
+      .graph-emissions .content .electricity .box-coal-mumbai::before {
+        background-color: #008b45; }
       .graph-emissions .content .electricity .chart-container {
         width: 410px;
         margin-left: auto;
@@ -831,36 +1004,6 @@
                   .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .active {
                     width: 14px;
                     height: 150px; } }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-coal {
-                -webkit-filter: brightness(60%);
-                        filter: brightness(60%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-oil {
-                -webkit-filter: brightness(60%);
-                        filter: brightness(60%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-nuclear {
-                -webkit-filter: brightness(80%);
-                        filter: brightness(80%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-gas {
-                -webkit-filter: brightness(100%);
-                        filter: brightness(100%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-hydro {
-                -webkit-filter: brightness(250%);
-                        filter: brightness(250%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-wind {
-                -webkit-filter: brightness(400%);
-                        filter: brightness(400%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-solar {
-                -webkit-filter: brightness(750%);
-                        filter: brightness(750%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-pm {
-                -webkit-filter: brightness(90%);
-                        filter: brightness(90%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-no {
-                -webkit-filter: brightness(60%);
-                        filter: brightness(60%); }
-              .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .bar-ghgas {
-                -webkit-filter: brightness(40%);
-                        filter: brightness(40%); }
               .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                 width: 100%;
                 max-width: 12px;
@@ -932,36 +1075,6 @@
           max-width: 380px;
           position: relative;
           left: 30px; }
-          .graph-emissions .content .electricity .chart-container .legends .box-coal::before {
-            -webkit-filter: brightness(35%);
-                    filter: brightness(35%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-oil::before {
-            -webkit-filter: brightness(60%);
-                    filter: brightness(60%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-nuclear::before {
-            -webkit-filter: brightness(80%);
-                    filter: brightness(80%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-gas::before {
-            -webkit-filter: brightness(100%);
-                    filter: brightness(100%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-hydro::before {
-            -webkit-filter: brightness(250%);
-                    filter: brightness(250%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-wind::before {
-            -webkit-filter: brightness(400%);
-                    filter: brightness(400%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-solar::before {
-            -webkit-filter: brightness(750%);
-                    filter: brightness(750%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-pm::before {
-            -webkit-filter: brightness(90%);
-                    filter: brightness(90%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-no::before {
-            -webkit-filter: brightness(50%);
-                    filter: brightness(50%); }
-          .graph-emissions .content .electricity .chart-container .legends .box-ghgas::before {
-            -webkit-filter: brightness(30%);
-                    filter: brightness(30%); }
           .graph-emissions .content .electricity .chart-container .legends div {
             opacity: 0;
             -webkit-animation: fadein 0.5s forwards 0.5s;
@@ -992,8 +1105,7 @@
               height: 16px;
               top: 0px;
               border: 1px solid #a5a5a5;
-              position: absolute;
-              background-color: #303030; }
+              position: absolute; }
               @media (max-width: 767px) {
                 .graph-emissions .content .electricity .chart-container .legends .each-legend-extend::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-london::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-la::before {
                   width: 8px;
@@ -1004,12 +1116,6 @@
               background-color: white;
               -webkit-filter: brightness(100%);
                       filter: brightness(100%); }
-          .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai::before {
-            background-color: #009999; }
-          .graph-emissions .content .electricity .chart-container .legends .each-legend-london::before {
-            background-color: #0e6ce5; }
-          .graph-emissions .content .electricity .chart-container .legends .each-legend-la::before {
-            background-color: #ff2466; }
       @media (max-width: 767px) {
         .graph-emissions .content .electricity {
           height: 50%;

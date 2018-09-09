@@ -8,18 +8,31 @@
     <title>CitiLab - Graphs</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/graph-min.css">
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics_debug.js','ga'); // <-- please update the url for the non-debug version
+        // use this for the final version:   https://www.google-analytics.com/analytics.js
+
+        ga('create', 'UA-XXXXXXXXXX', 'auto'); // <----- please update the GA tracking-id for final
+        ga('set', 'forceSSL', true);
+        ga('send', 'pageview');
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script src="js/main-charges.js"></script>
+    <script src="js/graph-charge.js"></script>
 </head>
 <body>
 
   
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
+    <!-- === PLACE HOLDER ========== -->
     <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <!-- === END OF PLACE HOLDER === -->
 
-     <!-- div for charges graph starts here . =============================================-->
+    <!-- CHARGES GRAPH - LOS ANGELES ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="graph-vehicle-charges" id="graph-vehicle-charges-la">
         <div class="mapholder"><div class="dotContainer"></div></div>
         <div class="contents">
@@ -51,62 +64,78 @@
             </div>
             <div class="hint">drag the slider to see the increasing number of electric vehicle chargers over time</div>
         </div>
-        
-       
     </div>
-     <!-- div for charges graph starts here . =============================================-->
 
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
+    <script>
+        initVehicleCarges({
+            container: "#graph-vehicle-charges-la",         // required
+            location: "la",                                 // required
+            intervals: 10,                                  // optional 
+            start: 1,                                       // optional 
+            end: 99                                         // optional 
+        });
+    </script>
+    <!-- end of CHARGES GRAPH - LOS ANGELES +++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- === PLACE HOLDER ========== -->
     <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <!-- === END OF PLACE HOLDER === -->
 
-         <!-- div for charges graph starts here . =============================================-->
-         <div class="graph-vehicle-charges" id="graph-vehicle-charges-london">
-            <div class="mapholder"><div class="dotContainer"></div></div>
-            <div class="contents">
-                <div class="content-copy"><p>If London wants to meet its rigorous emissions targets by 2050, it will have to make buying electric more practical and help supply charging infrastructure for electric vehicles. </br>Siemens predicts the installation of nearly 840,000 new chargers for a city like London by 2050. To accommodate this, the city will have to invest in over 520 chargers a week, starting now.
-                    </p></div>
-                <div class="deviderline"></div>
-                <div class="legend">
-                    <div class="title">SCALE</div>
-                    <div class="val-container">
-                        <div class="sample-dot"></div>
-                        <div class="value">1 DOT = 100 CHARGERS</div>
-                    </div>
+    <!-- CHARGES GRAPH - LONDON ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="graph-vehicle-charges" id="graph-vehicle-charges-london">
+        <div class="mapholder"><div class="dotContainer"></div></div>
+        <div class="contents">
+            <div class="content-copy"><p>If London wants to meet its rigorous emissions targets by 2050, it will have to make buying electric more practical and help supply charging infrastructure for electric vehicles. </br>Siemens predicts the installation of nearly 840,000 new chargers for a city like London by 2050. To accommodate this, the city will have to invest in over 520 chargers a week, starting now.
+                </p></div>
+            <div class="deviderline"></div>
+            <div class="legend">
+                <div class="title">SCALE</div>
+                <div class="val-container">
+                    <div class="sample-dot"></div>
+                    <div class="value">1 DOT = 100 CHARGERS</div>
                 </div>
             </div>
-            
-            <div class="sliderModule">
-                <div class='years'>
-                    <div class="year">2018</div>
-                    <div class="year">2035</div>
-                    <div class="year">2050</div>
-                </div>
-                <div class="range-slider">
-                    
-                    <div class="sliderDotContainer">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                    <input id="r-slider" type="range" value="0" min="0" max="0">
-                </div>
-                <div class="hint">drag the slider to see the increasing number of electric vehicle chargers over time</div>
-            </div>
-            
-           
         </div>
-         <!-- div for charges graph starts here . =============================================-->
-    
-        <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
-        <div class="placeholder"></div>
-        <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+        
+        <div class="sliderModule">
+            <div class='years'>
+                <div class="year">2018</div>
+                <div class="year">2035</div>
+                <div class="year">2050</div>
+            </div>
+            <div class="range-slider">
+                
+                <div class="sliderDotContainer">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <input id="r-slider" type="range" value="0" min="0" max="0">
+            </div>
+            <div class="hint">drag the slider to see the increasing number of electric vehicle chargers over time</div>
+        </div>
+    </div>
 
-             <!-- div for charges graph starts here . =============================================-->
+    <script>
+        initVehicleCarges({
+            container: "#graph-vehicle-charges-london",         // required
+            location: "london",                                 // required
+            intervals: 10,                                  // optional 
+            start: 1,                                       // optional 
+            end: 99                                         // optional 
+        });
+    </script>
+    <!-- end of CHARGES GRAPH - LONDON ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    
+    <!-- === PLACE HOLDER ========== -->
+    <div class="placeholder"></div>
+    <!-- === END OF PLACE HOLDER === -->
+
+    <!-- CHARGES GRAPH - MUMBAI ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="graph-vehicle-charges" id="graph-vehicle-charges-mumbai">
         <div class="mapholder"><div class="dotContainer"></div></div>
         <div class="contents">
-            <div class="content-copy"><p>Siemens predicts that by 2050, a city like Mumbai would require nearly 500,000 electric vehicle chargers-- that’s an average of about 310 chargers per week starting today.</p></div>
+            <div class="content-copy"><p>Siemens predicts that by 2050, a city like Mumbai would require nearly 500,000 electric vehicle chargers—that’s an average of about 300 chargers per week starting today.</p></div>
             <div class="deviderline"></div>
             <div class="legend">
                 <div class="title">SCALE</div>
@@ -136,11 +165,22 @@
         
        
     </div>
-     <!-- div for charges graph starts here . =============================================-->
 
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
-    <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <script>
+        initVehicleCarges({
+            container: "#graph-vehicle-charges-mumbai",         // required
+            location: "mumbai",                                 // required
+            intervals: 10,                                  // optional 
+            start: 1,                                       // optional 
+            end: 99                                         // optional 
+        });
+    </script>
+
+      <!-- end of CHARGES GRAPH - MUMBAI ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- === PLACE HOLDER ========== -->
+     <div class="placeholder"></div>
+    <!-- === END OF PLACE HOLDER === -->
 
 </body>
 </html>

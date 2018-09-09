@@ -8,18 +8,32 @@
     <title>CitiLab - Graphs</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/graph-min.css">
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics_debug.js','ga'); // <-- please update the url for the non-debug version
+        // use this for the final version:   https://www.google-analytics.com/analytics.js
+
+        ga('create', 'UA-XXXXXXXXXX', 'auto'); // <----- please update the GA tracking-id for final
+        ga('set', 'forceSSL', true);
+        ga('send', 'pageview');
+    </script>
+
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script src="js/main-emmissions.js"></script>
+    <script src="js/graph-emmissions.js"></script>
 </head>
 <body>
 
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
+    <!-- === PLACE HOLDER ========== -->
     <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <!-- === END OF PLACE HOLDER === -->
 
 
-    <!-- LONDON --------- div for emissions graph starts here . =============================================-->
+   <!-- LONDON Emission Graph ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="graph-emissions" id="graph-emissions-london">
         <div class="content">
             <div class="electricity">
@@ -142,21 +156,28 @@
             </div>
         </div>
         <div class="caption">
-            <div class="original-copy"><p>By 2050, London could be using nearly 13.5 million kWh of electricity every day on electric buses, shared fleets, and private cars alone.
-                That’s nearly a 2,500 percent increase in current electricity demand from transportation, or roughly about the same amount of energy you’d need to run 19,000 refrigerators for a year.</p>
+            <div class="original-copy"><p>By 2050, London could be using nearly 13.5 million kilowatt-hours of electricity every day on electric buses, shared fleets, and private cars alone.</br>That’s nearly a 2,500 percent increase in current electricity demand from transportation, or roughly about the same amount of energy you’d need to run 19,000 refrigerators for a year.</p>
             </div>
             <div class="rollover-copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
         </div>
     </div>
-    <!-- div for emissions graph ends here  =============================================-->
 
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
+    <script>
+        initEmmissionsGraph ({
+            container: "#graph-emissions-london",
+            location: "london"
+        });
+    </script>
+    <!-- END OF LONDON Emission Graph ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- === PLACE HOLDER ========== -->
     <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <!-- === END OF PLACE HOLDER === -->
 
 
 
-    <!-- LA div for emissions graph starts here . =============================================-->
+
+    <!-- LOS ANGELES Emission Graph ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="graph-emissions" id="graph-emissions-la">
             <div class="content">
                 <div class="electricity">
@@ -181,27 +202,27 @@
                                         <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
                                         <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
                                         <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
-                                        <div class="small-bar bar-solar" id="bar-gas-3"><span></span></div>
-                                        <div class="small-bar bar-gas" id="bar-gas-4"><span></span></div>
-                                        <div class="small-bar bar-hydro" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
                                         <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
                                     </div>
                                     <div id="bar-1" class="bar">
                                         <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
                                         <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
                                         <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
-                                        <div class="small-bar bar-solar" id="bar-gas-3"><span></span></div>
-                                        <div class="small-bar bar-gas" id="bar-gas-4"><span></span></div>
-                                        <div class="small-bar bar-hydro" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
                                         <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
                                     </div>
                                     <div id="bar-2" class="bar">
                                         <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
                                         <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
                                         <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
-                                        <div class="small-bar bar-solar" id="bar-gas-3"><span></span></div>
-                                        <div class="small-bar bar-gas" id="bar-gas-4"><span></span></div>
-                                        <div class="small-bar bar-hydro" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
                                         <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
                                     </div>
                                 </div>
@@ -219,9 +240,9 @@
                             <div id="box-0" class="each-legend mainColor box-oil">Oil</div>
                             <div id="box-1" class="each-legend mainColor box-nuclear">Nuclear</div>
                             <div id="box-2" class="each-legend mainColor box-coal">Coal</div>
-                            <div id="box-3" class="each-legend mainColor box-solar">Solar</div>
-                            <div id="box-4" class="each-legend mainColor box-gas">Gas</div>
-                            <div id="box-5" class="each-legend mainColor box-hydro">Hydro</div>
+                            <div id="box-3" class="each-legend mainColor box-gas">Gas</div>
+                            <div id="box-4" class="each-legend mainColor box-hydro">Hydro</div>
+                            <div id="box-5" class="each-legend mainColor box-solar">Solar</div>
                             <div id="box-6" class="each-legend mainColor box-wind">Wind</div>
                         </div>
                     </div>
@@ -283,15 +304,22 @@
                 <div class="rollover-copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
             </div>
         </div>
-    <!-- div for emissions graph ends here  =============================================-->
 
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
+    <script>
+        initEmmissionsGraph ({
+            container: "#graph-emissions-la",
+            location: "la"
+        });
+    </script>
+    <!-- end of LOS ANGELES Emission Graph ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- === PLACE HOLDER ========== -->
     <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
+    <!-- === END OF PLACE HOLDER === -->
 
 
 
-    <!-- div for emissions graph starts here . =============================================-->
+    <!-- MUMBAI Emission Graph ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="graph-emissions" id="graph-emissions-mumbai">
             <div class="content">
                 <div class="electricity">
@@ -414,20 +442,22 @@
                 </div>
             </div>
             <div class="caption">
-                <div class="original-copy"><p>Siemens predicts that by 2050, e-Mobility could reduce traffic-related GHG emissions by 74 percent and decrease traffic-related air pollution by 62 percent.
-                    With an increase of nearly 19 million kWh of electricity used per day, in a city like Mumbai you could binge watch 114 million hours of television with that much energy.</p></div>
+                <div class="original-copy"><p>Siemens predicts that by 2050, eMobility could reduce traffic-related GHG emissions by 74 percent and decrease traffic-related air pollution by 62 percent.</br>
+With an increase of nearly 19 million kilowatt-hours of electricity used per day, in a city like Mumbai you could binge watch 114 million hours of television with that much energy.</p></div>
                 <div class="rollover-copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
             </div>
         </div>
-    <!-- div for emissions graph ends here  =============================================-->
 
-    <!-- +++++++++++ PLACE HOLDER ++++++++++++++++++ -->
+    <script>
+        initEmmissionsGraph ({
+            container: "#graph-emissions-mumbai",
+            location: "mumbai"
+        });
+    </script>
+    <!-- end MUMBAI Emission Graph ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- === PLACE HOLDER ========== -->
     <div class="placeholder"></div>
-    <!-- +++++++++++ END OF PLACE HOLDER +++++++++++ -->
-
-
-
-
-
+    <!-- === END OF PLACE HOLDER === -->
 </body>
 </html>

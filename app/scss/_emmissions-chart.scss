@@ -9,6 +9,40 @@ $Value-5: 80%;
 $Value-6: 60%;
 $Value-7: 35%;
 
+$pm-london: #05edff;
+$no-london: #60affe;
+$ghg-london: #3300ff;
+$solar-london: #DBFEF8;
+$wind-london: #97ffff;
+$hydro-london: #05edff;
+$nuclear-london: #b0e2ff;
+$gas-london: #60affe;
+$oil-london: #88ace0;
+$coal-london: #3300ff;
+
+$pm-la: #fff0f5;
+$no-la: #ff69b4;
+$ghg-la: #ff007f;
+$solar-la: #fff0f5;
+$wind-la: #ffcccc;
+$hydro-la: #ffb5c5;
+$nuclear-la: #ffbbff;
+$gas-la: #ff69b4;
+$oil-la: #ff00cc;
+$coal-la: #ff007f;
+
+$pm-mumbai: #a4dcd1;
+$no-mumbai: #00ff00;
+$ghg-mumbai: #79973f;
+$solar-mumbai: #98fb98;
+$wind-mumbai: #00ffcc;
+$hydro-mumbai: #a4dcd1;
+$nuclear-mumbai: #00ff00;
+$gas-mumbai: #00cd00;
+$oil-mumbai: #79973f;
+$coal-mumbai: #008b45;
+
+
 .small-bar-color-mumbai {
     background-color: $color-mumbai;
 }
@@ -20,6 +54,83 @@ $Value-7: 35%;
 .small-bar-color-london {
     background-color: $color-london;
 }
+
+.color-pm-london        { background-color: $pm-london;}
+.color-no-london        { background-color: $no-london;}
+.color-ghg-london       { background-color: $ghg-london;}
+.color-solar-london     { background-color: $solar-london;}
+.color-wind-london      { background-color: $wind-london;}
+.color-hydro-london     { background-color: $hydro-london;}
+.color-nuclear-london   { background-color: $nuclear-london;}
+.color-gas-london       { background-color: $gas-london;}
+.color-oil-london       { background-color: $oil-london;}
+.color-coal-london      { background-color: $coal-london;}
+
+.box-pm-london          { &::before {background-color: $pm-london;} }
+.box-no-london          { &::before {background-color: $no-london;} }
+.box-ghg-london         { &::before {background-color: $ghg-london;} }
+.box-solar-london       { &::before {background-color: $solar-london;} }
+.box-wind-london        { &::before {background-color: $wind-london;} }
+.box-hydro-london       { &::before {background-color: $hydro-london;} }
+.box-nuclear-london     { &::before {background-color: $nuclear-london;} }
+.box-gas-london         { &::before {background-color: $gas-london;} }
+.box-oil-london         { &::before {background-color: $oil-london;} }
+.box-coal-london        { &::before {background-color: $coal-london;} }
+
+.color-pm-la            { background-color: $pm-la;}
+.color-no-la            { background-color: $no-la;}
+.color-ghg-la           { background-color: $ghg-la;}
+.color-solar-la         { background-color: $solar-la;}
+.color-wind-la          { background-color: $wind-la;}
+.color-hydro-la         { background-color: $hydro-la;}
+.color-nuclear-la       { background-color: $nuclear-la;}
+.color-gas-la           { background-color: $gas-la;}
+.color-oil-la           { background-color: $oil-la;}
+.color-coal-la          { background-color: $coal-la;}
+
+.box-pm-la          { &::before {background-color: $pm-la;} }
+.box-no-la          { &::before {background-color: $no-la;} }
+.box-ghg-la         { &::before {background-color: $ghg-la;} }
+.box-solar-la       { &::before {background-color: $solar-la;} }
+.box-wind-la        { &::before {background-color: $wind-la;} }
+.box-hydro-la       { &::before {background-color: $hydro-la;} }
+.box-nuclear-la     { &::before {background-color: $nuclear-la;} }
+.box-gas-la         { &::before {background-color: $gas-la;} }
+.box-oil-la         { &::before {background-color: $oil-la;} }
+.box-coal-la        { &::before {background-color: $coal-la;} }
+
+.color-pm-mumbai        { background-color: $pm-mumbai;}
+.color-no-mumbai        { background-color: $no-mumbai;}
+.color-ghg-mumbai       { background-color: $ghg-mumbai;}
+.color-solar-mumbai     { background-color: $solar-mumbai;}
+.color-wind-mumbai      { background-color: $wind-mumbai;}
+.color-hydro-mumbai     { background-color: $hydro-mumbai;}
+.color-nuclear-mumbai   { background-color: $nuclear-mumbai;}
+.color-gas-mumbai       { background-color: $gas-mumbai;}
+.color-oil-mumbai       { background-color: $oil-mumbai;}
+.color-coal-mumbai      { background-color: $coal-mumbai;}
+
+.box-pm-mumbai          { &::before {background-color: $pm-mumbai;} }
+.box-no-mumbai          { &::before {background-color: $no-mumbai;} }
+.box-ghg-mumbai         { &::before {background-color: $ghg-mumbai;} }
+.box-solar-mumbai       { &::before {background-color: $solar-mumbai;} }
+.box-wind-mumbai        { &::before {background-color: $wind-mumbai;} }
+.box-hydro-mumbai       { &::before {background-color: $hydro-mumbai;} }
+.box-nuclear-mumbai     { &::before {background-color: $nuclear-mumbai;} }
+.box-gas-mumbai         { &::before {background-color: $gas-mumbai;} }
+.box-oil-mumbai         { &::before {background-color: $oil-mumbai;} }
+.box-coal-mumbai        { &::before {background-color: $coal-mumbai;} }
+
+
+
+
+  // .box-coal { &::before {filter: brightness($Value-7);}}
+        // .box-oil { &::before {filter: brightness($Value-6);}}
+        // .box-nuclear { &::before {filter: brightness($Value-5);}}
+        // .box-gas { &::before {filter: brightness($Value-4);}}
+        // .box-hydro { &::before {filter: brightness($Value-3);}}
+        // .box-wind { &::before {filter: brightness($Value-2);}}
+        // .box-solar { &::before {filter: brightness($Value-1);}}
 
 
 .chart-container {
@@ -176,19 +287,9 @@ $Value-7: 35%;
                         }
                     }
 
-                    
-
-                    .bar-coal { filter: brightness($Value-6);}
-                    .bar-oil { filter: brightness($Value-6);}
-                    .bar-nuclear { filter: brightness($Value-5);}
-                    .bar-gas { filter: brightness($Value-4);}
-                    .bar-hydro { filter: brightness($Value-3);}
-                    .bar-wind { filter: brightness($Value-2);}
-                    .bar-solar { filter: brightness($Value-1);}
-
-                    .bar-pm { filter: brightness(90%);}
-                    .bar-no { filter: brightness(60%);}
-                    .bar-ghgas { filter: brightness(40%);}
+                    // .bar-pm { filter: brightness(90%);}
+                    // .bar-no { filter: brightness(60%);}
+                    // .bar-ghgas { filter: brightness(40%);}
 
                     .small-bar {
                         // width: 10px;
@@ -197,41 +298,10 @@ $Value-7: 35%;
                         margin: 0px 2px;
                         height: 200px;
                         align-self: flex-end;
-                        // background-color: #3c7bcd;
-                        // transform-origin: 50% 100%;
-                        //  transform: scaleY(0);
                         position: relative;
                         //  bottom: 0px;
                         box-sizing: border-box;
 
-
-                        // &:nth-child(1){
-                        //     filter: brightness(100%);
-                        // }
-
-                        // &:nth-child(2){
-                        //     filter: brightness(90%);
-                        // }
-
-                        // &:nth-child(3){
-                        //     filter: brightness(80%);
-                        // }
-
-                        // &:nth-child(4){
-                        //     filter: brightness(70%);
-                        // }
-
-                        // &:nth-child(5){
-                        //     filter: brightness(60%);
-                        // }
-
-                        // &:nth-child(6){
-                        //     filter: brightness(50%);
-                        // }
-
-                        // &:nth-child(7){
-                        //     filter: brightness(40%);
-                        // }
 
 
                         &:hover {
@@ -305,17 +375,17 @@ $Value-7: 35%;
         left: 30px;
 
         
-        .box-coal { &::before {filter: brightness($Value-7);}}
-        .box-oil { &::before {filter: brightness($Value-6);}}
-        .box-nuclear { &::before {filter: brightness($Value-5);}}
-        .box-gas { &::before {filter: brightness($Value-4);}}
-        .box-hydro { &::before {filter: brightness($Value-3);}}
-        .box-wind { &::before {filter: brightness($Value-2);}}
-        .box-solar { &::before {filter: brightness($Value-1);}}
+        // .box-coal { &::before {filter: brightness($Value-7);}}
+        // .box-oil { &::before {filter: brightness($Value-6);}}
+        // .box-nuclear { &::before {filter: brightness($Value-5);}}
+        // .box-gas { &::before {filter: brightness($Value-4);}}
+        // .box-hydro { &::before {filter: brightness($Value-3);}}
+        // .box-wind { &::before {filter: brightness($Value-2);}}
+        // .box-solar { &::before {filter: brightness($Value-1);}}
 
-        .box-pm { &::before {filter: brightness(90%);}}
-        .box-no { &::before {filter: brightness(50%);}}
-        .box-ghgas { &::before {filter: brightness(30%);}}
+        // .box-pm { &::before {filter: brightness(90%);}}
+        // .box-no { &::before {filter: brightness(50%);}}
+        // .box-ghgas { &::before {filter: brightness(30%);}}
         
 
         div {
@@ -362,7 +432,7 @@ $Value-7: 35%;
                 top: 0px;
                 border: 1px solid rgb(165, 165, 165);
                 position: absolute;
-                background-color: #303030;
+               // background-color: #303030;
 
 
                 @include breakpoint ("mobile") {
@@ -389,19 +459,19 @@ $Value-7: 35%;
 
         .each-legend-mumbai {
             @extend .each-legend-extend;
-            &::before {background-color: $color-mumbai;}
+           // &::before {background-color: $color-mumbai;}
            
         }
 
         .each-legend-london {
             @extend .each-legend-extend;
-            &::before {background-color: $color-london;}
+           // &::before {background-color: $color-london;}
            
         }
 
         .each-legend-la {
             @extend .each-legend-extend;
-            &::before {background-color: $color-la;}
+           // &::before {background-color: $color-la;}
         
         }
     }
