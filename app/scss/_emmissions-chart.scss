@@ -55,9 +55,21 @@ $coal-mumbai: #008b45;
     background-color: $color-london;
 }
 
-.color-pm-london        { background-color: $pm-london;}
-.color-no-london        { background-color: $no-london;}
-.color-ghg-london       { background-color: $ghg-london;}
+.color-pm-london { 
+    background-color: $color-london;
+    filter: brightness($Value-7);
+}
+.color-no-london { 
+    background-color: $color-london;
+    filter: brightness($Value-6);
+}
+
+.color-ghg-london { 
+    background-color: $color-london;
+    filter: brightness($Value-5);
+
+}
+
 .color-solar-london     { background-color: $solar-london;}
 .color-wind-london      { background-color: $wind-london;}
 .color-hydro-london     { background-color: $hydro-london;}
@@ -66,9 +78,26 @@ $coal-mumbai: #008b45;
 .color-oil-london       { background-color: $oil-london;}
 .color-coal-london      { background-color: $coal-london;}
 
-.box-pm-london          { &::before {background-color: $pm-london;} }
-.box-no-london          { &::before {background-color: $no-london;} }
-.box-ghg-london         { &::before {background-color: $ghg-london;} }
+.box-pm-london{ 
+    &::before {
+        background-color: $color-london;
+        filter: brightness($Value-7);
+    } 
+}
+
+.box-no-london{ 
+    &::before {
+        background-color: $color-london;
+        filter: brightness($Value-6);
+    } 
+}
+.box-ghg-london{ 
+    &::before {
+        background-color: $color-london;
+        filter: brightness($Value-5);
+    } 
+}
+
 .box-solar-london       { &::before {background-color: $solar-london;} }
 .box-wind-london        { &::before {background-color: $wind-london;} }
 .box-hydro-london       { &::before {background-color: $hydro-london;} }
@@ -77,9 +106,19 @@ $coal-mumbai: #008b45;
 .box-oil-london         { &::before {background-color: $oil-london;} }
 .box-coal-london        { &::before {background-color: $coal-london;} }
 
-.color-pm-la            { background-color: $pm-la;}
-.color-no-la            { background-color: $no-la;}
-.color-ghg-la           { background-color: $ghg-la;}
+.color-pm-la { 
+    background-color: $color-la;
+    filter: brightness($Value-7);
+}
+.color-no-la { 
+    background-color: $color-la;
+    filter: brightness($Value-6);
+}
+.color-ghg-la { 
+    background-color: $color-la;
+    filter: brightness($Value-5);
+}
+
 .color-solar-la         { background-color: $solar-la;}
 .color-wind-la          { background-color: $wind-la;}
 .color-hydro-la         { background-color: $hydro-la;}
@@ -88,9 +127,27 @@ $coal-mumbai: #008b45;
 .color-oil-la           { background-color: $oil-la;}
 .color-coal-la          { background-color: $coal-la;}
 
-.box-pm-la          { &::before {background-color: $pm-la;} }
-.box-no-la          { &::before {background-color: $no-la;} }
-.box-ghg-la         { &::before {background-color: $ghg-la;} }
+.box-pm-la { 
+    &::before {
+        background-color: $color-la;
+        filter: brightness($Value-7);
+    } 
+}
+
+.box-no-la { 
+    &::before {
+        background-color: $color-la;
+        filter: brightness($Value-6);
+    } 
+}
+
+.box-ghg-la { 
+    &::before {
+        background-color: $color-la;
+        filter: brightness($Value-5);
+    } 
+}
+
 .box-solar-la       { &::before {background-color: $solar-la;} }
 .box-wind-la        { &::before {background-color: $wind-la;} }
 .box-hydro-la       { &::before {background-color: $hydro-la;} }
@@ -99,9 +156,21 @@ $coal-mumbai: #008b45;
 .box-oil-la         { &::before {background-color: $oil-la;} }
 .box-coal-la        { &::before {background-color: $coal-la;} }
 
-.color-pm-mumbai        { background-color: $pm-mumbai;}
-.color-no-mumbai        { background-color: $no-mumbai;}
-.color-ghg-mumbai       { background-color: $ghg-mumbai;}
+.color-pm-mumbai  { 
+    background-color: $color-mumbai;
+    filter: brightness($Value-7);
+}
+.color-no-mumbai { 
+    background-color: $color-mumbai;
+    filter: brightness($Value-6);
+}
+
+.color-ghg-mumbai { 
+    background-color: $color-mumbai;
+    filter: brightness($Value-5);
+}
+
+
 .color-solar-mumbai     { background-color: $solar-mumbai;}
 .color-wind-mumbai      { background-color: $wind-mumbai;}
 .color-hydro-mumbai     { background-color: $hydro-mumbai;}
@@ -110,9 +179,25 @@ $coal-mumbai: #008b45;
 .color-oil-mumbai       { background-color: $oil-mumbai;}
 .color-coal-mumbai      { background-color: $coal-mumbai;}
 
-.box-pm-mumbai          { &::before {background-color: $pm-mumbai;} }
-.box-no-mumbai          { &::before {background-color: $no-mumbai;} }
-.box-ghg-mumbai         { &::before {background-color: $ghg-mumbai;} }
+.box-pm-mumbai { 
+    &::before {
+        background-color: $color-mumbai;
+        filter: brightness($Value-7);
+    } 
+}
+.box-no-mumbai { 
+    &::before {
+        background-color: $color-mumbai;
+        filter: brightness($Value-6);
+    } 
+}
+.box-ghg-mumbai { 
+    &::before {
+        background-color: $color-mumbai;
+        filter: brightness($Value-5);
+    } 
+}
+
 .box-solar-mumbai       { &::before {background-color: $solar-mumbai;} }
 .box-wind-mumbai        { &::before {background-color: $wind-mumbai;} }
 .box-hydro-mumbai       { &::before {background-color: $hydro-mumbai;} }

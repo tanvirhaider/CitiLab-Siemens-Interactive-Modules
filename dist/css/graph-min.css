@@ -335,11 +335,17 @@
       .graph-emissions .content .emmissions .small-bar-color-london {
         background-color: #0e6ce5; }
       .graph-emissions .content .emmissions .color-pm-london {
-        background-color: #05edff; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .emmissions .color-no-london {
-        background-color: #60affe; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .emmissions .color-ghg-london {
-        background-color: #3300ff; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .emmissions .color-solar-london {
         background-color: #DBFEF8; }
       .graph-emissions .content .emmissions .color-wind-london {
@@ -355,11 +361,17 @@
       .graph-emissions .content .emmissions .color-coal-london {
         background-color: #3300ff; }
       .graph-emissions .content .emmissions .box-pm-london::before {
-        background-color: #05edff; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .emmissions .box-no-london::before {
-        background-color: #60affe; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .emmissions .box-ghg-london::before {
-        background-color: #3300ff; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .emmissions .box-solar-london::before {
         background-color: #DBFEF8; }
       .graph-emissions .content .emmissions .box-wind-london::before {
@@ -375,11 +387,17 @@
       .graph-emissions .content .emmissions .box-coal-london::before {
         background-color: #3300ff; }
       .graph-emissions .content .emmissions .color-pm-la {
-        background-color: #fff0f5; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .emmissions .color-no-la {
-        background-color: #ff69b4; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .emmissions .color-ghg-la {
-        background-color: #ff007f; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .emmissions .color-solar-la {
         background-color: #fff0f5; }
       .graph-emissions .content .emmissions .color-wind-la {
@@ -395,11 +413,17 @@
       .graph-emissions .content .emmissions .color-coal-la {
         background-color: #ff007f; }
       .graph-emissions .content .emmissions .box-pm-la::before {
-        background-color: #fff0f5; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .emmissions .box-no-la::before {
-        background-color: #ff69b4; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .emmissions .box-ghg-la::before {
-        background-color: #ff007f; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .emmissions .box-solar-la::before {
         background-color: #fff0f5; }
       .graph-emissions .content .emmissions .box-wind-la::before {
@@ -415,11 +439,17 @@
       .graph-emissions .content .emmissions .box-coal-la::before {
         background-color: #ff007f; }
       .graph-emissions .content .emmissions .color-pm-mumbai {
-        background-color: #a4dcd1; }
+        background-color: #009999;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .emmissions .color-no-mumbai {
-        background-color: #00ff00; }
+        background-color: #009999;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .emmissions .color-ghg-mumbai {
-        background-color: #79973f; }
+        background-color: #009999;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .emmissions .color-solar-mumbai {
         background-color: #98fb98; }
       .graph-emissions .content .emmissions .color-wind-mumbai {
@@ -435,11 +465,17 @@
       .graph-emissions .content .emmissions .color-coal-mumbai {
         background-color: #008b45; }
       .graph-emissions .content .emmissions .box-pm-mumbai::before {
-        background-color: #a4dcd1; }
+        background-color: #009999;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .emmissions .box-no-mumbai::before {
-        background-color: #00ff00; }
+        background-color: #009999;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .emmissions .box-ghg-mumbai::before {
-        background-color: #79973f; }
+        background-color: #009999;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .emmissions .box-solar-mumbai::before {
         background-color: #98fb98; }
       .graph-emissions .content .emmissions .box-wind-mumbai::before {
@@ -734,11 +770,17 @@
       .graph-emissions .content .electricity .small-bar-color-london {
         background-color: #0e6ce5; }
       .graph-emissions .content .electricity .color-pm-london {
-        background-color: #05edff; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .electricity .color-no-london {
-        background-color: #60affe; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .electricity .color-ghg-london {
-        background-color: #3300ff; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .electricity .color-solar-london {
         background-color: #DBFEF8; }
       .graph-emissions .content .electricity .color-wind-london {
@@ -754,11 +796,17 @@
       .graph-emissions .content .electricity .color-coal-london {
         background-color: #3300ff; }
       .graph-emissions .content .electricity .box-pm-london::before {
-        background-color: #05edff; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .electricity .box-no-london::before {
-        background-color: #60affe; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .electricity .box-ghg-london::before {
-        background-color: #3300ff; }
+        background-color: #0e6ce5;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .electricity .box-solar-london::before {
         background-color: #DBFEF8; }
       .graph-emissions .content .electricity .box-wind-london::before {
@@ -774,11 +822,17 @@
       .graph-emissions .content .electricity .box-coal-london::before {
         background-color: #3300ff; }
       .graph-emissions .content .electricity .color-pm-la {
-        background-color: #fff0f5; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .electricity .color-no-la {
-        background-color: #ff69b4; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .electricity .color-ghg-la {
-        background-color: #ff007f; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .electricity .color-solar-la {
         background-color: #fff0f5; }
       .graph-emissions .content .electricity .color-wind-la {
@@ -794,11 +848,17 @@
       .graph-emissions .content .electricity .color-coal-la {
         background-color: #ff007f; }
       .graph-emissions .content .electricity .box-pm-la::before {
-        background-color: #fff0f5; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .electricity .box-no-la::before {
-        background-color: #ff69b4; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .electricity .box-ghg-la::before {
-        background-color: #ff007f; }
+        background-color: #ff2466;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .electricity .box-solar-la::before {
         background-color: #fff0f5; }
       .graph-emissions .content .electricity .box-wind-la::before {
@@ -814,11 +874,17 @@
       .graph-emissions .content .electricity .box-coal-la::before {
         background-color: #ff007f; }
       .graph-emissions .content .electricity .color-pm-mumbai {
-        background-color: #a4dcd1; }
+        background-color: #009999;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .electricity .color-no-mumbai {
-        background-color: #00ff00; }
+        background-color: #009999;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .electricity .color-ghg-mumbai {
-        background-color: #79973f; }
+        background-color: #009999;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .electricity .color-solar-mumbai {
         background-color: #98fb98; }
       .graph-emissions .content .electricity .color-wind-mumbai {
@@ -834,11 +900,17 @@
       .graph-emissions .content .electricity .color-coal-mumbai {
         background-color: #008b45; }
       .graph-emissions .content .electricity .box-pm-mumbai::before {
-        background-color: #a4dcd1; }
+        background-color: #009999;
+        -webkit-filter: brightness(35%);
+                filter: brightness(35%); }
       .graph-emissions .content .electricity .box-no-mumbai::before {
-        background-color: #00ff00; }
+        background-color: #009999;
+        -webkit-filter: brightness(60%);
+                filter: brightness(60%); }
       .graph-emissions .content .electricity .box-ghg-mumbai::before {
-        background-color: #79973f; }
+        background-color: #009999;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
       .graph-emissions .content .electricity .box-solar-mumbai::before {
         background-color: #98fb98; }
       .graph-emissions .content .electricity .box-wind-mumbai::before {

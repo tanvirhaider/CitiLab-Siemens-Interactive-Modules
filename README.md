@@ -12,7 +12,6 @@ there are total of 8 external files that needs to be placed in the head tag plea
     <script src="js/graph-charge.js"></script>
     <script src="js/graph-emmissions.js"></script>
     <script src="js/intro-animation.js"></script>
-   
 ```
 
 #### google analytics code ( this should go inside the <head> tag of the page)
