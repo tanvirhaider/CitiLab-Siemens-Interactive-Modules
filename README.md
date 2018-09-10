@@ -1,14 +1,17 @@
 # CitiLab Siemens Interactive Modules
 
 
-## Dependencies
-there are two dependecies, Jquery and GSAP animation Engine and 2 css files. here are the CDN for them to include at the <head> in your page.
-
+#### Dependencies
+there are total of 8 external files that needs to be placed in the <head> please
 ```
     <link rel="stylesheet" href="css/graph-min.css">
     <link rel="stylesheet" href="css/intro-animation.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="js/graph-parking.js"></script>
+    <script src="js/graph-charge.js"></script>
+    <script src="js/graph-emmissions.js"></script>
+    <script src="js/intro-animation.js"></script>
    
 ```
 
@@ -27,7 +30,7 @@ there are two dependecies, Jquery and GSAP animation Engine and 2 css files. her
 </script>
 ```
 
-### Homee Page Animation
+### Home Page Animation
 
 this is a linear animation and there are no interactivity. 
 
@@ -42,7 +45,6 @@ please update the data-hero-img attribute of div id "hero-animation_container" t
         <div class="copy">The electrification of passenger mobility will revolutionize cities. Cleaner air, less congestion, new economic opportunities, and a return to green spaces. But it will take planning and concentrated action to get there.  Change doesn’t come easy.</div>
     </div>
 </div>
-<script src="js/intro-animation.js"></script>
 ```
 
 ### Parking Graph
@@ -124,10 +126,6 @@ please update the data-hero-img attribute of div id "hero-animation_container" t
 ```
 
 ### Emission Graph
-please include this js for these graph
-``` 
-<script src="js/graph-emmissions.js"></script>
-```
 #### (LA) code snippet for Emission graph module
 ```
  <div class="graph-emissions" id="graph-emissions-la">
@@ -540,26 +538,155 @@ With an increase of nearly 19 million kilowatt-hours of electricity used per day
 ```
 
 ### Electric Charges Graph
+
 #### (LA) code snippet for Electric Charges graph module
 ```
+    <div class="graph-vehicle-charges" id="graph-vehicle-charges-la">
+        <div class="mapholder"><div class="dotContainer"></div></div>
+        <div class="contents">
+            <div class="content-copy"><p>In cities like LA, public charging infrastructure is going to be a priority. By 2050, shared fleets might be one of the more popular modes of transit, even above private cars, with 70 percent of passenger spots occupied by 2050.</p></div>
+            <div class="deviderline"></div>
+            <div class="legend">
+                <div class="title">SCALE</div>
+                <div class="val-container">
+                    <div class="sample-dot"></div>
+                    <div class="value">1 DOT = 100 CHARGERS</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sliderModule">
+            <div class='years'>
+                <div class="year">2018</div>
+                <div class="year">2035</div>
+                <div class="year">2050</div>
+            </div>
+            <div class="range-slider">
+                
+                <div class="sliderDotContainer">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <input id="r-slider" type="range" value="0" min="0" max="0">
+            </div>
+            <div class="hint">drag the slider to see the increasing number of electric vehicle chargers over time</div>
+        </div>
+    </div>
+
+    <script>
+        initVehicleCarges({
+            container: "#graph-vehicle-charges-la",         // required
+            location: "la",                                 // required
+            intervals: 10,                                  // optional 
+            start: 1,                                       // optional 
+            end: 99                                         // optional 
+        });
+    </script>
 ```
 #### (LONDON) code snippet for Electric Charges graph module
 ```
+ <div class="graph-vehicle-charges" id="graph-vehicle-charges-london">
+        <div class="mapholder"><div class="dotContainer"></div></div>
+        <div class="contents">
+            <div class="content-copy"><p>If London wants to meet its rigorous emissions targets by 2050, it will have to make buying electric more practical and help supply charging infrastructure for electric vehicles. </br>Siemens predicts the installation of nearly 840,000 new chargers for a city like London by 2050. To accommodate this, the city will have to invest in over 520 chargers a week, starting now.
+                </p></div>
+            <div class="deviderline"></div>
+            <div class="legend">
+                <div class="title">SCALE</div>
+                <div class="val-container">
+                    <div class="sample-dot"></div>
+                    <div class="value">1 DOT = 100 CHARGERS</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sliderModule">
+            <div class='years'>
+                <div class="year">2018</div>
+                <div class="year">2035</div>
+                <div class="year">2050</div>
+            </div>
+            <div class="range-slider">
+                
+                <div class="sliderDotContainer">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <input id="r-slider" type="range" value="0" min="0" max="0">
+            </div>
+            <div class="hint">drag the slider to see the increasing number of electric vehicle chargers over time</div>
+        </div>
+    </div>
+
+    <script>
+        initVehicleCarges({
+            container: "#graph-vehicle-charges-london",         // required
+            location: "london",                                 // required
+            intervals: 10,                                  // optional 
+            start: 1,                                       // optional 
+            end: 99                                         // optional 
+        });
+    </script>
 ```
 #### (MUMBAI) code snippet for Electric Charges graph module
 ```
+<div class="graph-vehicle-charges" id="graph-vehicle-charges-mumbai">
+        <div class="mapholder"><div class="dotContainer"></div></div>
+        <div class="contents">
+            <div class="content-copy"><p>Siemens predicts that by 2050, a city like Mumbai would require nearly 500,000 electric vehicle chargers—that’s an average of about 300 chargers per week starting today.</p></div>
+            <div class="deviderline"></div>
+            <div class="legend">
+                <div class="title">SCALE</div>
+                <div class="val-container">
+                    <div class="sample-dot"></div>
+                    <div class="value">1 DOT = 100 CHARGERS</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sliderModule">
+            <div class='years'>
+                <div class="year">2018</div>
+                <div class="year">2035</div>
+                <div class="year">2050</div>
+            </div>
+            <div class="range-slider">
+                <div class="sliderDotContainer">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <input id="r-slider" type="range" value="0" min="0" max="0">
+            </div>
+            <div class="hint">drag the slider to see the increasing number of electric vehicle chargers over time</div>
+        </div>
+        
+       
+    </div>
+
+    <script>
+        initVehicleCarges({
+            container: "#graph-vehicle-charges-mumbai",         // required
+            location: "mumbai",                                 // required
+            intervals: 10,                                  // optional 
+            start: 1,                                       // optional 
+            end: 99                                         // optional 
+        });
+    </script>
 ```
 
-### Built With
+#### Built With
 
 * [CodeKit](https://codekitapp.com/) - as the build tool
 
 
-## Authors
+#### Authors
 * Project Manager: Elizabeth Line -- <liz.line@digitalcitizen.nyc>
 * Developer: Tanvir Haider - <tanvir@willow.studio> 
 * Designer: Alison DeBenedictis - <alison@alisondb.com> 
 
-## License
+#### License
 
 This is a commercial software and can not be used without agreement.
