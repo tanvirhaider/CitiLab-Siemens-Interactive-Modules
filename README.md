@@ -2,7 +2,7 @@
 
 
 #### Dependencies
-there are total of 8 external files that needs to be placed in the <head> please
+there are total of 8 external files that needs to be placed in the head tag please
 ```
     <link rel="stylesheet" href="css/graph-min.css">
     <link rel="stylesheet" href="css/intro-animation.css">
