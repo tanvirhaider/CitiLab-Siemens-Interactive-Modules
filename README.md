@@ -4,7 +4,7 @@ CitiLab Siemens Interactive Modules
 
 
 ## Dependencies
-####there are two dependecies, Jquery and GSAP animation Engine. here are the CDN for them to include at the <head> in your page.
+#### there are two dependecies, Jquery and GSAP animation Engine. here are the CDN for them to include at the <head> in your page.
 
 ```
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
