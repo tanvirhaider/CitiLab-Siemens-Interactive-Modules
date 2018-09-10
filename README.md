@@ -130,6 +130,139 @@ please include this js for these graph
 ```
 #### (LA) code snippet for Emission graph module
 ```
+ <div class="graph-emissions" id="graph-emissions-la">
+            <div class="content">
+                <div class="electricity">
+                    <div class="chart-container">
+                        <div class="title">Electricity Demand</div>
+                        <div class="chart">
+                            <div class='tooltip'>description of electricity source or factoid to go here</div>
+                            <div class="bar-sets">
+                                <div class="vertical-legend">
+                                    <div class="legend-copy">percentage increase</div>
+                                    <div class="legend-val">
+                                        <div class="legend-val-item">0</div>
+                                        <div class="legend-val-item">20</div>
+                                        <div class="legend-val-item">40</div>
+                                        <div class="legend-val-item">60</div>
+                                        <div class="legend-val-item">100</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="bar-content">
+                                    <div id="bar-0" class="bar">
+                                        <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
+                                        <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
+                                        <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
+                                    </div>
+                                    <div id="bar-1" class="bar">
+                                        <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
+                                        <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
+                                        <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
+                                    </div>
+                                    <div id="bar-2" class="bar">
+                                        <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
+                                        <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
+                                        <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-legends">
+                                <div class="devider-line"></div>
+                                <div class="years">
+                                    <div class="year" id="year-0">2018</div>
+                                    <div class="year" id="year-1">2035</div>
+                                    <div class="year" id="year-2">2050</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='legends-electric' class="legends">
+                            <div id="box-0" class="each-legend mainColor box-oil">Oil</div>
+                            <div id="box-1" class="each-legend mainColor box-nuclear">Nuclear</div>
+                            <div id="box-2" class="each-legend mainColor box-coal">Coal</div>
+                            <div id="box-3" class="each-legend mainColor box-gas">Gas</div>
+                            <div id="box-4" class="each-legend mainColor box-hydro">Hydro</div>
+                            <div id="box-5" class="each-legend mainColor box-solar">Solar</div>
+                            <div id="box-6" class="each-legend mainColor box-wind">Wind</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="emmissions">
+                    <div class="chart-container">
+                        <div class="title">Emissions Reduction</div>
+                        <div class="chart">
+                            <div class='tooltip'>description of electricity source or factoid to go here</div>
+                            <div class="bar-sets">
+                                    <div class="vertical-legend">
+                                        <div class="legend-copy">percentage decrease</div>
+                                        <div class="legend-val">
+                                            <div class="legend-val-item">0</div>
+                                            <div class="legend-val-item">20</div>
+                                            <div class="legend-val-item">40</div>
+                                            <div class="legend-val-item">60</div>
+                                            <div class="legend-val-item">100</div>
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
+                                <div class="bar-content">
+                                    <div id="bar-0" class="bar">
+                                            <div class="small-bar bar-pm" id="bar-gas-0"><span></span></div>
+                                            <div class="small-bar bar-no" id="bar-gas-1"><span></span></div>
+                                            <div class="small-bar bar-ghgas" id="bar-gas-2"><span></span></div>
+                                        </div>
+                                        <div id="bar-1" class="bar">
+                                            <div class="small-bar bar-pm" id="bar-gas-0"><span></span></div>
+                                            <div class="small-bar bar-no" id="bar-gas-1"><span></span></div>
+                                            <div class="small-bar bar-ghgas" id="bar-gas-2"><span></span></div>
+                                        </div>
+                                        <div id="bar-2" class="bar">
+                                            <div class="small-bar bar-pm" id="bar-gas-0"><span></span></div>
+                                            <div class="small-bar bar-no" id="bar-gas-1"><span></span></div>
+                                            <div class="small-bar bar-ghgas" id="bar-gas-2"><span></span></div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="chart-legends">
+                                <div class="devider-line"></div>
+                                <div class="years">
+                                    <div class="year" id="year-0">2018</div>
+                                    <div class="year" id="year-1">2035</div>
+                                    <div class="year" id="year-2">2050</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='legends-emmissions' class="legends">
+                            <div id="box-0" class="each-legend box-pm">PM</div>
+                            <div id="box-1" class="each-legend box-no">NO</div>
+                            <div id="box-2" class="each-legend box-ghgas">GH Gas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caption">
+                <div class="original-copy"><p>Los Angeles is the American city with the most polluted ozone in 2018. In LA County, around 15 percent of children have lifetime asthma, and LA gas prices are almost consistently above the national average.</p></div>
+                <div class="rollover-copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+
+    <script>
+        initEmmissionsGraph ({
+            container: "#graph-emissions-la",
+            location: "la"
+        });
+    </script>
 ```
 #### (LONDON) code snippet for Emission graph module
 ```
@@ -270,6 +403,140 @@ please include this js for these graph
 ```
 #### (MUMBAI) code snippet for Emission graph module
 ```
+ <div class="graph-emissions" id="graph-emissions-mumbai">
+            <div class="content">
+                <div class="electricity">
+                    <div class="chart-container">
+                        <div class="title">Electricity Demand</div>
+                        <div class="chart">
+                            <div class='tooltip'>description of electricity source or factoid to go here</div>
+                            <div class="bar-sets">
+                                <div class="vertical-legend">
+                                    <div class="legend-copy">percentage increase</div>
+                                    <div class="legend-val">
+                                        <div class="legend-val-item">0</div>
+                                        <div class="legend-val-item">20</div>
+                                        <div class="legend-val-item">40</div>
+                                        <div class="legend-val-item">60</div>
+                                        <div class="legend-val-item">100</div>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="bar-content">
+                                    <div id="bar-0" class="bar">
+                                        <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
+                                        <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
+                                        <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
+                                    </div>
+                                    <div id="bar-1" class="bar">
+                                        <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
+                                        <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
+                                        <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
+                                    </div>
+                                    <div id="bar-2" class="bar">
+                                        <div class="small-bar bar-oil" id="bar-gas-0"><span></span></div>
+                                        <div class="small-bar bar-nuclear" id="bar-gas-1"><span></span></div>
+                                        <div class="small-bar bar-coal" id="bar-gas-2"><span></span></div>
+                                        <div class="small-bar bar-gas" id="bar-gas-3"><span></span></div>
+                                        <div class="small-bar bar-hydro" id="bar-gas-4"><span></span></div>
+                                        <div class="small-bar bar-solar" id="bar-gas-5"><span></span></div>
+                                        <div class="small-bar bar-wind" id="bar-gas-6"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-legends">
+                                <div class="devider-line"></div>
+                                <div class="years">
+                                    <div class="year" id="year-0">2018</div>
+                                    <div class="year" id="year-1">2035</div>
+                                    <div class="year" id="year-2">2050</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='legends-electric' class="legends">
+                            <div id="box-0" class="each-legend mainColor box-oil">Oil</div>
+                            <div id="box-1" class="each-legend mainColor box-nuclear">Nuclear</div>
+                            <div id="box-2" class="each-legend mainColor box-coal">Coal</div>
+                            <div id="box-3" class="each-legend mainColor box-gas">Gas</div>
+                            <div id="box-4" class="each-legend mainColor box-hydro">Hydro</div>
+                            <div id="box-5" class="each-legend mainColor box-solar">Solar</div>
+                            <div id="box-6" class="each-legend mainColor box-wind">Wind</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="emmissions">
+                    <div class="chart-container">
+                        <div class="title">Emissions Reduction</div>
+                        <div class="chart">
+                            <div class='tooltip'>description of electricity source or factoid to go here</div>
+                            <div class="bar-sets">
+                                    <div class="vertical-legend">
+                                        <div class="legend-copy">percentage decrease</div>
+                                        <div class="legend-val">
+                                            <div class="legend-val-item">0</div>
+                                            <div class="legend-val-item">20</div>
+                                            <div class="legend-val-item">40</div>
+                                            <div class="legend-val-item">60</div>
+                                            <div class="legend-val-item">100</div>
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
+                                <div class="bar-content">
+                                    <div id="bar-0" class="bar">
+                                            <div class="small-bar bar-pm" id="bar-gas-0"><span></span></div>
+                                            <div class="small-bar bar-no" id="bar-gas-1"><span></span></div>
+                                            <div class="small-bar bar-ghgas" id="bar-gas-2"><span></span></div>
+                                        </div>
+                                        <div id="bar-1" class="bar">
+                                            <div class="small-bar bar-pm" id="bar-gas-0"><span></span></div>
+                                            <div class="small-bar bar-no" id="bar-gas-1"><span></span></div>
+                                            <div class="small-bar bar-ghgas" id="bar-gas-2"><span></span></div>
+                                        </div>
+                                        <div id="bar-2" class="bar">
+                                            <div class="small-bar bar-pm" id="bar-gas-0"><span></span></div>
+                                            <div class="small-bar bar-no" id="bar-gas-1"><span></span></div>
+                                            <div class="small-bar bar-ghgas" id="bar-gas-2"><span></span></div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="chart-legends">
+                                <div class="devider-line"></div>
+                                <div class="years">
+                                    <div class="year" id="year-0">2018</div>
+                                    <div class="year" id="year-1">2035</div>
+                                    <div class="year" id="year-2">2050</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='legends-emmissions' class="legends">
+                            <div id="box-0" class="each-legend box-pm">PM</div>
+                            <div id="box-1" class="each-legend box-no">NO</div>
+                            <div id="box-2" class="each-legend box-ghgas">GH Gas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caption">
+                <div class="original-copy"><p>Siemens predicts that by 2050, eMobility could reduce traffic-related GHG emissions by 74 percent and decrease traffic-related air pollution by 62 percent.</br>
+With an increase of nearly 19 million kilowatt-hours of electricity used per day, in a city like Mumbai you could binge watch 114 million hours of television with that much energy.</p></div>
+                <div class="rollover-copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+
+    <script>
+        initEmmissionsGraph ({
+            container: "#graph-emissions-mumbai",
+            location: "mumbai"
+        });
+    </script>
 ```
 
 ### Electric Charges Graph
