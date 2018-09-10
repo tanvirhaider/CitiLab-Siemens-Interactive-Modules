@@ -7,6 +7,7 @@ there are two dependecies, Jquery and GSAP animation Engine. here are the CDN fo
 ```
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/graph-min.css">
 ```
 
 #### google analytics code ( this should go inside the <head> tag of the page)
