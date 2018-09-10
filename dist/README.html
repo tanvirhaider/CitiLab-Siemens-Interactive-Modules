@@ -5,9 +5,7 @@
 </head>
 <body>
 
-<h1 id="projecttitle">Project Title</h1>
-
-<p>CitiLab Siemens Interactive Modules</p>
+<h1 id="citilabsiemensinteractivemodules">CitiLab Siemens Interactive Modules</h1>
 
 <h2 id="dependencies">Dependencies</h2>
 
@@ -32,11 +30,11 @@
 &lt;/script&gt;
 </code></pre>
 
-<h2 id="homeepageanimation">Homee Page Animation</h2>
+<h3 id="homeepageanimation">Homee Page Animation</h3>
 
 <p>this is a linear animation and there are no interactivity.</p>
 
-<h3 id="codesnippetforthehomepagemodule">code snippet for the home page module</h3>
+<h4 id="codesnippetforthehomepagemodule">code snippet for the home page module</h4>
 
 <p>please update the data-hero-img attribute of div id &#8220;hero-animation_container&#8221; to where the hero image should live</p>
 
@@ -52,6 +50,85 @@
 &lt;script src=&quot;js/intro-animation.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 
+<h3 id="parkinggraph">Parking Graph</h3>
+
+<h4 id="lacodesnippetforparkinggraphmodule">(LA) code snippet for parking graph module</h4>
+
+<pre><code>    &lt;div class=&quot;graph-parking&quot; id=&quot;graph-parking-la&quot;&gt;
+        &lt;div id=&quot;graph-content&quot;&gt;
+            &lt;div id=&quot;grid&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;nav&quot;&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-0&quot;&gt;2018&lt;/div&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-1&quot;&gt;2035&lt;/div&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-2&quot;&gt;2050&lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;hint&quot;&gt;SELECT A YEAR TO VISUALIZE THE CHANGE IN LAND USE OVER TIME&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;graph-copy&quot;&gt;
+            &lt;div class=&quot;graph-content&quot;&gt;
+                &lt;p&gt;In a city like LA, with 18.6 million parking spaces, the space reclaimed from just parking alone could create more than 500,000 new homes. If you combined all of these parking spaces into one giant, circular parking lot, it would be roughly the distance from Downtown LA to Santa Monica, or the space of about 25 Central Parks.&lt;/p&gt;
+                &lt;div class=&quot;legend&quot;&gt;SCALE&lt;/br&gt;1 VEHICLE = 100 PARKING SPACES&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        initParkingGraph ({
+            container: &quot;#graph-parking-la&quot;,
+            location: &quot;la&quot;,
+            defaultindex: 0
+        });
+    &lt;/script&gt;
+</code></pre>
+
+<h4 id="mumbaicodesnippetforparkinggraphmodule">(MUMBAI) code snippet for parking graph module</h4>
+
+<pre><code>   &lt;div class=&quot;graph-parking&quot; id=&quot;graph-parking-mumbai&quot;&gt;
+        &lt;div id=&quot;graph-content&quot;&gt;
+            &lt;div id=&quot;grid&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;nav&quot;&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-0&quot;&gt;2018&lt;/div&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-1&quot;&gt;2035&lt;/div&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-2&quot;&gt;2050&lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;hint&quot;&gt;SELECT A YEAR TO VISUALIZE THE CHANGE IN LAND USE OVER TIME&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;graph-copy&quot;&gt;
+            &lt;div class=&quot;graph-content&quot;&gt;
+                &lt;p&gt;Siemens predicts a 24 percent decrease in number of parking spaces needed for cars by 2035, and a 50 percent decrease by 2050.&lt;/p&gt;
+                &lt;p&gt;This could mean space for over 600,000 new homes or over 390 million square feet for urban parkland—roughly the same amount of space as about 29,000 Olympic-sized swimming pools.&lt;/p&gt;
+                &lt;div class=&quot;legend&quot;&gt;SCALE&lt;/br&gt;1 VEHICLE = 100 PARKING SPACES&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        initParkingGraph ({
+            container: &quot;#graph-parking-mumbai&quot;,
+            location: &quot;mumbai&quot;,
+            defaultindex: 0
+        });
+    &lt;/script&gt;
+</code></pre>
+
+<h4 id="londoncodesnippetforparkinggraphmodule">(LONDON) code snippet for parking graph module</h4>
+
+<pre><code>   &lt;div class=&quot;graph-parking&quot; id=&quot;graph-parking-london&quot;&gt;
+        &lt;div id=&quot;graph-content&quot;&gt;
+            &lt;div id=&quot;grid&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;nav&quot;&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-0&quot;&gt;2018&lt;/div&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-1&quot;&gt;2035&lt;/div&gt;&lt;div class=&quot;nav-year&quot; id=&quot;nav-2&quot;&gt;2050&lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;hint&quot;&gt;SELECT A YEAR TO VISUALIZE THE CHANGE IN LAND USE OVER TIME&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;graph-copy&quot;&gt;
+            &lt;div class=&quot;graph-content&quot;&gt;
+                &lt;p&gt;At present, the land occupied by parking in HIHD cities  like London could fit almost 3 million homes. Parked alongside one another, the amount of space taken up by parking in a city like London could make up the entire city of Boston proper.&lt;/p&gt;
+                &lt;p id=&quot;content-2050&quot;&gt;As eMobility takes hold, by 2050 the parking spaces reclaimed could fit close to 900,000 new homes, or 700 million square feet in urban parkland. That’s about the space of 12,000 football fields.&lt;/p&gt;
+                &lt;div class=&quot;legend&quot;&gt;SCALE&lt;/br&gt;1 VEHICLE = 100 PARKING SPACES&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        initParkingGraph ({
+            container: &quot;#graph-parking-london&quot;,
+            location: &quot;london&quot;,
+            defaultindex: 0
+        });
+    &lt;/script&gt;
+</code></pre>
+
 <h2 id="builtwith">Built With</h2>
 
 <ul>
@@ -61,9 +138,9 @@
 <h2 id="authors">Authors</h2>
 
 <ul>
-<li>Project Manager: Elizabeth Line &#8211; <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#x6c;&#x69;&#122;&#46;&#108;&#105;&#110;&#101;&#x40;&#100;&#x69;&#x67;&#105;&#x74;&#97;&#x6c;&#x63;&#x69;&#116;&#x69;&#x7a;&#x65;&#x6e;&#46;&#110;&#x79;&#x63;">&#108;&#105;&#x7a;&#x2e;&#108;&#105;&#x6e;&#101;&#x40;&#x64;&#105;&#x67;&#105;&#116;&#97;&#108;&#x63;&#105;&#x74;&#105;&#122;&#101;&#x6e;&#46;&#x6e;&#x79;&#99;</a></li>
-<li>Developer: Tanvir Haider - <a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#116;&#97;&#110;&#118;&#x69;&#114;&#x40;&#119;&#105;&#x6c;&#x6c;&#111;&#119;&#x2e;&#115;&#x74;&#x75;&#100;&#x69;&#111;">&#x74;&#97;&#110;&#118;&#x69;&#114;&#x40;&#x77;&#x69;&#108;&#108;&#111;&#x77;&#46;&#115;&#116;&#117;&#100;&#105;&#111;</a></li>
-<li>Designer: Alison DeBenedictis - <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#97;&#108;&#x69;&#115;&#111;&#x6e;&#64;&#97;&#108;&#x69;&#x73;&#x6f;&#110;&#100;&#x62;&#46;&#99;&#111;&#109;">&#x61;&#108;&#x69;&#115;&#x6f;&#110;&#x40;&#x61;&#x6c;&#x69;&#115;&#x6f;&#110;&#100;&#98;&#46;&#99;&#111;&#x6d;</a></li>
+<li>Project Manager: Elizabeth Line &#8211; <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x6c;&#x69;&#122;&#46;&#108;&#105;&#x6e;&#101;&#64;&#100;&#x69;&#x67;&#x69;&#116;&#x61;&#108;&#x63;&#x69;&#x74;&#x69;&#122;&#101;&#x6e;&#x2e;&#110;&#x79;&#x63;">&#108;&#105;&#122;&#x2e;&#x6c;&#x69;&#110;&#101;&#64;&#x64;&#x69;&#x67;&#x69;&#x74;&#97;&#108;&#x63;&#x69;&#116;&#x69;&#x7a;&#x65;&#110;&#x2e;&#x6e;&#x79;&#x63;</a></li>
+<li>Developer: Tanvir Haider - <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#x74;&#x61;&#x6e;&#118;&#105;&#x72;&#64;&#119;&#x69;&#x6c;&#x6c;&#111;&#x77;&#46;&#x73;&#x74;&#117;&#x64;&#x69;&#x6f;">&#116;&#x61;&#x6e;&#x76;&#105;&#114;&#x40;&#119;&#x69;&#x6c;&#x6c;&#x6f;&#119;&#x2e;&#x73;&#x74;&#117;&#x64;&#105;&#111;</a></li>
+<li>Designer: Alison DeBenedictis - <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#97;&#108;&#x69;&#x73;&#111;&#110;&#64;&#x61;&#108;&#x69;&#115;&#111;&#x6e;&#x64;&#98;&#46;&#99;&#111;&#x6d;">&#97;&#x6c;&#105;&#x73;&#111;&#x6e;&#x40;&#97;&#x6c;&#105;&#115;&#x6f;&#x6e;&#x64;&#98;&#x2e;&#x63;&#x6f;&#x6d;</a></li>
 </ul>
 
 <h2 id="license">License</h2>

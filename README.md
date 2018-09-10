@@ -1,6 +1,4 @@
-# Project Title
-
-CitiLab Siemens Interactive Modules
+# CitiLab Siemens Interactive Modules
 
 
 ## Dependencies
@@ -26,11 +24,11 @@ there are two dependecies, Jquery and GSAP animation Engine. here are the CDN fo
 </script>
 ```
 
-## Homee Page Animation
+### Homee Page Animation
 
 this is a linear animation and there are no interactivity. 
 
-### code snippet for the home page module
+#### code snippet for the home page module
 please update the data-hero-img attribute of div id "hero-animation_container" to where the hero image should live
 ```
 <link rel="stylesheet" href="css/intro-animation.css">
@@ -45,8 +43,85 @@ please update the data-hero-img attribute of div id "hero-animation_container" t
 <script src="js/intro-animation.js"></script>
 ```
 
+### Parking Graph
 
 
+#### (LA) code snippet for parking graph module
+```
+    <div class="graph-parking" id="graph-parking-la">
+        <div id="graph-content">
+            <div id="grid"></div>
+            <div class="nav"><div class="nav-year" id="nav-0">2018</div><div class="nav-year" id="nav-1">2035</div><div class="nav-year" id="nav-2">2050</div></div>
+            <div class="hint">SELECT A YEAR TO VISUALIZE THE CHANGE IN LAND USE OVER TIME</div>
+        </div>
+        <div id="graph-copy">
+            <div class="graph-content">
+                <p>In a city like LA, with 18.6 million parking spaces, the space reclaimed from just parking alone could create more than 500,000 new homes. If you combined all of these parking spaces into one giant, circular parking lot, it would be roughly the distance from Downtown LA to Santa Monica, or the space of about 25 Central Parks.</p>
+                <div class="legend">SCALE</br>1 VEHICLE = 100 PARKING SPACES</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        initParkingGraph ({
+            container: "#graph-parking-la",
+            location: "la",
+            defaultindex: 0
+        });
+    </script>
+```
+
+#### (MUMBAI) code snippet for parking graph module
+```
+   <div class="graph-parking" id="graph-parking-mumbai">
+        <div id="graph-content">
+            <div id="grid"></div>
+            <div class="nav"><div class="nav-year" id="nav-0">2018</div><div class="nav-year" id="nav-1">2035</div><div class="nav-year" id="nav-2">2050</div></div>
+            <div class="hint">SELECT A YEAR TO VISUALIZE THE CHANGE IN LAND USE OVER TIME</div>
+        </div>
+        <div id="graph-copy">
+            <div class="graph-content">
+                <p>Siemens predicts a 24 percent decrease in number of parking spaces needed for cars by 2035, and a 50 percent decrease by 2050.</p>
+                <p>This could mean space for over 600,000 new homes or over 390 million square feet for urban parkland—roughly the same amount of space as about 29,000 Olympic-sized swimming pools.</p>
+                <div class="legend">SCALE</br>1 VEHICLE = 100 PARKING SPACES</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        initParkingGraph ({
+            container: "#graph-parking-mumbai",
+            location: "mumbai",
+            defaultindex: 0
+        });
+    </script>
+```
+
+#### (LONDON) code snippet for parking graph module
+```
+   <div class="graph-parking" id="graph-parking-london">
+        <div id="graph-content">
+            <div id="grid"></div>
+            <div class="nav"><div class="nav-year" id="nav-0">2018</div><div class="nav-year" id="nav-1">2035</div><div class="nav-year" id="nav-2">2050</div></div>
+            <div class="hint">SELECT A YEAR TO VISUALIZE THE CHANGE IN LAND USE OVER TIME</div>
+        </div>
+        <div id="graph-copy">
+            <div class="graph-content">
+                <p>At present, the land occupied by parking in HIHD cities  like London could fit almost 3 million homes. Parked alongside one another, the amount of space taken up by parking in a city like London could make up the entire city of Boston proper.</p>
+                <p id="content-2050">As eMobility takes hold, by 2050 the parking spaces reclaimed could fit close to 900,000 new homes, or 700 million square feet in urban parkland. That’s about the space of 12,000 football fields.</p>
+                <div class="legend">SCALE</br>1 VEHICLE = 100 PARKING SPACES</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        initParkingGraph ({
+            container: "#graph-parking-london",
+            location: "london",
+            defaultindex: 0
+        });
+    </script>
+```
 
 ## Built With
 
