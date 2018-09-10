@@ -9,11 +9,13 @@
 
 <h2 id="dependencies">Dependencies</h2>
 
-<p>there are two dependecies, Jquery and GSAP animation Engine. here are the CDN for them to include at the <head> in your page.</p>
+<p>there are two dependecies, Jquery and GSAP animation Engine and 2 css files. here are the CDN for them to include at the <head> in your page.</p>
 
-<pre><code>    &lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
+<pre><code>    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/graph-min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/intro-animation.css&quot;&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/graph-min.css&quot;&gt;
+   
 </code></pre>
 
 <h4 id="googleanalyticscodethisshouldgoinsidetheheadtagofthepage">google analytics code ( this should go inside the <head> tag of the page)</h4>
@@ -39,8 +41,7 @@
 
 <p>please update the data-hero-img attribute of div id &#8220;hero-animation_container&#8221; to where the hero image should live</p>
 
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/intro-animation.css&quot;&gt;
-&lt;div id=&quot;hero-animation_container&quot; data-hero-img=&quot;assets/images/worldmap.png&quot;&gt;
+<pre><code>&lt;div id=&quot;hero-animation_container&quot; data-hero-img=&quot;assets/images/worldmap.png&quot;&gt;
     &lt;canvas id=&quot;canvas&quot; width=&quot;1440&quot; height=&quot;100%&quot;&gt;&lt;/canvas&gt;
     &lt;div id=&quot;dom_overlay_container&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;introCopy&quot;&gt;
@@ -130,7 +131,174 @@
     &lt;/script&gt;
 </code></pre>
 
-<h2 id="builtwith">Built With</h2>
+<h3 id="emissiongraph">Emission Graph</h3>
+
+<p>please include this js for these graph</p>
+
+<pre><code>&lt;script src=&quot;js/graph-emmissions.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<h4 id="lacodesnippetforemissiongraphmodule">(LA) code snippet for Emission graph module</h4>
+
+<pre><code></code></pre>
+
+<h4 id="londoncodesnippetforemissiongraphmodule">(LONDON) code snippet for Emission graph module</h4>
+
+<pre><code>  &lt;div class=&quot;graph-emissions&quot; id=&quot;graph-emissions-london&quot;&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;div class=&quot;electricity&quot;&gt;
+                &lt;div class=&quot;chart-container&quot;&gt;
+                    &lt;div class=&quot;title&quot;&gt;Electricity Demand&lt;/div&gt;
+                    &lt;div class=&quot;chart&quot;&gt;
+                        &lt;div class='tooltip'&gt;description of electricity source or factoid to go here&lt;/div&gt;
+                        &lt;div class=&quot;bar-sets&quot;&gt;
+                            &lt;div class=&quot;vertical-legend&quot;&gt;
+                                &lt;div class=&quot;legend-copy&quot;&gt;percentage increase&lt;/div&gt;
+                                &lt;div class=&quot;legend-val&quot;&gt;
+                                    &lt;div class=&quot;legend-val-item&quot;&gt;0&lt;/div&gt;
+                                    &lt;div class=&quot;legend-val-item&quot;&gt;20&lt;/div&gt;
+                                    &lt;div class=&quot;legend-val-item&quot;&gt;40&lt;/div&gt;
+                                    &lt;div class=&quot;legend-val-item&quot;&gt;60&lt;/div&gt;
+                                    &lt;div class=&quot;legend-val-item&quot;&gt;100&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;bar-content&quot;&gt;
+                                &lt;div id=&quot;bar-0&quot; class=&quot;bar&quot;&gt;
+                                    &lt;div class=&quot;small-bar bar-oil&quot; id=&quot;bar-gas-0&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-nuclear&quot; id=&quot;bar-gas-1&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-coal&quot; id=&quot;bar-gas-2&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-gas&quot; id=&quot;bar-gas-3&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-hydro&quot; id=&quot;bar-gas-4&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-solar&quot; id=&quot;bar-gas-5&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-wind&quot; id=&quot;bar-gas-6&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div id=&quot;bar-1&quot; class=&quot;bar&quot;&gt;
+                                    &lt;div class=&quot;small-bar bar-oil&quot; id=&quot;bar-gas-0&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-nuclear&quot; id=&quot;bar-gas-1&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-coal&quot; id=&quot;bar-gas-2&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-gas&quot; id=&quot;bar-gas-3&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-hydro&quot; id=&quot;bar-gas-4&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-solar&quot; id=&quot;bar-gas-5&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-wind&quot; id=&quot;bar-gas-6&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div id=&quot;bar-2&quot; class=&quot;bar&quot;&gt;
+                                    &lt;div class=&quot;small-bar bar-oil&quot; id=&quot;bar-gas-0&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-nuclear&quot; id=&quot;bar-gas-1&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-coal&quot; id=&quot;bar-gas-2&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-gas&quot; id=&quot;bar-gas-3&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-hydro&quot; id=&quot;bar-gas-4&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-solar&quot; id=&quot;bar-gas-5&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;div class=&quot;small-bar bar-wind&quot; id=&quot;bar-gas-6&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;chart-legends&quot;&gt;
+                            &lt;div class=&quot;devider-line&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;years&quot;&gt;
+                                &lt;div class=&quot;year&quot; id=&quot;year-0&quot;&gt;2018&lt;/div&gt;
+                                &lt;div class=&quot;year&quot; id=&quot;year-1&quot;&gt;2035&lt;/div&gt;
+                                &lt;div class=&quot;year&quot; id=&quot;year-2&quot;&gt;2050&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div id='legends-electric' class=&quot;legends&quot;&gt;
+                        &lt;div id=&quot;box-0&quot; class=&quot;each-legend mainColor box-oil&quot;&gt;Oil&lt;/div&gt;
+                        &lt;div id=&quot;box-1&quot; class=&quot;each-legend mainColor box-nuclear&quot;&gt;Nuclear&lt;/div&gt;
+                        &lt;div id=&quot;box-2&quot; class=&quot;each-legend mainColor box-coal&quot;&gt;Coal&lt;/div&gt;
+                        &lt;div id=&quot;box-3&quot; class=&quot;each-legend mainColor box-gas&quot;&gt;Gas&lt;/div&gt;
+                        &lt;div id=&quot;box-4&quot; class=&quot;each-legend mainColor box-hydro&quot;&gt;Hydro&lt;/div&gt;
+                        &lt;div id=&quot;box-5&quot; class=&quot;each-legend mainColor box-solar&quot;&gt;Solar&lt;/div&gt;
+                        &lt;div id=&quot;box-6&quot; class=&quot;each-legend mainColor box-wind&quot;&gt;Wind&lt;/div&gt; 
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;emmissions&quot;&gt;
+                &lt;div class=&quot;chart-container&quot;&gt;
+                    &lt;div class=&quot;title&quot;&gt;Emissions Reduction&lt;/div&gt;
+                    &lt;div class=&quot;chart&quot;&gt;
+                        &lt;div class='tooltip'&gt;description of electricity source or factoid to go here&lt;/div&gt;
+                        &lt;div class=&quot;bar-sets&quot;&gt;
+                                &lt;div class=&quot;vertical-legend&quot;&gt;
+                                    &lt;div class=&quot;legend-copy&quot;&gt;percentage decrease&lt;/div&gt;
+                                    &lt;div class=&quot;legend-val&quot;&gt;
+                                        &lt;div class=&quot;legend-val-item&quot;&gt;0&lt;/div&gt;
+                                        &lt;div class=&quot;legend-val-item&quot;&gt;20&lt;/div&gt;
+                                        &lt;div class=&quot;legend-val-item&quot;&gt;40&lt;/div&gt;
+                                        &lt;div class=&quot;legend-val-item&quot;&gt;60&lt;/div&gt;
+                                        &lt;div class=&quot;legend-val-item&quot;&gt;100&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;div class=&quot;bar-content&quot;&gt;
+                                &lt;div id=&quot;bar-0&quot; class=&quot;bar&quot;&gt;
+                                        &lt;div class=&quot;small-bar bar-pm&quot; id=&quot;bar-gas-0&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class=&quot;small-bar bar-no&quot; id=&quot;bar-gas-1&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class=&quot;small-bar bar-ghgas&quot; id=&quot;bar-gas-2&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div id=&quot;bar-1&quot; class=&quot;bar&quot;&gt;
+                                        &lt;div class=&quot;small-bar bar-pm&quot; id=&quot;bar-gas-0&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class=&quot;small-bar bar-no&quot; id=&quot;bar-gas-1&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class=&quot;small-bar bar-ghgas&quot; id=&quot;bar-gas-2&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div id=&quot;bar-2&quot; class=&quot;bar&quot;&gt;
+                                        &lt;div class=&quot;small-bar bar-pm&quot; id=&quot;bar-gas-0&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class=&quot;small-bar bar-no&quot; id=&quot;bar-gas-1&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                        &lt;div class=&quot;small-bar bar-ghgas&quot; id=&quot;bar-gas-2&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;chart-legends&quot;&gt;
+                            &lt;div class=&quot;devider-line&quot;&gt;&lt;/div&gt;
+                            &lt;div class=&quot;years&quot;&gt;
+                                &lt;div class=&quot;year&quot; id=&quot;year-0&quot;&gt;2018&lt;/div&gt;
+                                &lt;div class=&quot;year&quot; id=&quot;year-1&quot;&gt;2035&lt;/div&gt;
+                                &lt;div class=&quot;year&quot; id=&quot;year-2&quot;&gt;2050&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div id='legends-emmissions' class=&quot;legends&quot;&gt;
+                        &lt;div id=&quot;box-0&quot; class=&quot;each-legend box-pm&quot;&gt;PM&lt;/div&gt;
+                        &lt;div id=&quot;box-1&quot; class=&quot;each-legend box-no&quot;&gt;NO&lt;/div&gt;
+                        &lt;div id=&quot;box-2&quot; class=&quot;each-legend box-ghgas&quot;&gt;GH Gas&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;caption&quot;&gt;
+            &lt;div class=&quot;original-copy&quot;&gt;&lt;p&gt;By 2050, London could be using nearly 13.5 million kilowatt-hours of electricity every day on electric buses, shared fleets, and private cars alone.&lt;/br&gt;That’s nearly a 2,500 percent increase in current electricity demand from transportation, or roughly about the same amount of energy you’d need to run 19,000 refrigerators for a year.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;rollover-copy&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        initEmmissionsGraph ({
+            container: &quot;#graph-emissions-london&quot;,
+            location: &quot;london&quot;
+        });
+    &lt;/script&gt;
+</code></pre>
+
+<h4 id="mumbaicodesnippetforemissiongraphmodule">(MUMBAI) code snippet for Emission graph module</h4>
+
+<pre><code></code></pre>
+
+<h3 id="electricchargesgraph">Electric Charges Graph</h3>
+
+<h4 id="lacodesnippetforelectricchargesgraphmodule">(LA) code snippet for Electric Charges graph module</h4>
+
+<pre><code></code></pre>
+
+<h4 id="londoncodesnippetforelectricchargesgraphmodule">(LONDON) code snippet for Electric Charges graph module</h4>
+
+<pre><code></code></pre>
+
+<h4 id="mumbaicodesnippetforelectricchargesgraphmodule">(MUMBAI) code snippet for Electric Charges graph module</h4>
+
+<pre><code></code></pre>
+
+<h3 id="builtwith">Built With</h3>
 
 <ul>
 <li><a href="https://codekitapp.com/">CodeKit</a> - as the build tool</li>
@@ -139,9 +307,9 @@
 <h2 id="authors">Authors</h2>
 
 <ul>
-<li>Project Manager: Elizabeth Line &#8211; <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x6c;&#105;&#122;&#x2e;&#108;&#105;&#110;&#101;&#x40;&#100;&#x69;&#x67;&#105;&#x74;&#97;&#x6c;&#99;&#x69;&#116;&#x69;&#122;&#x65;&#x6e;&#46;&#x6e;&#x79;&#x63;">&#108;&#x69;&#x7a;&#x2e;&#108;&#x69;&#x6e;&#101;&#x40;&#100;&#105;&#103;&#105;&#116;&#97;&#x6c;&#99;&#x69;&#x74;&#105;&#122;&#101;&#x6e;&#46;&#x6e;&#x79;&#99;</a></li>
-<li>Developer: Tanvir Haider - <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#116;&#x61;&#110;&#x76;&#x69;&#114;&#64;&#119;&#105;&#108;&#108;&#111;&#119;&#46;&#115;&#116;&#117;&#100;&#105;&#111;">&#116;&#x61;&#110;&#x76;&#105;&#x72;&#x40;&#119;&#x69;&#108;&#108;&#111;&#x77;&#x2e;&#115;&#116;&#x75;&#100;&#x69;&#111;</a></li>
-<li>Designer: Alison DeBenedictis - <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x61;&#108;&#105;&#115;&#111;&#x6e;&#64;&#x61;&#x6c;&#x69;&#x73;&#x6f;&#x6e;&#x64;&#x62;&#46;&#99;&#x6f;&#109;">&#x61;&#108;&#105;&#x73;&#x6f;&#110;&#64;&#97;&#108;&#105;&#x73;&#111;&#110;&#100;&#98;&#46;&#99;&#x6f;&#x6d;</a></li>
+<li>Project Manager: Elizabeth Line &#8211; <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x6c;&#x69;&#122;&#x2e;&#x6c;&#105;&#110;&#x65;&#x40;&#100;&#105;&#x67;&#x69;&#116;&#97;&#108;&#x63;&#x69;&#116;&#105;&#122;&#x65;&#110;&#46;&#110;&#121;&#99;">&#x6c;&#x69;&#x7a;&#x2e;&#108;&#x69;&#110;&#101;&#64;&#x64;&#105;&#103;&#105;&#x74;&#97;&#x6c;&#x63;&#x69;&#x74;&#x69;&#122;&#101;&#x6e;&#46;&#110;&#x79;&#99;</a></li>
+<li>Developer: Tanvir Haider - <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#x74;&#x61;&#110;&#x76;&#x69;&#x72;&#64;&#119;&#x69;&#x6c;&#x6c;&#111;&#x77;&#x2e;&#115;&#x74;&#x75;&#x64;&#105;&#111;">&#x74;&#97;&#110;&#x76;&#x69;&#114;&#64;&#x77;&#x69;&#108;&#x6c;&#111;&#x77;&#46;&#x73;&#116;&#117;&#x64;&#105;&#111;</a></li>
+<li>Designer: Alison DeBenedictis - <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x61;&#x6c;&#105;&#x73;&#111;&#110;&#64;&#97;&#108;&#105;&#115;&#x6f;&#110;&#x64;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#97;&#108;&#105;&#x73;&#111;&#110;&#64;&#x61;&#108;&#x69;&#x73;&#x6f;&#110;&#100;&#98;&#x2e;&#99;&#x6f;&#x6d;</a></li>
 </ul>
 
 <h2 id="license">License</h2>
