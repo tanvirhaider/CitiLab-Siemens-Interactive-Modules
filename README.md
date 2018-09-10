@@ -4,14 +4,14 @@ CitiLab Siemens Interactive Modules
 
 
 ## Dependencies
-#### there are two dependecies, Jquery and GSAP animation Engine. here are the CDN for them to include at the <head> in your page.
+there are two dependecies, Jquery and GSAP animation Engine. here are the CDN for them to include at the <head> in your page.
 
 ```
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 ```
 
-### google analytics code ( this should go inside the head tag of the page)
+#### google analytics code ( this should go inside the <head> tag of the page)
 ```
 <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
