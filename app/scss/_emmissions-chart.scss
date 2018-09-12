@@ -282,6 +282,7 @@ $coal-mumbai: #008b45;
                 width: 24px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
+                text-align: center;
 
                 @include breakpoint ("mobile") {
                     font-size: 8px;
@@ -482,7 +483,7 @@ $coal-mumbai: #008b45;
        
 
         @include breakpoint ("mobile") {
-            font-size: 9px;
+            font-size: 11px;
             width: 100%;
             max-width: unset;
          }
@@ -521,9 +522,9 @@ $coal-mumbai: #008b45;
 
 
                 @include breakpoint ("mobile") {
-                    width: 8px;
-                    height: 8px;
-                    left: -18px;
+                    width: 10px;
+                    height: 10px;
+                    left: -20px;
                 }
 
                 // &:hover{

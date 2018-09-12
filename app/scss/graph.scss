@@ -9,11 +9,11 @@ $color-london: #0e6ce5;
 
 // css variables :: ---------------
 
-:root {
-    --color-mumbai: #009999; 
-    --color-la: #ff2466; 
-    --color-london: #0e6ce5; 
-}
+// :root {
+//     --color-mumbai: #009999; 
+//     --color-la: #ff2466; 
+//     --color-london: #0e6ce5; 
+// }
 
 
 
@@ -44,7 +44,7 @@ $color-london: #0e6ce5;
 body {
     margin: 0px;
     padding: 0px;
-    background-color: lightgray;
+  //  background-color: lightgray;
 }
 
 //  #site-intro-animation, 
@@ -100,5 +100,5 @@ body {
 .placeholder {
     width: 100%;
     height: 100px;
-    background: lightgray;
+  //  background: lightgray;
 }
