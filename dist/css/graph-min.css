@@ -206,7 +206,9 @@
           -ms-user-select: none;
               user-select: none;
       bottom: calc(50px);
-      width: 100%; }
+      width: 100%;
+      text-transform: lowercase;
+      font-style: italic; }
       @media (max-width: 767px) {
         .graph-parking #graph-content .hint {
           font-size: 7px;

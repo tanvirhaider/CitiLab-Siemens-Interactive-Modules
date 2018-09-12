@@ -209,6 +209,9 @@
             user-select: none;
             bottom: calc(50px);
             width: 100%;
+            text-transform: lowercase;
+            font-style: italic;
+
 
             @include breakpoint ("mobile") {
               font-size: 7px;
