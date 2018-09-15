@@ -1,19 +1,15 @@
 
+// @codekit-prepend "createjs.js"
 
-//(function (cjs, an) {
+// Global Variables
 
-function createHeroAnimation (cjs, an, heroImg) {
+var createjs, DesktopAdobeAn;
+var desktopCanvas, desktopStage, exportDesktopRoot, Desktop_anim_container, desktop_dom_overlay, DesktopfnStartAnimation;
 
-	//console.log(heroImg);
-
+function createHeroDesktopAnimation (cjs, an, heroImg) {
 	var p; // shortcut to reference prototypes
 	var lib={};var ss={};var img={};
 	lib.ssMetadata = [];
-	
-	
-	// symbols:
-	
-	
 	
 	(lib.worldmap = function() {
 		this.initialize(img.worldmap);
@@ -1552,9 +1548,6 @@ function createHeroAnimation (cjs, an, heroImg) {
 	}).prototype = p = new cjs.MovieClip();
 	p.nominalBounds = new cjs.Rectangle(1098.2,246.8,735.1,432.7);
 
-	//var heroImgLoc = document.querySelector("#hero-animation_container").dataset.heroImageLocation;
-	
-	// library properties:
 	lib.properties = {
 		id: '1BC59284BC11499B8F52D1D6B9E2D635',
 		width: 1440,
@@ -1570,12 +1563,8 @@ function createHeroAnimation (cjs, an, heroImg) {
 		preloads: []
 	};
 	
-	
-	
-	// bootstrap callback support:
-	
-	(lib.Stage = function(canvas) {
-		createjs.Stage.call(this, canvas);
+	(lib.Stage = function(desktopCanvas) {
+		createjs.Stage.call(this, desktopCanvas);
 	}).prototype = p = new createjs.Stage();
 	
 	p.setAutoPlay = function(autoPlay) {
@@ -1604,7 +1593,7 @@ function createHeroAnimation (cjs, an, heroImg) {
 	
 	an.compositions = an.compositions || {};
 	an.compositions['1BC59284BC11499B8F52D1D6B9E2D635'] = {
-		getStage: function() { return exportRoot.getStage(); },
+		getStage: function() { return exportDesktopRoot.getStage(); },
 		getLibrary: function() { return lib; },
 		getSpriteSheet: function() { return ss; },
 		getImages: function() { return img; }
@@ -1616,54 +1605,45 @@ function createHeroAnimation (cjs, an, heroImg) {
 			an.bootstrapListeners[j](id);
 		}
 	}
-	
-	an.getComposition = function(id) {
-		return an.compositions[id];
-	}
-	
-}
-	
-	//})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+	an.getComposition = function(id) {return an.compositions[id];}
+} // end of createHeroDesktopAnimation
 
-	
-
-
-	var createjs, AdobeAn;
-
-
-	var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-	function initIntro() {
-		canvas = document.getElementById("canvas");
-		anim_container = document.getElementById("hero-animation_container");
-		dom_overlay_container = document.getElementById("dom_overlay_container");
-		var comp=AdobeAn.getComposition("1BC59284BC11499B8F52D1D6B9E2D635");
+	function initDesktopIntro() {
+		desktopCanvas = document.getElementById("desktop-hp-canvas");
+		Desktop_anim_container = document.getElementById("hero-animation_container");
+		desktop_dom_overlay = document.getElementById("desktop_dom_overlay");
+		var comp=DesktopAdobeAn.getComposition("1BC59284BC11499B8F52D1D6B9E2D635");
 		var lib=comp.getLibrary();
 		var loader = new createjs.LoadQueue(false);
-		loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
-		loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+		loader.addEventListener("fileload", function(evt){desktophandleFileLoad(evt,comp)});
+		loader.addEventListener("complete", function(evt){desktophandleComplete(evt,comp)});
 		var lib=comp.getLibrary();
 		loader.loadManifest(lib.properties.manifest);
-	}
-	function handleFileLoad(evt, comp) {
+	} // end of initDesktopIntro
+
+
+	function desktophandleFileLoad(evt, comp) {
 		var images=comp.getImages();	
 		if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
-	}
-	function handleComplete(evt,comp) {
+	} // end of  desktophandleFileLoad
+
+
+	function desktophandleComplete(evt,comp) {
 		//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-		var lib=comp.getLibrary();
-		var ss=comp.getSpriteSheet();
+		var lib = comp.getLibrary();
+		var ss = comp.getSpriteSheet();
 		var queue = evt.target;
 		var ssMetadata = lib.ssMetadata;
 		for(i=0; i<ssMetadata.length; i++) {
 			ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 		}
-		exportRoot = new lib.introanimationv1desktop();
-		stage = new lib.Stage(canvas);	
+		exportDesktopRoot = new lib.introanimationv1desktop();
+		desktopStage = new lib.Stage(desktopCanvas);	
 		//Registers the "tick" event listener.
-		fnStartAnimation = function() {
-			stage.addChild(exportRoot);
+		DesktopfnStartAnimation = function() {
+			desktopStage.addChild(exportDesktopRoot);
 			createjs.Ticker.setFPS(lib.properties.fps);
-			createjs.Ticker.addEventListener("tick", stage);
+			createjs.Ticker.addEventListener("tick", desktopStage);
 		}	    
 		//Code to support hidpi screens and responsive scaling.
 		function makeResponsive(isResp, respDim, isScale, scaleType) {		
@@ -1689,34 +1669,32 @@ function createHeroAnimation (cjs, an, heroImg) {
 						sRatio = Math.max(xRatio, yRatio);				
 					}			
 				}			
-				canvas.width = w*pRatio*sRatio;			
-				canvas.height = h*pRatio*sRatio;
-				canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
-				canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
-				stage.scaleX = pRatio*sRatio;			
-				stage.scaleY = pRatio*sRatio;			
+				desktopCanvas.width = w*pRatio*sRatio;			
+				desktopCanvas.height = h*pRatio*sRatio;
+				desktopCanvas.style.width = desktop_dom_overlay.style.width = Desktop_anim_container.style.width =  w*sRatio+'px';				
+				desktopCanvas.style.height = Desktop_anim_container.style.height = desktop_dom_overlay.style.height = h*sRatio+'px';
+				desktopStage.scaleX = pRatio*sRatio;			
+				desktopStage.scaleY = pRatio*sRatio;			
 				lastW = iw; lastH = ih; lastS = sRatio;            
-				stage.tickOnUpdate = false;            
-				stage.update();            
-				stage.tickOnUpdate = true;		
+				desktopStage.tickOnUpdate = false;            
+				desktopStage.update();            
+				desktopStage.tickOnUpdate = true;		
 			}
 		}
 		makeResponsive(true,'both',false,1);	
-		AdobeAn.compositionLoaded(lib.properties.id);
-		fnStartAnimation();
-	}
+		DesktopAdobeAn.compositionLoaded(lib.properties.id);
+		DesktopfnStartAnimation();
+	} // end of desktophandleComplete
 
 
 window.onload = function() {
 	var heroImgLoc = window.top.document.getElementById("hero-animation_container").dataset.heroImg;
-//	console.log("hero: ",heroImgLoc);
-	createHeroAnimation (createjs = createjs||{}, AdobeAn = AdobeAn||{},heroImgLoc);
-	initIntro();
+	createHeroDesktopAnimation (createjs = createjs||{}, DesktopAdobeAn = DesktopAdobeAn||{},heroImgLoc);
+	initDesktopIntro();
 	
 }
 
 function initIntroHeroCopy() {
-	//console.log("fire this function");
 	var introContent = document.querySelector("#hero-animation_container .introCopy");
 	introContent.style.display = "block";
 }

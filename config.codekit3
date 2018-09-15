@@ -208,7 +208,7 @@
 		"oAP": "\/dist\/hero-animation.html",
 		"oF": 0
 		},
-	"\/app\/js\/createjs-2015.11.26.min.js": {
+	"\/app\/js\/createjs.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
@@ -417,14 +417,6 @@
 "hooks": [
 	],
 "manualImportLinks": {
-	"\/app\/js\/intro-animation.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/app\/js\/createjs-2015.11.26.min.js",
-			"position": 0,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"creationDate": 555967449,
