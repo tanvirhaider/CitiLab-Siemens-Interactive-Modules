@@ -1695,12 +1695,16 @@ function initIntroHeroCopy() {
 
 
 
-if (window.innerWidth < 768) {
-	document.getElementById("hero-animation_container").style.display = "none";
-}
-else {
-	var heroImgLoc = window.top.document.getElementById("hero-animation_container").dataset.heroImg;
+// if (window.innerWidth < 768) {
+// 	document.getElementById("hero-animation_container").style.display = "none";
+// }
+// else {
+// 	var heroImgLoc = window.top.document.getElementById("hero-animation_container").dataset.heroImg;
+// 	createHeroDesktopAnimation (createjs = createjs||{}, DesktopAdobeAn = DesktopAdobeAn||{},heroImgLoc);
+// 	initDesktopIntro();
+// }
+
+
+var heroImgLoc = window.top.document.getElementById("hero-animation_container").dataset.heroImg;
 	createHeroDesktopAnimation (createjs = createjs||{}, DesktopAdobeAn = DesktopAdobeAn||{},heroImgLoc);
 	initDesktopIntro();
-}
-

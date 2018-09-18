@@ -1,5 +1,4 @@
 
-// @codekit-prepend "createjs.js"
 
 // Global Variables
 
@@ -1548,8 +1547,9 @@ function createHeroDesktopAnimation (cjs, an, heroImg) {
 	}).prototype = p = new cjs.MovieClip();
 	p.nominalBounds = new cjs.Rectangle(1098.2,246.8,735.1,432.7);
 
+	
 	lib.properties = {
-		id: '1BC59284BC11499B8F52D1D6B9E2D635',
+		id: '2BC59284BC11499B8F52D1D6B9E2D635',
 		width: 1440,
 		height: 460,
 		fps: 60,
@@ -1687,14 +1687,25 @@ function createHeroDesktopAnimation (cjs, an, heroImg) {
 	} // end of desktophandleComplete
 
 
-window.onload = function() {
-	var heroImgLoc = window.top.document.getElementById("hero-animation_container").dataset.heroImg;
-	createHeroDesktopAnimation (createjs = createjs||{}, DesktopAdobeAn = DesktopAdobeAn||{},heroImgLoc);
-	initDesktopIntro();
-	
-}
 
 function initIntroHeroCopy() {
 	var introContent = document.querySelector("#hero-animation_container .introCopy");
 	introContent.style.display = "block";
 }
+
+
+
+// if (window.innerWidth < 768) {
+// 	document.getElementById("hero-animation_container").style.display = "none";
+// }
+// else {
+// 	var heroImgLoc = window.top.document.getElementById("hero-animation_container").dataset.heroImg;
+// 	createHeroDesktopAnimation (createjs = createjs||{}, DesktopAdobeAn = DesktopAdobeAn||{},heroImgLoc);
+// 	initDesktopIntro();
+// }
+
+
+var heroImgLoc = window.top.document.getElementById("hero-animation_container").dataset.heroImg;
+	createHeroDesktopAnimation (createjs = createjs||{}, DesktopAdobeAn = DesktopAdobeAn||{},heroImgLoc);
+	initDesktopIntro();
+

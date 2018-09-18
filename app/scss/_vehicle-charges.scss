@@ -41,6 +41,12 @@ $range-label-width: 0px !default;
 
 
 .graph-vehicle-charges {
+
+    input:focus, textarea:focus {
+        outline: none;
+    }
+
+    
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
@@ -106,8 +112,10 @@ $range-label-width: 0px !default;
         }
 
         .content-copy p {
-            line-height: 1.5em;
+            //line-height: 1.5em;
+            line-height: 24px;
             margin-bottom: 8px;
+            font-size: 16px;
 
             @include breakpoint ("mobile") {
                 padding-top: 0px;
@@ -133,6 +141,7 @@ $range-label-width: 0px !default;
 
          .legend {
             padding-top: 20px;
+            font-size: 14px;
 
             .val-container {
                 display: flex;
@@ -231,7 +240,8 @@ $range-label-width: 0px !default;
 
 
             .year {
-                font-size: 2em;
+                font-size: 28px;
+                font-weight: 600;
 
                 @include breakpoint ("mobile") {
                     font-size: 16px;
@@ -247,6 +257,17 @@ $range-label-width: 0px !default;
             margin-left: auto;
             margin-right: auto;
             padding-top: 65px;
+
+            outline:0;
+
+            &::selection {
+                background: unset;
+                outline: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
 
             @include breakpoint ("mobile") {
                 width: calc(100% - 100px);
@@ -287,7 +308,7 @@ $range-label-width: 0px !default;
         .range-slider-common {
             position: relative;
             left: 2px;
-            top: -23px;
+            top: -19px;
             -webkit-appearance: none;
             width: calc(100% - 4px);
             margin-left: auto;

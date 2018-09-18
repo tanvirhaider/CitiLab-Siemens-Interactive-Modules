@@ -183,7 +183,8 @@
       font-size: 1.3em; }
       .graph-parking #graph-content .nav .nav-year {
         position: relative;
-        font-size: 1.2em;
+        font-size: 26px;
+        font-weight: 600;
         cursor: pointer;
         -webkit-user-select: none;
            -moz-user-select: none;
@@ -191,14 +192,14 @@
                 user-select: none; }
         @media (max-width: 767px) {
           .graph-parking #graph-content .nav .nav-year {
-            font-size: 16px; } }
+            font-size: 18px; } }
       @media (max-width: 767px) {
         .graph-parking #graph-content .nav {
           width: 60%;
           position: relative;
           bottom: unset; } }
     .graph-parking #graph-content .hint {
-      font-size: 0.8em;
+      font-size: 13px;
       position: absolute;
       text-align: center;
       -webkit-user-select: none;
@@ -211,7 +212,7 @@
       font-style: italic; }
       @media (max-width: 767px) {
         .graph-parking #graph-content .hint {
-          font-size: 7px;
+          font-size: 9px;
           width: calc(100% - 20px);
           left: 0px;
           right: 0px;
@@ -258,7 +259,13 @@
       margin-bottom: auto; }
       .graph-parking #graph-copy .graph-content p {
         padding: 0px;
-        margin-top: 0px; }
+        margin-top: 0px;
+        font-size: 16px;
+        line-height: 25px; }
+      @media (max-width: 767px) {
+        .graph-parking #graph-copy .graph-content p {
+          font-size: 13px;
+          line-height: 21px; } }
       .graph-parking #graph-copy .graph-content #content-2050 {
         display: none;
         opacity: 0;
@@ -267,7 +274,8 @@
       .graph-parking #graph-copy .graph-content .legend {
         color: white;
         font-family: 'Lato', sans-serif;
-        line-height: 24px; }
+        line-height: 22px;
+        font-size: 14px; }
         .graph-parking #graph-copy .graph-content .legend::before {
           content: " ";
           display: block;
@@ -276,6 +284,18 @@
           margin-right: 20px;
           -webkit-box-sizing: border-box;
                   box-sizing: border-box; }
+        @media (max-width: 767px) {
+          .graph-parking #graph-copy .graph-content .legend {
+            font-size: 12px;
+            line-height: 16px; }
+            .graph-parking #graph-copy .graph-content .legend::before {
+              content: " ";
+              display: block;
+              border-bottom: 1px solid #fff;
+              margin-bottom: 15px;
+              margin-right: 20px;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box; } }
       @media (max-width: 767px) {
         .graph-parking #graph-copy .graph-content {
           padding: 0px 0px; }
@@ -509,7 +529,8 @@
             margin-top: 30px;
             left: 35px; } }
         .graph-emissions .content .emmissions .chart-container .title {
-          font-size: 2em;
+          font-size: 30px;
+          font-weight: 600;
           width: 410px;
           text-align: center;
           padding-bottom: 40px;
@@ -521,7 +542,7 @@
           left: -25px; }
           @media (max-width: 767px) {
             .graph-emissions .content .emmissions .chart-container .title {
-              font-size: 18px;
+              font-size: 20px;
               width: 300px;
               padding-bottom: 20px; } }
         .graph-emissions .content .emmissions .chart-container .chart .tooltip {
@@ -656,10 +677,6 @@
                 position: relative;
                 -webkit-box-sizing: border-box;
                         box-sizing: border-box; }
-                .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar:hover {
-                  background-color: white;
-                  -webkit-filter: brightness(100%);
-                          filter: brightness(100%); }
                 @media (max-width: 767px) {
                   .graph-emissions .content .emmissions .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                     width: 14px;
@@ -695,7 +712,7 @@
               -ms-flex-pack: justify;
                   justify-content: space-between; }
           .graph-emissions .content .emmissions .chart-container .chart .chart-legends .years .year {
-            font-size: 1.6em;
+            font-size: 22px;
             -webkit-user-select: none;
                -moz-user-select: none;
                 -ms-user-select: none;
@@ -712,7 +729,7 @@
               flex-wrap: wrap;
           -ms-flex-line-pack: end;
               align-content: flex-end;
-          font-size: 0.8em;
+          font-size: 12px;
           width: 100%;
           max-width: 380px;
           position: relative;
@@ -729,12 +746,13 @@
           .graph-emissions .content .emmissions .chart-container .legends .each-legend-extend, .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai, .graph-emissions .content .emmissions .chart-container .legends .each-legend-london, .graph-emissions .content .emmissions .chart-container .legends .each-legend-la {
             position: relative;
             width: 65px;
-            padding-right: 30px;
+            margin-right: 30px;
             padding-bottom: 10px;
             -webkit-user-select: none;
                -moz-user-select: none;
                 -ms-user-select: none;
                     user-select: none;
+            font-size: 13px;
             cursor: pointer; }
             @media (max-width: 767px) {
               .graph-emissions .content .emmissions .chart-container .legends .each-legend-extend, .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai, .graph-emissions .content .emmissions .chart-container .legends .each-legend-london, .graph-emissions .content .emmissions .chart-container .legends .each-legend-la {
@@ -945,7 +963,8 @@
             margin-top: 30px;
             left: 35px; } }
         .graph-emissions .content .electricity .chart-container .title {
-          font-size: 2em;
+          font-size: 30px;
+          font-weight: 600;
           width: 410px;
           text-align: center;
           padding-bottom: 40px;
@@ -957,7 +976,7 @@
           left: -25px; }
           @media (max-width: 767px) {
             .graph-emissions .content .electricity .chart-container .title {
-              font-size: 18px;
+              font-size: 20px;
               width: 300px;
               padding-bottom: 20px; } }
         .graph-emissions .content .electricity .chart-container .chart .tooltip {
@@ -1092,10 +1111,6 @@
                 position: relative;
                 -webkit-box-sizing: border-box;
                         box-sizing: border-box; }
-                .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar:hover {
-                  background-color: white;
-                  -webkit-filter: brightness(100%);
-                          filter: brightness(100%); }
                 @media (max-width: 767px) {
                   .graph-emissions .content .electricity .chart-container .chart .bar-sets .bar-content .bar .small-bar {
                     width: 14px;
@@ -1131,7 +1146,7 @@
               -ms-flex-pack: justify;
                   justify-content: space-between; }
           .graph-emissions .content .electricity .chart-container .chart .chart-legends .years .year {
-            font-size: 1.6em;
+            font-size: 22px;
             -webkit-user-select: none;
                -moz-user-select: none;
                 -ms-user-select: none;
@@ -1148,7 +1163,7 @@
               flex-wrap: wrap;
           -ms-flex-line-pack: end;
               align-content: flex-end;
-          font-size: 0.8em;
+          font-size: 12px;
           width: 100%;
           max-width: 380px;
           position: relative;
@@ -1165,12 +1180,13 @@
           .graph-emissions .content .electricity .chart-container .legends .each-legend-extend, .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai, .graph-emissions .content .electricity .chart-container .legends .each-legend-london, .graph-emissions .content .electricity .chart-container .legends .each-legend-la {
             position: relative;
             width: 65px;
-            padding-right: 30px;
+            margin-right: 30px;
             padding-bottom: 10px;
             -webkit-user-select: none;
                -moz-user-select: none;
                 -ms-user-select: none;
                     user-select: none;
+            font-size: 13px;
             cursor: pointer; }
             @media (max-width: 767px) {
               .graph-emissions .content .electricity .chart-container .legends .each-legend-extend, .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai, .graph-emissions .content .electricity .chart-container .legends .each-legend-london, .graph-emissions .content .electricity .chart-container .legends .each-legend-la {
@@ -1228,10 +1244,19 @@
       width: calc(100% - 100px);
       margin-left: auto;
       margin-right: auto;
-      line-height: 1.5em;
       opacity: 0;
       -webkit-animation: fadein 0.5s forwards 0.1s;
               animation: fadein 0.5s forwards 0.1s; }
+      .graph-emissions .caption .original-copy p {
+        font-size: 16px;
+        line-height: 23px; }
+      @media (max-width: 767px) {
+        .graph-emissions .caption .original-copy p {
+          font-size: 13px;
+          line-height: 20px;
+          padding-left: 20px;
+          padding-right: 12px;
+          width: calc(100% - 40px); } }
     @media (max-width: 767px) {
       .graph-emissions .caption {
         position: relative;
@@ -1285,6 +1310,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
+  .graph-vehicle-charges input:focus, .graph-vehicle-charges textarea:focus {
+    outline: none; }
   @media (max-width: 767px) {
     .graph-vehicle-charges {
       height: 475px; } }
@@ -1317,8 +1344,9 @@
         top: 20px !important;
         height: auto; } }
     .graph-vehicle-charges .content-common .content-copy p, .graph-vehicle-charges .contents .content-copy p, .graph-vehicle-charges .mumbai .content-copy p, .graph-vehicle-charges .la .content-copy p, .graph-vehicle-charges .london .content-copy p {
-      line-height: 1.5em;
-      margin-bottom: 8px; }
+      line-height: 24px;
+      margin-bottom: 8px;
+      font-size: 16px; }
       @media (max-width: 767px) {
         .graph-vehicle-charges .content-common .content-copy p, .graph-vehicle-charges .contents .content-copy p, .graph-vehicle-charges .mumbai .content-copy p, .graph-vehicle-charges .la .content-copy p, .graph-vehicle-charges .london .content-copy p {
           padding-top: 0px;
@@ -1337,7 +1365,8 @@
         .graph-vehicle-charges .content-common .deviderline, .graph-vehicle-charges .contents .deviderline, .graph-vehicle-charges .mumbai .deviderline, .graph-vehicle-charges .la .deviderline, .graph-vehicle-charges .london .deviderline {
           height: 2px; } }
     .graph-vehicle-charges .content-common .legend, .graph-vehicle-charges .contents .legend, .graph-vehicle-charges .mumbai .legend, .graph-vehicle-charges .la .legend, .graph-vehicle-charges .london .legend {
-      padding-top: 20px; }
+      padding-top: 20px;
+      font-size: 14px; }
       .graph-vehicle-charges .content-common .legend .val-container, .graph-vehicle-charges .contents .legend .val-container, .graph-vehicle-charges .mumbai .legend .val-container, .graph-vehicle-charges .la .legend .val-container, .graph-vehicle-charges .london .legend .val-container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1417,7 +1446,8 @@
           padding-top: 15px;
           width: calc(100% - 100px); } }
       .graph-vehicle-charges .sliderModule .years .year {
-        font-size: 2em; }
+        font-size: 28px;
+        font-weight: 600; }
         @media (max-width: 767px) {
           .graph-vehicle-charges .sliderModule .years .year {
             font-size: 16px; } }
@@ -1425,7 +1455,16 @@
       width: 50%;
       margin-left: auto;
       margin-right: auto;
-      padding-top: 65px; }
+      padding-top: 65px;
+      outline: 0; }
+      .graph-vehicle-charges .sliderModule .range-slider::-moz-selection {
+        background: unset;
+        outline: none; }
+      .graph-vehicle-charges .sliderModule .range-slider::selection {
+        background: unset;
+        outline: none; }
+      .graph-vehicle-charges .sliderModule .range-slider:focus {
+        outline: none; }
       @media (max-width: 767px) {
         .graph-vehicle-charges .sliderModule .range-slider {
           width: calc(100% - 100px);
@@ -1456,7 +1495,7 @@
     .graph-vehicle-charges .sliderModule .range-slider-common, .graph-vehicle-charges .sliderModule .range-slider__range-mumbai, .graph-vehicle-charges .sliderModule .range-slider__range-la, .graph-vehicle-charges .sliderModule .range-slider__range-london {
       position: relative;
       left: 2px;
-      top: -23px;
+      top: -19px;
       -webkit-appearance: none;
       width: calc(100% - 4px);
       margin-left: auto;

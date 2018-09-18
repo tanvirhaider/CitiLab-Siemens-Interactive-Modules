@@ -212,8 +212,8 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 1,
-		"oAP": "\/dist\/js\/createjs.min.js",
+		"oA": 2,
+		"oAP": "\/dist\/js\/createjs.js",
 		"oF": 3,
 		"sC": 3,
 		"tS": 0
@@ -258,12 +258,22 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/app\/js\/intro-animation.js": {
+	"\/app\/js\/intro-desktop.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/dist\/js\/intro-animation.js",
+		"oAP": "\/dist\/js\/intro-desktop.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/app\/js\/intro-mobile.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/dist\/js\/intro-mobile.js",
 		"oF": 2,
 		"sC": 3,
 		"tS": 0
@@ -386,6 +396,19 @@
 		"oA": 0,
 		"oAP": "\/dist\/css\/intro-animation.css",
 		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/app\/scss\/mobile-hp.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/dist\/css\/mobile-hp.css",
+		"oF": 3,
 		"oS": 0,
 		"uL": 1
 		},
