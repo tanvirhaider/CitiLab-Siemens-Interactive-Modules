@@ -1529,9 +1529,19 @@ function createHeroDesktopAnimation (cjs, an, heroImg) {
 	if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	
 		// timeline functions:
+
+		this.frame_300 = function() {
+			//this.stop();
+			//console.log("frame 300");
+			window.initIntroHeroCopy();
+		}
+
+		this.timeline.addTween(cjs.Tween.get(this).wait(300).call(this.frame_300).wait(1));
+
+
 		this.frame_359 = function() {
 			this.stop();
-			window.initIntroHeroCopy();
+			
 		}
 	
 		// actions tween:
