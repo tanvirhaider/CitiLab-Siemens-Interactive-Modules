@@ -162,10 +162,11 @@ var EmmissionGraphData = {
 function initEmmissionsGraph (data) {
 
     function trackEvent (_eventCategory, _eventAction, _eventLabel) {
-        // console.log('Tracking', _eventCategory, _eventAction, _eventLabel);
-         ga('send', 'event', _eventCategory, _eventAction, _eventLabel);
+        gtag('event', _eventAction , {
+          'event_category': _eventCategory,
+          'event_label': _eventLabel
+        });
     }
-
     
     console.group("emmissions-" + data.location);
     console.log(data.container);

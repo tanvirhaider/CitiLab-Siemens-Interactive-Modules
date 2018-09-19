@@ -271,22 +271,12 @@
 	"\/app\/js\/graph-parking.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
-		"oA": 2,
+		"mi": 0,
+		"oA": 0,
 		"oAP": "\/dist\/js\/graph-parking.js",
 		"oF": 3,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/app\/js\/graph.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/dist\/js\/graph-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
 		},
 	"\/app\/js\/intro-desktop.js": {
 		"ft": 64,

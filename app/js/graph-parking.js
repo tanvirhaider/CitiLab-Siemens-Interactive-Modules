@@ -1,6 +1,5 @@
 
 
-
 function initParkingGraph (data) {
 
     var ParkingGraphData = {
@@ -21,9 +20,16 @@ function initParkingGraph (data) {
         }
     }
 
+    // function trackEvent (_eventCategory, _eventAction, _eventLabel) {
+    //     // console.log('Tracking', _eventCategory, _eventAction, _eventLabel);
+    //      ga('send', 'event', _eventCategory, _eventAction, _eventLabel);
+    // }
+
     function trackEvent (_eventCategory, _eventAction, _eventLabel) {
-        // console.log('Tracking', _eventCategory, _eventAction, _eventLabel);
-         ga('send', 'event', _eventCategory, _eventAction, _eventLabel);
+        gtag('event', _eventAction , {
+          'event_category': _eventCategory,
+          'event_label': _eventLabel
+        });
     }
 
     var container = data.container;
@@ -79,7 +85,7 @@ function initParkingGraph (data) {
             if (para_2050) {para_2050.style.display = "block";}
         }
 
-        trackEvent('Parking-chart', 'Click', "Year-Selected-" + yearList[Number(whichSet)] + "-" + data.location);
+      trackEvent('Parking-chart', 'Click', "Year-Selected-" + yearList[Number(whichSet)] + "-" + data.location);
 
        
         var numberOfIcons = document.querySelector(container + " #graph-content #grid");

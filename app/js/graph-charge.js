@@ -5,8 +5,10 @@
 function initVehicleCarges (data) {
 
   function trackEvent (_eventCategory, _eventAction, _eventLabel) {
-    // console.log('Tracking', _eventCategory, _eventAction, _eventLabel);
-      ga('send', 'event', _eventCategory, _eventAction, _eventLabel);
+      gtag('event', _eventAction , {
+        'event_category': _eventCategory,
+        'event_label': _eventLabel
+      });
   }
 
   var colors = {
@@ -22,7 +24,7 @@ function initVehicleCarges (data) {
   var currentSet = VehicleCargesData[data.location];
   var mapHolder = document.querySelector( data.container + " .mapholder");
   mapHolder.classList.add("vchargesBG-" + data.location);
-  console.log(mapHolder);
+  //console.log(mapHolder);
 
 
   document.querySelector('#graph-vehicle-charges-' + data.location + ' .contents').classList.add(data.location);
