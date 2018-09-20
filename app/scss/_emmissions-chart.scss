@@ -505,8 +505,9 @@ $coal-mumbai: #008b45;
             
 
             @include breakpoint ("mobile") {
-                width: 40px;
-                padding-right: 30px;
+                width: 45px;
+                padding-right: 15px;
+                padding-top: 5px;
              }
 
             // &:nth-child(1) {&::before {filter: brightness(100%);}}
@@ -532,6 +533,7 @@ $coal-mumbai: #008b45;
                     width: 10px;
                     height: 10px;
                     left: -20px;
+                    top: 7px;
                 }
 
                 // &:hover{

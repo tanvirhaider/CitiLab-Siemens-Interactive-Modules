@@ -23,7 +23,9 @@
     @include breakpoint ("mobile") {
        // height: auto;
        max-height: unset;
+       min-height: 800px;
        height: auto;
+       display: block;
     }
 
 

@@ -2,6 +2,9 @@
 
 // @codekit-prepend "vehicleCargesData.js"
 
+
+var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+
 function initVehicleCarges (data) {
 
   function trackEvent (_eventCategory, _eventAction, _eventLabel) {
@@ -55,6 +58,8 @@ function initVehicleCarges (data) {
   }
 
   slider.each(function(){  
+
+
   range.on('input', function(){
 
       hideHint ();
@@ -68,6 +73,25 @@ function initVehicleCarges (data) {
         if ((valSel >= (currentSet.length / NumberOfSegments) * i ) && (valSel < (currentSet.length / (NumberOfSegments)) * (i+1))) {initiateVCanimation (i+1);}
       }   
     });
+
+
+    // this is needed for IE 11 only
+    if (isIE11) {
+      range.change('input', function(){
+
+        hideHint ();
+  
+        console.log("input change value: ", this.value);
+        
+        var valSel = this.value;
+        trackEvent('vehicle-charges', 'Slider',data.location + 'slider-bar-value-for-' + valSel);
+  
+        for (var i = 0; i < NumberOfSegments; i++) {
+          if ((valSel >= (currentSet.length / NumberOfSegments) * i ) && (valSel < (currentSet.length / (NumberOfSegments)) * (i+1))) {initiateVCanimation (i+1);}
+        }   
+      });
+    }
+
   });
 
 

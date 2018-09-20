@@ -251,12 +251,12 @@
 	"\/app\/js\/graph-charge.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/dist\/js\/graph-charge.js",
 		"oF": 2,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/app\/js\/graph-emmissions.js": {
 		"ft": 64,

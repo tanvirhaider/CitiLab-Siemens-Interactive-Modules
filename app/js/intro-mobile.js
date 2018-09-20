@@ -378,24 +378,20 @@ function initMobileIntroCopy() {
 
 
 
-// if (window.innerWidth < 768) {
-// 	document.querySelector("#mobile-hp-animation").style.display = "block";
-// 	var heroImgLoc = document.querySelector("#mobile-hp-animation").dataset.heroImg;
-// 	createHeroMobileAnimation (createjs = createjs||{}, MobileAdobeAn = MobileAdobeAn||{},heroImgLoc);
-// 	initMobileIntroAnimation();
-// }
-// else {
-// 	document.querySelector("#mobile-hp-animation").style.display = "none";
-// }
+
 
 var heroImgLoc = document.querySelector("#mobile-hp-animation").dataset.heroImg;
 
 
+if (window.innerWidth < 768) {
+	//document.querySelector("#mobile-hp-animation").style.display = "block";
+	function load() {
+		createHeroMobileAnimation (createjs = createjs||{}, MobileAdobeAn = MobileAdobeAn||{},heroImgLoc);
+		initMobileIntroAnimation();
+	}
 
-
-function load() {
-	createHeroMobileAnimation (createjs = createjs||{}, MobileAdobeAn = MobileAdobeAn||{},heroImgLoc);
-	initMobileIntroAnimation();
+	window.onload = load;
 }
-
-window.onload = load;
+else {
+	document.querySelector("#mobile-hp-animation").style.display = "none";
+}

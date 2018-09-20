@@ -162,7 +162,7 @@
     .graph-parking #graph-content .icon-tree-la {
       background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5NSA5NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTUgOTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPG1ldGFkYXRhPjw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQzIDc5LjE2MTM1NiwgMjAxNy8wOS8wNy0wMToxMToyMiAgICAgICAgIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIvPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPiAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz48L21ldGFkYXRhPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNmZjI0NjY7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODYuNywzNGMwLjgtMS43LDEuMy0zLjcsMS4zLTUuOGMwLTcuNy02LjItMTMuOS0xMy44LTEzLjljLTEuNS02LjItNy0xMC43LTEzLjYtMTAuN2MtMi43LDAtNS4yLDAuOC03LjMsMi4xCgljLTIuNi0zLjItNi41LTUuNS0xMS01LjVjLTcsMC0xMi44LDUuMS0xMy44LDExLjhDMjcuOSwxMiwyNy4zLDEyLDI2LjcsMTJjLTcuNywwLTEzLjksNi4zLTEzLjksMTMuOWMwLDAuMSwwLDAuMywwLDAuNQoJYy00LjIsMi40LTcsNy03LDEyLjFjMCw0LjMsMiw4LjEsNSwxMC43YzAsMC41LTAuMSwxLTAuMSwxLjVjMCw3LjcsNi4zLDEzLjksMTMuOSwxMy45YzIuOCwwLDUuMi0wLjgsNy40LTIuMmMzLjEsMy4xLDcsMi4xLDgsNi4yCgljNC41LDE2LjUtMi43LDI2LjEtMi43LDI2LjFoMTYuOGMwLDAtOC0xOS4xLTEuNS0yMy40YzEuNi0xLDMuNC0yLjgsNS00LjZjMi4zLDEuNiw1LjEsMi42LDguMSwyLjZjNy43LDAsMTMuOS02LjIsMTMuOS0xMy44CgljNS42LTEuOSw5LjYtNy4xLDkuNi0xMy4yQzg5LjMsMzkuMiw4OC4zLDM2LjMsODYuNywzNHogTTM5LDYyLjZjLTIuMS0wLjYtMy43LTEuMi01LTEuN2MxLjktMS43LDMuNC00LjEsMy45LTYuNgoJYzEuNSwxLjQsMy4yLDIuNCw1LjEsMy4yQzQzLjksNjEsNDMuNCw2My45LDM5LDYyLjZ6IE00Ni4xLDYzLjJjMC4xLTEuNywwLTMuNC0wLjItNC42YzEuNCwwLjMsMi45LDAuNiw0LjUsMC43CglDNDguMyw2NC45LDQ1LjcsNzAuNSw0Ni4xLDYzLjJ6IE00OS41LDY4YzItMi4yLDMuMS00LjYsMy43LTYuOGMwLjYsMS4yLDEuMywyLjIsMi4xLDMuMUM1Mi4xLDY2LjQsNDkuNSw2OCw0OS41LDY4eiIvPgo8L3N2Zz4K"); }
     .graph-parking #graph-content .icon-car-london {
-      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5OS44IDEwMC4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5OS44IDEwMC4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxtZXRhZGF0YT48P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MyA3OS4xNjEzNTYsIDIwMTcvMDkvMDctMDE6MTE6MjIgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiLz4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8+PC9tZXRhZGF0YT4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMDgzRjg2O30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTQuNCwzNi4yaC04LjhMNzkuNywyM2MtMy41LTQuOS02LTYuNC0xMC4yLTYuNEgzMC4zYy00LjIsMC02LjcsMS41LTEwLjIsNi40bC01LjgsMTMuMUg1LjQKCQljLTEuNCwwLTQsNy4yLDUuNCw3LjRsLTMuMSw3LjZjMC4xLDkuNywwLjEsMTkuMiwwLjEsMjguN2MwLDIsMS42LDMuNiwzLjYsMy42aDEyLjFjMiwwLDMuNS0xLjYsMy41LTMuNlY3Mmg0NS44djcuOQoJCWMwLDIsMS42LDMuNiwzLjYsMy42aDEyLjFjMiwwLDMuNS0xLjYsMy41LTMuNmMwLTkuNSwwLjEtMTkuMSwwLjEtMjguN2wtMy4xLTcuNkM5OC40LDQzLjQsOTUuNywzNi4yLDk0LjQsMzYuMnogTTIwLjksNjMuNQoJCWMtMy4zLDAtNS44LTIuNy01LjgtNS44YzAtMy4zLDIuNi01LjgsNS44LTUuOGMzLjEsMCw1LjgsMi42LDUuOCw1LjhDMjYuNyw2MC44LDI0LDYzLjUsMjAuOSw2My41eiBNNjIuMiw2Mi41SDM3LjUKCQljLTEuNCwwLTIuNy0xLjMtMi43LTIuN2MwLTEuNSwxLjMtMi44LDIuNy0yLjhoMjQuN2MxLjUsMCwyLjcsMS4zLDIuNywyLjhDNjQuOSw2MS4yLDYzLjcsNjIuNSw2Mi4yLDYyLjV6IE0xOS4xLDQwLjMKCQljMS45LTQuMSwzLjYtOC4zLDUuOS0xMi45YzEuMy0yLjIsMi43LTQuMiw1LjItNC40aDM5LjJjMi42LDAuMiw0LDIuMiw1LjIsNC40YzIuMyw0LjcsNC4xLDguOCw1LjksMTIuOUgxOS4xeiBNNzguOSw2My41CgkJYy0zLjEsMC01LjgtMi43LTUuOC01LjhjMC0zLjMsMi43LTUuOCw1LjgtNS44YzMuMywwLDUuOCwyLjYsNS44LDUuOEM4NC43LDYwLjgsODIuMiw2My41LDc4LjksNjMuNXoiLz4KPC9nPgo8L3N2Zz4K"); }
+      background-image: url("../assets/images/icon-car-london.svg"); }
     .graph-parking #graph-content .icon-house-london {
       background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAgMTAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzBDNURDNTt9Cjwvc3R5bGU+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNTAsOS43IDMyLjcsMjUuNCAzMi43LDIwLjIgMzIuNywxMi42IDIwLjEsMTIuNiAyMC4xLDIwLjIgMjAuMSwzNi45IDAuMyw1NC45IDEwLjcsNTQuOSAxMC43LDkwLjMgCgk0MC41LDkwLjMgNTkuNSw5MC4zIDg5LjMsOTAuMyA4OS4zLDU0LjkgOTkuNyw1NC45ICIvPgo8L3N2Zz4K"); }
     .graph-parking #graph-content .icon-tree-london {
@@ -330,7 +330,9 @@
   @media (max-width: 767px) {
     .graph-emissions {
       max-height: unset;
-      height: auto; } }
+      min-height: 800px;
+      height: auto;
+      display: block; } }
   .graph-emissions .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -756,8 +758,9 @@
             cursor: pointer; }
             @media (max-width: 767px) {
               .graph-emissions .content .emmissions .chart-container .legends .each-legend-extend, .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai, .graph-emissions .content .emmissions .chart-container .legends .each-legend-london, .graph-emissions .content .emmissions .chart-container .legends .each-legend-la {
-                width: 40px;
-                padding-right: 30px; } }
+                width: 45px;
+                padding-right: 15px;
+                padding-top: 5px; } }
             .graph-emissions .content .emmissions .chart-container .legends .each-legend-extend::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-london::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-la::before {
               content: "";
               left: -30px;
@@ -770,7 +773,8 @@
                 .graph-emissions .content .emmissions .chart-container .legends .each-legend-extend::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-london::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-la::before {
                   width: 10px;
                   height: 10px;
-                  left: -20px; } }
+                  left: -20px;
+                  top: 7px; } }
             .graph-emissions .content .emmissions .chart-container .legends .each-legend-extend:hover::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-mumbai:hover::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-london:hover::before, .graph-emissions .content .emmissions .chart-container .legends .each-legend-la:hover::before {
               border: 1px solid white;
               background-color: white;
@@ -1190,8 +1194,9 @@
             cursor: pointer; }
             @media (max-width: 767px) {
               .graph-emissions .content .electricity .chart-container .legends .each-legend-extend, .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai, .graph-emissions .content .electricity .chart-container .legends .each-legend-london, .graph-emissions .content .electricity .chart-container .legends .each-legend-la {
-                width: 40px;
-                padding-right: 30px; } }
+                width: 45px;
+                padding-right: 15px;
+                padding-top: 5px; } }
             .graph-emissions .content .electricity .chart-container .legends .each-legend-extend::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-london::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-la::before {
               content: "";
               left: -30px;
@@ -1204,7 +1209,8 @@
                 .graph-emissions .content .electricity .chart-container .legends .each-legend-extend::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-london::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-la::before {
                   width: 10px;
                   height: 10px;
-                  left: -20px; } }
+                  left: -20px;
+                  top: 7px; } }
             .graph-emissions .content .electricity .chart-container .legends .each-legend-extend:hover::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-mumbai:hover::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-london:hover::before, .graph-emissions .content .electricity .chart-container .legends .each-legend-la:hover::before {
               border: 1px solid white;
               background-color: white;
@@ -1457,10 +1463,10 @@
       margin-right: auto;
       padding-top: 65px;
       outline: 0; }
-      .graph-vehicle-charges .sliderModule .range-slider::-moz-selection {
-        background: unset;
-        outline: none; }
-      .graph-vehicle-charges .sliderModule .range-slider::selection {
+      .graph-vehicle-charges .sliderModule .range-slider input[type=range]::-ms-track {
+        background: #fff;
+        color: #ddd; }
+      input[type=range]::-ms-thumb input[type=range]:active::-ms-thumb .graph-vehicle-charges .sliderModule .range-slider::selection {
         background: unset;
         outline: none; }
       .graph-vehicle-charges .sliderModule .range-slider:focus {
@@ -1502,12 +1508,9 @@
       margin-right: auto;
       height: 10px;
       border-radius: 5px;
-      background: #fff;
       outline: none;
       padding-left: 2px;
-      padding-right: 2px;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+      padding-right: 2px; }
       .graph-vehicle-charges .sliderModule .range-slider-common::-webkit-slider-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-webkit-slider-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-la::-webkit-slider-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-london::-webkit-slider-thumb {
         -webkit-appearance: none;
                 appearance: none;
@@ -1524,17 +1527,30 @@
         cursor: pointer;
         -webkit-transition: background .15s ease-in-out;
         transition: background .15s ease-in-out; }
+      .graph-vehicle-charges .sliderModule .range-slider-common::-ms-range-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-ms-range-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-la::-ms-range-thumb, .graph-vehicle-charges .sliderModule .range-slider__range-london::-ms-range-thumb {
+        width: 14px;
+        height: 30px;
+        border: 0;
+        cursor: pointer;
+        -webkit-transition: background .15s ease-in-out;
+        transition: background .15s ease-in-out; }
     .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-webkit-slider-thumb {
       background: #009999; }
     .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-moz-range-thumb {
+      background: #009999; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-mumbai::-ms-range-thumb {
       background: #009999; }
     .graph-vehicle-charges .sliderModule .range-slider__range-la::-webkit-slider-thumb {
       background: #ff2466; }
     .graph-vehicle-charges .sliderModule .range-slider__range-la::-moz-range-thumb {
       background: #ff2466; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-la::-ms-range-thumb {
+      background: #ff2466; }
     .graph-vehicle-charges .sliderModule .range-slider__range-london::-webkit-slider-thumb {
       background: #0e6ce5; }
     .graph-vehicle-charges .sliderModule .range-slider__range-london::-moz-range-thumb {
+      background: #0e6ce5; }
+    .graph-vehicle-charges .sliderModule .range-slider__range-london::-ms-range-thumb {
       background: #0e6ce5; }
     .graph-vehicle-charges .sliderModule ::-moz-range-track {
       background: #fff;

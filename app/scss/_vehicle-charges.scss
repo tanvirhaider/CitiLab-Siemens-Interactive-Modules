@@ -15,6 +15,8 @@ $range-label-color: $shade-10 !default;
 $range-label-width: 0px !default;
 
 
+
+
 .vchargesBG-mumbai {
     @include bgimage("map-mumbai.jpg");
 }
@@ -257,8 +259,39 @@ $range-label-width: 0px !default;
             margin-left: auto;
             margin-right: auto;
             padding-top: 65px;
-
             outline:0;
+
+
+            // input[type="range"]::-ms-fill-lower,
+            // input[type="range"]::-ms-fill-upper {
+            // background: transparent;
+            // }
+            // input[type="range"]::-ms-track {
+            // border-radius: 8px;
+            // height: 7px;
+            // border: 1px solid #bdc3c7;
+            // background-color: #fff;
+            // }
+            // input[type="range"]::-ms-thumb {
+            // background-color: #ecf0f1;
+            // border: 1px solid #bdc3c7;
+            // width: 20px;
+            // height: 20px;
+            // border-radius: 10px;
+            // cursor: pointer;
+            // }
+
+            input[type=range]::-ms-track {
+                background: #fff;
+                color: #ddd;
+              }
+
+              input[type=range]::-ms-thumb // to target it
+
+              input[type=range]:active::-ms-thumb // to target it
+
+
+
 
             &::selection {
                 background: unset;
@@ -315,34 +348,33 @@ $range-label-width: 0px !default;
             margin-right: auto;
             height: $range-track-height;
             border-radius: 5px;
-            background: $range-track-color;
+           // background: $range-track-color;
             outline: none;
             padding-left: 2px;
             padding-right: 2px;
-            box-sizing: border-box;
+            //box-sizing: border-box;
 
             &::-webkit-slider-thumb {
                 appearance: none;
                 width: 14px;
                 height: 30px;
-               // margin-left:4px;
-               // margin-right: 4px;
-              //  box-sizing: border-box;
-                // width: $range-handle-size;
-                // border-radius: 50%;
                 cursor: pointer;
                 transition: background .15s ease-in-out;
                 position: relative;
-               // left: -4px;
             }
 
             &::-moz-range-thumb {
-                // width: $range-handle-size;
-                // height: $range-handle-size;
                 width: 14px;
                 height: 30px;
                 border: 0;
-               // border-radius: 50%;
+                cursor: pointer;
+                transition: background .15s ease-in-out;
+            }
+
+            &::-ms-range-thumb {
+                width: 14px;
+                height: 30px;
+                border: 0;
                 cursor: pointer;
                 transition: background .15s ease-in-out;
             }
@@ -353,18 +385,21 @@ $range-label-width: 0px !default;
             @extend .range-slider-common;
             &::-webkit-slider-thumb {background: $color-mumbai;}
             &::-moz-range-thumb {background: $color-mumbai;}
+            &::-ms-range-thumb {background: $color-mumbai;}
         }
 
         .range-slider__range-la {
            @extend .range-slider-common;
             &::-webkit-slider-thumb {background: $color-la;}
             &::-moz-range-thumb {background: $color-la;}
+            &::-ms-range-thumb {background: $color-la;}
         }
 
         .range-slider__range-london {
             @extend .range-slider-common;
             &::-webkit-slider-thumb {background: $color-london;}
             &::-moz-range-thumb {background: $color-london;}
+            &::-ms-range-thumb {background: $color-london;}
         }
 
         
